@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "f632cdea9e370d11bc294c0bfae181ed"
+build_time: [1581552519, 761382000]
+inputs:
+  "/Users/samnagesh/Desktop/clubhouse/clubhousePrototype/clubhousePrototype/ViewController.swift": [1581552519, 707610068]
+  "/Users/samnagesh/Desktop/clubhouse/clubhousePrototype/clubhousePrototype/AppDelegate.swift": [1581125994, 816667964]

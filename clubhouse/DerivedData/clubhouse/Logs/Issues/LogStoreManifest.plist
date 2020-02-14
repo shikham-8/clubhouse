@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>11961D02-D2DB-45F3-BE03-A5BA8EE92708</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>11961D02-D2DB-45F3-BE03-A5BA8EE92708.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>clubhouse-eyqhnyeocedxqrdbvlkcsefczfsv</string>
+			<key>timeStartedRecording</key>
+			<real>603398575.67911506</real>
+			<key>timeStoppedRecording</key>
+			<real>603398577.11224699</real>
+			<key>title</key>
+			<string>Build target clubhouse</string>
+			<key>uniqueIdentifier</key>
+			<string>11961D02-D2DB-45F3-BE03-A5BA8EE92708</string>
+		</dict>
+		<key>458F7E95-F035-49AD-9D71-95822DA2332D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
+			<key>fileName</key>
+			<string>458F7E95-F035-49AD-9D71-95822DA2332D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>clubhouseTests-eyqhnyeocedxqrdbvlkcsefczfsv</string>
+			<key>timeStartedRecording</key>
+			<real>603398531.49747097</real>
+			<key>timeStoppedRecording</key>
+			<real>603398531.80248106</real>
+			<key>title</key>
+			<string>Build target clubhouseTests</string>
+			<key>uniqueIdentifier</key>
+			<string>458F7E95-F035-49AD-9D71-95822DA2332D</string>
+		</dict>
+		<key>899847E1-F1A3-4695-8C9D-92FDB5C562EA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
+			<key>fileName</key>
+			<string>899847E1-F1A3-4695-8C9D-92FDB5C562EA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>clubhouseUITests-eyqhnyeocedxqrdbvlkcsefczfsv</string>
+			<key>timeStartedRecording</key>
+			<real>603262183.82463801</real>
+			<key>timeStoppedRecording</key>
+			<real>603262191.80977404</real>
+			<key>title</key>
+			<string>Build target clubhouseUITests</string>
+			<key>uniqueIdentifier</key>
+			<string>899847E1-F1A3-4695-8C9D-92FDB5C562EA</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>
