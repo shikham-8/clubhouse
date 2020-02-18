@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0EB6F52C-7258-41D4-BF1F-4E0721DF93CA</key>
+		<key>2500D071-CE31-4757-9D35-EEC5D1A9F49E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,211 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0EB6F52C-7258-41D4-BF1F-4E0721DF93CA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398189.202124</real>
-			<key>timeStoppedRecording</key>
-			<real>603398189.96480894</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>0EB6F52C-7258-41D4-BF1F-4E0721DF93CA</string>
-		</dict>
-		<key>17C8F979-1E7D-4D69-8595-FAC1311002D2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>17C8F979-1E7D-4D69-8595-FAC1311002D2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397758.61234796</real>
-			<key>timeStoppedRecording</key>
-			<real>603397760.17142999</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>17C8F979-1E7D-4D69-8595-FAC1311002D2</string>
-		</dict>
-		<key>1C75BF34-5916-428F-B4A6-2C1E1D3D9F30</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1C75BF34-5916-428F-B4A6-2C1E1D3D9F30.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397453.54637802</real>
-			<key>timeStoppedRecording</key>
-			<real>603397457.85456705</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>1C75BF34-5916-428F-B4A6-2C1E1D3D9F30</string>
-		</dict>
-		<key>20716056-5C70-4AF7-B1F5-9B421C58FD6B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>20716056-5C70-4AF7-B1F5-9B421C58FD6B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397559.51622498</real>
-			<key>timeStoppedRecording</key>
-			<real>603397560.94504702</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>20716056-5C70-4AF7-B1F5-9B421C58FD6B</string>
-		</dict>
-		<key>25A3E4A6-0F7E-4892-8A93-F1FC447D575A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>25A3E4A6-0F7E-4892-8A93-F1FC447D575A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398343.41019499</real>
-			<key>timeStoppedRecording</key>
-			<real>603398345.202793</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>25A3E4A6-0F7E-4892-8A93-F1FC447D575A</string>
-		</dict>
-		<key>39584681-5DE1-4E50-A8EF-B307E595AE3D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>39584681-5DE1-4E50-A8EF-B307E595AE3D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397723.11845398</real>
-			<key>timeStoppedRecording</key>
-			<real>603397723.87479603</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>39584681-5DE1-4E50-A8EF-B307E595AE3D</string>
-		</dict>
-		<key>3EB8E085-3FA9-4FF2-99D0-627650DAD391</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3EB8E085-3FA9-4FF2-99D0-627650DAD391.xcactivitylog</string>
+			<string>2500D071-CE31-4757-9D35-EEC5D1A9F49E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -236,15 +32,15 @@
 			<key>signature</key>
 			<string>Preview clubhouse</string>
 			<key>timeStartedRecording</key>
-			<real>603398432.02466798</real>
+			<real>603683788.72825205</real>
 			<key>timeStoppedRecording</key>
-			<real>603398432.16555405</real>
+			<real>603683797.25704205</real>
 			<key>title</key>
 			<string>Preview clubhouse</string>
 			<key>uniqueIdentifier</key>
-			<string>3EB8E085-3FA9-4FF2-99D0-627650DAD391</string>
+			<string>2500D071-CE31-4757-9D35-EEC5D1A9F49E</string>
 		</dict>
-		<key>4F349B33-A23F-403D-AF0D-799785E33828</key>
+		<key>442C8D80-2930-45EF-AD31-2F255EB53BD0</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -253,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>4F349B33-A23F-403D-AF0D-799785E33828.xcactivitylog</string>
+			<string>442C8D80-2930-45EF-AD31-2F255EB53BD0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -270,15 +66,15 @@
 			<key>signature</key>
 			<string>Build clubhouse</string>
 			<key>timeStartedRecording</key>
-			<real>603398457.31884897</real>
+			<real>603684356.42374504</real>
 			<key>timeStoppedRecording</key>
-			<real>603398459.08955801</real>
+			<real>603684360.23840201</real>
 			<key>title</key>
 			<string>Build clubhouse</string>
 			<key>uniqueIdentifier</key>
-			<string>4F349B33-A23F-403D-AF0D-799785E33828</string>
+			<string>442C8D80-2930-45EF-AD31-2F255EB53BD0</string>
 		</dict>
-		<key>4F59E369-9C15-4E07-9BB6-697371D6E339</key>
+		<key>80C43557-360A-4766-90C5-EBE3D0C21315</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -287,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>4F59E369-9C15-4E07-9BB6-697371D6E339.xcactivitylog</string>
+			<string>80C43557-360A-4766-90C5-EBE3D0C21315.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -304,15 +100,15 @@
 			<key>signature</key>
 			<string>Build clubhouse</string>
 			<key>timeStartedRecording</key>
-			<real>603398534.41584897</real>
+			<real>603683811.71489096</real>
 			<key>timeStoppedRecording</key>
-			<real>603398535.94941103</real>
+			<real>603683812.52946603</real>
 			<key>title</key>
 			<string>Build clubhouse</string>
 			<key>uniqueIdentifier</key>
-			<string>4F59E369-9C15-4E07-9BB6-697371D6E339</string>
+			<string>80C43557-360A-4766-90C5-EBE3D0C21315</string>
 		</dict>
-		<key>5B9236E8-D1A5-41A6-9D53-785EC3A479F9</key>
+		<key>A698C4DC-A418-4401-965A-A3B4F0E385B5</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -321,75 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>5B9236E8-D1A5-41A6-9D53-785EC3A479F9.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Preview clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603396938.00504398</real>
-			<key>timeStoppedRecording</key>
-			<real>603396940.55256701</real>
-			<key>title</key>
-			<string>Preview clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>5B9236E8-D1A5-41A6-9D53-785EC3A479F9</string>
-		</dict>
-		<key>5D746457-B4D5-4B12-A753-9C1030BC20A1</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5D746457-B4D5-4B12-A753-9C1030BC20A1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Preview clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398529.60753596</real>
-			<key>timeStoppedRecording</key>
-			<real>603398531.81298101</real>
-			<key>title</key>
-			<string>Preview clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>5D746457-B4D5-4B12-A753-9C1030BC20A1</string>
-		</dict>
-		<key>67165AC9-ABC0-43AE-B0BD-6C806F250E20</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>67165AC9-ABC0-43AE-B0BD-6C806F250E20.xcactivitylog</string>
+			<string>A698C4DC-A418-4401-965A-A3B4F0E385B5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -406,15 +134,15 @@
 			<key>signature</key>
 			<string>Build clubhouse</string>
 			<key>timeStartedRecording</key>
-			<real>603397581.50119698</real>
+			<real>603579631.31974602</real>
 			<key>timeStoppedRecording</key>
-			<real>603397582.63458705</real>
+			<real>603579634.83583105</real>
 			<key>title</key>
 			<string>Build clubhouse</string>
 			<key>uniqueIdentifier</key>
-			<string>67165AC9-ABC0-43AE-B0BD-6C806F250E20</string>
+			<string>A698C4DC-A418-4401-965A-A3B4F0E385B5</string>
 		</dict>
-		<key>741E755C-609E-4569-B688-FD6B7FD4EA42</key>
+		<key>DFFD7A97-662B-4B78-912B-D8205FE989F6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -423,41 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>741E755C-609E-4569-B688-FD6B7FD4EA42.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397149.43510902</real>
-			<key>timeStoppedRecording</key>
-			<real>603397150.99808002</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>741E755C-609E-4569-B688-FD6B7FD4EA42</string>
-		</dict>
-		<key>7FA1EB4C-E3CE-43DC-B4DC-796BED2A292C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7FA1EB4C-E3CE-43DC-B4DC-796BED2A292C.xcactivitylog</string>
+			<string>DFFD7A97-662B-4B78-912B-D8205FE989F6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -474,319 +168,13 @@
 			<key>signature</key>
 			<string>Preview clubhouse</string>
 			<key>timeStartedRecording</key>
-			<real>603397232.34853303</real>
+			<real>603683956.97995603</real>
 			<key>timeStoppedRecording</key>
-			<real>603397233.82295203</real>
+			<real>603683960.93026698</real>
 			<key>title</key>
 			<string>Preview clubhouse</string>
 			<key>uniqueIdentifier</key>
-			<string>7FA1EB4C-E3CE-43DC-B4DC-796BED2A292C</string>
-		</dict>
-		<key>A2D56123-4790-4483-B7BE-204929FAB11D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A2D56123-4790-4483-B7BE-204929FAB11D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397013.545398</real>
-			<key>timeStoppedRecording</key>
-			<real>603397013.91020501</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>A2D56123-4790-4483-B7BE-204929FAB11D</string>
-		</dict>
-		<key>A39B674E-5198-4E91-8DB2-2F2CF85FE876</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A39B674E-5198-4E91-8DB2-2F2CF85FE876.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397624.20988703</real>
-			<key>timeStoppedRecording</key>
-			<real>603397625.37716198</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>A39B674E-5198-4E91-8DB2-2F2CF85FE876</string>
-		</dict>
-		<key>A441F8E6-6DF3-4475-AD63-954E1AF82A25</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A441F8E6-6DF3-4475-AD63-954E1AF82A25.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Preview clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398419.95675302</real>
-			<key>timeStoppedRecording</key>
-			<real>603398424.76545703</real>
-			<key>title</key>
-			<string>Preview clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>A441F8E6-6DF3-4475-AD63-954E1AF82A25</string>
-		</dict>
-		<key>BF9D1363-902C-4157-86F1-75443EB6D3B4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>BF9D1363-902C-4157-86F1-75443EB6D3B4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Preview clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397053.311584</real>
-			<key>timeStoppedRecording</key>
-			<real>603397057.21682</real>
-			<key>title</key>
-			<string>Preview clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>BF9D1363-902C-4157-86F1-75443EB6D3B4</string>
-		</dict>
-		<key>D3F0BCB8-DC43-486E-B344-F20CFD555D1A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D3F0BCB8-DC43-486E-B344-F20CFD555D1A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397214.27350295</real>
-			<key>timeStoppedRecording</key>
-			<real>603397214.83715796</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>D3F0BCB8-DC43-486E-B344-F20CFD555D1A</string>
-		</dict>
-		<key>E4ED6967-5443-4C4F-B49D-ABC608073542</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E4ED6967-5443-4C4F-B49D-ABC608073542.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398555.35835803</real>
-			<key>timeStoppedRecording</key>
-			<real>603398556.842314</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>E4ED6967-5443-4C4F-B49D-ABC608073542</string>
-		</dict>
-		<key>F193F372-46CD-42BB-BACF-F5DA88222DDA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F193F372-46CD-42BB-BACF-F5DA88222DDA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398575.65343404</real>
-			<key>timeStoppedRecording</key>
-			<real>603398577.12247503</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>F193F372-46CD-42BB-BACF-F5DA88222DDA</string>
-		</dict>
-		<key>FA735659-D990-4E2C-836D-448D2737EAD5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FA735659-D990-4E2C-836D-448D2737EAD5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603397196.86897802</real>
-			<key>timeStoppedRecording</key>
-			<real>603397196.90656304</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>FA735659-D990-4E2C-836D-448D2737EAD5</string>
-		</dict>
-		<key>FE94D68A-5097-48EB-8ADA-A9C4536443BE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FE94D68A-5097-48EB-8ADA-A9C4536443BE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>clubhouse project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>clubhouse</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build clubhouse</string>
-			<key>timeStartedRecording</key>
-			<real>603398297.88269806</real>
-			<key>timeStoppedRecording</key>
-			<real>603398298.62056601</real>
-			<key>title</key>
-			<string>Build clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>FE94D68A-5097-48EB-8ADA-A9C4536443BE</string>
+			<string>DFFD7A97-662B-4B78-912B-D8205FE989F6</string>
 		</dict>
 	</dict>
 </dict>

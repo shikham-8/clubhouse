@@ -24,7 +24,7 @@ depends-top-level:
 - "UIWindow"
 - !private "UIWindowScene"
 - "UIWindowSceneDelegate"
-- !private "clubRegister2"
+- !private "clubProfileHome"
 depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
@@ -33,7 +33,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIHostingController"]
 - !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "clubRegister2"]
+- !private ["s7CVarArgP", "clubProfileHome"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "makeKeyAndVisible"]
 - !private ["s7CVarArgP", "rootViewController"]
@@ -51,7 +51,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIHostingController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "clubRegister2"]
+- !private ["s28CustomDebugStringConvertibleP", "clubProfileHome"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
@@ -69,7 +69,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIHostingController"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "clubRegister2"]
+- !private ["s23CustomStringConvertibleP", "clubProfileHome"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
@@ -87,7 +87,7 @@ depends-member:
 - !private ["SQ", "UIHostingController"]
 - !private ["SQ", "UIWindow"]
 - ["SQ", ""]
-- !private ["SQ", "clubRegister2"]
+- !private ["SQ", "clubProfileHome"]
 - !private ["SQ", "init"]
 - !private ["SQ", "makeKeyAndVisible"]
 - !private ["SQ", "rootViewController"]
@@ -105,7 +105,7 @@ depends-member:
 - !private ["SH", "UIHostingController"]
 - !private ["SH", "UIWindow"]
 - ["SH", ""]
-- !private ["SH", "clubRegister2"]
+- !private ["SH", "clubProfileHome"]
 - !private ["SH", "init"]
 - !private ["SH", "makeKeyAndVisible"]
 - !private ["SH", "rootViewController"]
@@ -129,7 +129,7 @@ depends-member:
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
 - !private ["So8NSObjectC", "UIWindowScene"]
-- !private ["So8NSObjectC", "clubRegister2"]
+- !private ["So8NSObjectC", "clubProfileHome"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "makeKeyAndVisible"]
 - !private ["So8NSObjectC", "rootViewController"]
@@ -147,7 +147,7 @@ depends-member:
 - !private ["So8NSObjectP", "UIHostingController"]
 - !private ["So8NSObjectP", "UIWindow"]
 - ["So8NSObjectP", ""]
-- !private ["So8NSObjectP", "clubRegister2"]
+- !private ["So8NSObjectP", "clubProfileHome"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "makeKeyAndVisible"]
 - !private ["So8NSObjectP", "rootViewController"]
@@ -166,7 +166,7 @@ depends-member:
 - ["9clubhouse13SceneDelegateC", "UISceneSession"]
 - ["9clubhouse13SceneDelegateC", "UIWindow"]
 - !private ["9clubhouse13SceneDelegateC", "UIWindowScene"]
-- !private ["9clubhouse13SceneDelegateC", "clubRegister2"]
+- !private ["9clubhouse13SceneDelegateC", "clubProfileHome"]
 - ["9clubhouse13SceneDelegateC", "deinit"]
 - ["9clubhouse13SceneDelegateC", "init"]
 - ["9clubhouse13SceneDelegateC", "scene"]
@@ -212,7 +212,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIHostingController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "clubRegister2"]
+- !private ["So30UIPasteConfigurationSupportingP", "clubProfileHome"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
 - !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
@@ -233,7 +233,7 @@ depends-member:
 - ["So11UIResponderC", "UIWindow"]
 - !private ["So11UIResponderC", "UIWindowScene"]
 - ["So11UIResponderC", ""]
-- !private ["So11UIResponderC", "clubRegister2"]
+- !private ["So11UIResponderC", "clubProfileHome"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
 - !private ["So11UIResponderC", "rootViewController"]
@@ -251,7 +251,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIHostingController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "clubRegister2"]
+- !private ["So30UIResponderStandardEditActionsP", "clubProfileHome"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
 - !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
@@ -269,7 +269,7 @@ depends-member:
 - !private ["So15UISceneDelegateP", "UIHostingController"]
 - !private ["So15UISceneDelegateP", "UIWindow"]
 - ["So15UISceneDelegateP", ""]
-- !private ["So15UISceneDelegateP", "clubRegister2"]
+- !private ["So15UISceneDelegateP", "clubProfileHome"]
 - ["So15UISceneDelegateP", "scene"]
 - ["So15UISceneDelegateP", "sceneDidBecomeActive"]
 - ["So15UISceneDelegateP", "sceneDidDisconnect"]
@@ -288,7 +288,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIHostingController"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "clubRegister2"]
+- !private ["So23UIUserActivityRestoringP", "clubProfileHome"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
 - !private ["So23UIUserActivityRestoringP", "rootViewController"]
@@ -311,7 +311,7 @@ depends-member:
 - !private ["So21UIWindowSceneDelegateP", "UIHostingController"]
 - !private ["So21UIWindowSceneDelegateP", "UIWindow"]
 - ["So21UIWindowSceneDelegateP", ""]
-- !private ["So21UIWindowSceneDelegateP", "clubRegister2"]
+- !private ["So21UIWindowSceneDelegateP", "clubProfileHome"]
 - ["So21UIWindowSceneDelegateP", "scene"]
 - ["So21UIWindowSceneDelegateP", "sceneDidBecomeActive"]
 - ["So21UIWindowSceneDelegateP", "sceneDidDisconnect"]
@@ -327,7 +327,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIHostingController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "clubRegister2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clubProfileHome"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
@@ -345,7 +345,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIHostingController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "clubRegister2"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "clubProfileHome"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeKeyAndVisible"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
@@ -363,8 +363,8 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
-- !private ["9clubhouse13clubRegister2V", "deinit"]
-- !private ["9clubhouse13clubRegister2V", "init"]
+- !private ["9clubhouse15clubProfileHomeV", "deinit"]
+- !private ["9clubhouse15clubProfileHomeV", "init"]
 depends-nominal:
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -404,7 +404,7 @@ depends-nominal:
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "7SwiftUI18_UIHostingViewableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
-- !private "9clubhouse13clubRegister2V"
+- !private "9clubhouse15clubProfileHomeV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"

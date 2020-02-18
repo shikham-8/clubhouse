@@ -100,7 +100,7 @@ struct clubProfileHome: View {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Text("edit")
                     .font(Font.custom("Montserrat-Regular", size: 18))
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
                 }
                 
             }

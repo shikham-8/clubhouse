@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "08f90f864fff72377d98664db10fb9ad"
+build_time: [1581733050, 542153000]
+inputs:
+  "/Users/samnagesh/Desktop/CL-clubhouse/clubhouse/clubhouseUITests/clubhouseUITests.swift": !dirty [1581552772, 171924477]

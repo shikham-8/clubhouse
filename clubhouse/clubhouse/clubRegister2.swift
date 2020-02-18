@@ -19,7 +19,7 @@ struct clubRegister2: View {
     @State var day: String = ""
     @State var selectedDay = true
     var clubTypes = ["Academic","Business", "Professional", "Cultural"]
-    var sizes = ["0-10","10-30", "30-50","50-100", "100+"]
+    var sizes = ["0-10 members","10-30 members", "30-50 members","50-100 members", "100+ members"]
     var meetings = ["Weekly", "Bi-weekly", "Month", "Quarter", "Year"]
     
     var body: some View {
@@ -63,19 +63,25 @@ struct clubRegister2: View {
                             Picker(selection: $size, label: Text("Size")){
                                 ForEach(0 ..< sizes.count){ index in
                                     Text(self.sizes[index]).tag(index)
+                                        .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
+                                .labelsHidden()
+                                .frame(width:165, height:20).clipped()
+                                .border(Color.init(red: 1, green: 0.357, blue: 0.227))
                             }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
                            Picker(selection: $type, label: Text("Club Type")){
                                 ForEach(0 ..< clubTypes.count){ index in
                                     Text(self.clubTypes[index]).tag(index)
+                                        .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                             }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
+                                .border(Color.init(red: 1, green: 0.357, blue: 0.227))
                         }
                     }
                    Text("Recruitment Process (N/A if None)")
@@ -109,6 +115,7 @@ struct clubRegister2: View {
                             Picker(selection: $type, label: Text("Commitment")){
                                 ForEach(0 ..< meetings.count){ index in
                                     Text(self.meetings[index]).tag(index)
+                                        .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                             }
@@ -168,34 +175,26 @@ struct clubRegister2: View {
                         .frame(width: 36, height: 36)
                         .clipShape(Circle())
                     }.padding(.horizontal,20)
-                    
-//                    HStack{
-//                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-//                           Text("back")
-//                               .font(Font.custom("Montserrat-Medium", size: 24))
-//                               .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
-//                               .padding()
-//                       }
-//                       .frame(width: 100, height: 50)
-//                       .background(.white)
-//                       .border(Color.init(red: 1, green: 0.357, blue: 0.227))
-//                       .cornerRadius(10)
-//                       .padding(50)
-//                       Spacer()
-//                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-//                           Text("next")
-//                               .font(Font.custom("Montserrat-Medium", size: 24))
-//                               .foregroundColor(.white)
-//                               .padding()
-//                       }
-//                       .frame(width: 100, height: 50)
-//                       .background(Color.init(red: 1, green: 0.357, blue: 0.227))
-//                       .border(Color.init(red: 1, green: 0.357, blue: 0.227))
-//                       .cornerRadius(10)
-//                       .padding(50)
-//                   }
                 }
-               
+                HStack(){
+               Button(action: {}){
+                        Text("back")
+                            .font(Font.custom("Montserrat-Regular", size: 22))
+                            .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    }
+                    .frame(width: 100, height: 30)
+                    .background(Color.white)
+                    .border(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .cornerRadius(10)
+               Button(action: {}){
+                        Text("next")
+                            .font(Font.custom("Montserrat-Regular", size: 22))
+                            .foregroundColor(Color.init(.white))
+                    }
+                    .frame(width: 100, height: 30)
+                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .cornerRadius(10)
+                }
             }
         }
     }

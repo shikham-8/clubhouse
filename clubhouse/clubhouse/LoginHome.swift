@@ -39,12 +39,6 @@ struct LoginHome: View {
                     .background(Color.init(red: 1, green: 0.357, blue: 0.227))
                     .cornerRadius(10)
                     Divider()
-//                    Text("Already have an account?")
-//                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-//                        Text("Sign in")
-//                            .font(Font.custom("Montserrat-Medium", size: 16))
-//                            .underline()
-//                            .foregroundColor(.black)
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         Text("Login")
                             .font(Font.custom("Montserrat-Medium", size: 24))

@@ -10,15 +10,14 @@ provides-member:
 - ["9clubhouse22clubRegister1_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Button"
 - !private "Color"
 - !private "Divider"
 - !private "FloatLiteralType"
 - !private "Font"
-- !private "HStack"
 - !private "IntegerLiteralType"
+- !private "NavigationLink"
+- !private "NavigationView"
 - "PreviewProvider"
-- !private "Spacer"
 - "State"
 - "String"
 - "StringLiteralType"
@@ -29,10 +28,9 @@ depends-top-level:
 - !private "ZStack"
 - "clubRegister1"
 - "clubRegister1_Previews"
+- !private "clubRegister2"
 depends-member:
 - !private ["SK", "white"]
-- !private ["7SwiftUI6ButtonV", "frame"]
-- !private ["7SwiftUI6ButtonV", "init"]
 - !private ["s7CVarArgP", "white"]
 - !private ["Sl", "white"]
 - !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
@@ -78,7 +76,6 @@ depends-member:
 - !private ["7SwiftUI4FontV", "custom"]
 - !private ["7SwiftUI7GestureP", "gray"]
 - !private ["7SwiftUI7GestureP", "white"]
-- !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "custom"]
 - !private ["SH", "edgesIgnoringSafeArea"]
 - !private ["SH", "gray"]
@@ -94,6 +91,9 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["7SwiftUI14NavigationLinkV", "frame"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["Sq", "gray"]
@@ -118,7 +118,6 @@ depends-member:
 - !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
-- !private ["7SwiftUI6SpacerV", "init"]
 - ["7SwiftUI5StateV", "init"]
 - ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["SS", "white"]
@@ -137,12 +136,11 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "$password"]
 - !private ["7SwiftUI4ViewP", "$password2"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "Font"]
-- !private ["7SwiftUI4ViewP", "HStack"]
-- !private ["7SwiftUI4ViewP", "Spacer"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TextField"]
 - !private ["7SwiftUI4ViewP", "VStack"]
@@ -154,6 +152,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "border"]
+- !private ["7SwiftUI4ViewP", "clubRegister2"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
 - !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "font"]
@@ -187,12 +186,11 @@ depends-member:
 - ["9clubhouse13clubRegister1V", "$password"]
 - ["9clubhouse13clubRegister1V", "$password2"]
 - ["9clubhouse13clubRegister1V", "Body"]
-- !private ["9clubhouse13clubRegister1V", "Button"]
 - !private ["9clubhouse13clubRegister1V", "Color"]
 - !private ["9clubhouse13clubRegister1V", "Divider"]
 - !private ["9clubhouse13clubRegister1V", "Font"]
-- !private ["9clubhouse13clubRegister1V", "HStack"]
-- !private ["9clubhouse13clubRegister1V", "Spacer"]
+- !private ["9clubhouse13clubRegister1V", "NavigationLink"]
+- !private ["9clubhouse13clubRegister1V", "NavigationView"]
 - ["9clubhouse13clubRegister1V", "State"]
 - ["9clubhouse13clubRegister1V", "String"]
 - !private ["9clubhouse13clubRegister1V", "Text"]
@@ -207,6 +205,7 @@ depends-member:
 - !private ["9clubhouse13clubRegister1V", "_password"]
 - !private ["9clubhouse13clubRegister1V", "_password2"]
 - ["9clubhouse13clubRegister1V", "body"]
+- !private ["9clubhouse13clubRegister1V", "clubRegister2"]
 - ["9clubhouse13clubRegister1V", "deinit"]
 - ["9clubhouse13clubRegister1V", "email"]
 - ["9clubhouse13clubRegister1V", "init"]
@@ -222,9 +221,10 @@ depends-member:
 - ["9clubhouse22clubRegister1_PreviewsV", "init"]
 - ["9clubhouse22clubRegister1_PreviewsV", "platform"]
 - ["9clubhouse22clubRegister1_PreviewsV", "previews"]
+- !private ["9clubhouse13clubRegister2V", "deinit"]
+- !private ["9clubhouse13clubRegister2V", "init"]
 depends-nominal:
 - !private "SK"
-- !private "7SwiftUI6ButtonV"
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "7SwiftUI5ColorV"
@@ -245,7 +245,6 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
 - !private "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
 - !private "s25LosslessStringConvertibleP"
@@ -257,6 +256,8 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "7SwiftUI14NavigationLinkV"
+- !private "7SwiftUI14NavigationViewV"
 - !private "s9OptionSetP"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
@@ -266,7 +267,6 @@ depends-nominal:
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
 - !private "7SwiftUI10ShapeStyleP"
-- !private "7SwiftUI6SpacerV"
 - "7SwiftUI5StateV"
 - !private "SS"
 - !private "Sy"
@@ -291,6 +291,7 @@ depends-nominal:
 - "7SwiftUI16_PreviewProviderP"
 - "9clubhouse13clubRegister1V"
 - "9clubhouse22clubRegister1_PreviewsV"
+- !private "9clubhouse13clubRegister2V"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
