@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct clubRegister1: View {
     @State var email:String = ""
@@ -65,6 +66,12 @@ struct clubRegister1: View {
                         .padding(50)
                 }
             }
+        }
+    }
+    if let emailText = email {
+        if let passwordText = password {
+        Auth.auth().createUser(withEmail: emailText, password: passwordText){
+            authResult, error in
         }
     }
 }
