@@ -9,8 +9,10 @@
 import SwiftUI
 import Firebase
 
+
+
 struct clubRegister1: View {
-    @State var email:String = ""
+    @State var email:String = "" //may not impose restrictions for correct email input
     @State var password:String = ""
     @State var password2:String = ""
     var body: some View {
@@ -68,12 +70,16 @@ struct clubRegister1: View {
             }
         }
     }
-    if let emailText = email {
-        if let passwordText = password {
+    static func addUser(emailt: String, passwordt : String)
+    {
+        let emailText = emailt
+        let passwordText = passwordt
         Auth.auth().createUser(withEmail: emailText, password: passwordText){
-            authResult, error in
+                   authResult, error in
         }
     }
+    
+    addUser(emailt: &email, passwordt: &password)
 }
 
 struct clubRegister1_Previews: PreviewProvider {
@@ -81,3 +87,4 @@ struct clubRegister1_Previews: PreviewProvider {
         clubRegister1()
     }
 }
+
