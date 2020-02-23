@@ -8,9 +8,11 @@ target 'clubhouse' do
 
   # Pods for clubhouse
   pod 'Firebase'
-   pod 'Firebase/Auth'
+  pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
   
 
   target 'clubhouseTests' do
