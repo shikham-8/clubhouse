@@ -69,24 +69,29 @@ struct clubRegister3: View {
                         .padding(.horizontal,30)
                     Divider().background(Color.gray).frame(width: 200).padding(.horizontal,30)
                 }
-                HStack(){
+                HStack(spacing: 50){
                     Button(action: {}){
                         Text("back")
                             .font(Font.custom("Montserrat-Regular", size: 22))
-                            .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
+                            .foregroundColor(Color.CustomOrange)
                     }
                     .frame(width: 100, height: 30)
-                    .background(Color.white)
-                    .border(Color.init(red: 1, green: 0.357, blue: 0.227))
+                     .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.CustomOrange, lineWidth: 2)
+                        .shadow(color: Color.gray, radius: 3, x: -2, y: 5))
                     .cornerRadius(10)
+
                     Button(action: {}){
                         Text("finish")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
                     }
                     .frame(width: 100, height: 30)
-                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .background(Color.CustomOrange)
                     .cornerRadius(10)
+                    .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+
                     
                 }
                 

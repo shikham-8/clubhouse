@@ -16,14 +16,16 @@ struct clubProfileHome: View {
             VStack (spacing: 60){
                 //Logo + Title
                 VStack {
+                    Spacer()
                     Image("creativeLabs")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100.0, height: 100.0)
                         .clipShape(Circle())
                     Divider().background(Color.white)
-                    Text("Club Name")
+                    Text("[Club Name]")
                         .font(Font.custom("Montserrat-Regular", size: 24))
+                    .foregroundColor(.CustomDarkGray)
 
                 }
                 //Brief Description
@@ -31,8 +33,11 @@ struct clubProfileHome: View {
                     Text("Brief Description")
                         .font(Font.custom("Roboto-Regular", size: 16))
                         .padding(.horizontal,20)
+                    .foregroundColor(.CustomDarkGray)
+
                     Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis")
                         .font(Font.custom("Roboto-Regular", size: 14))
+                        .foregroundColor(.CustomLightGray)
                         .frame(width: 336, height: 62)
                         .background(Color.white)
                         .padding(.horizontal,20)
@@ -43,20 +48,32 @@ struct clubProfileHome: View {
                             Text("Website")
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,5)
+                            .foregroundColor(.CustomDarkGray)
+
                             Text("Size")
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,5)
+                            .foregroundColor(.CustomDarkGray)
+
                             Text("Club Type")
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,5)
+                            .foregroundColor(.CustomDarkGray)
+
                         }
                         List{
                             Text("www.creativelabs.com")
                                 .font(Font.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.CustomLightGray)
+
                             Text("30-50")
                                 .font(Font.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.CustomLightGray)
+
                             Text("Business, Professional")
                                 .font(Font.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.CustomLightGray)
+
                         }
                     }
 
@@ -66,8 +83,12 @@ struct clubProfileHome: View {
                    Text("Recruitment Process")
                         .font(Font.custom("Roboto-Regular", size: 16))
                         .padding(.horizontal,20)
+                    .foregroundColor(.CustomDarkGray)
+
                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis")
                         .font(Font.custom("Roboto-Regular", size: 14))
+                    .foregroundColor(.CustomLightGray)
+
                         .padding(.horizontal,20)
                         .frame(width: 336, height: 43)
                         .background(Color.white)
@@ -78,20 +99,32 @@ struct clubProfileHome: View {
                             Text("Recruiting Now?")
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,5)
+                            .foregroundColor(.CustomDarkGray)
+
                             Text("Commitment")
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,5)
+                            .foregroundColor(.CustomDarkGray)
+
                              Text("Meeting Days")
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,5)
+                            .foregroundColor(.CustomDarkGray)
+
                         }
                         List{
                             Text("Yes")
                                 .font(Font.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.CustomLightGray)
+
                             Text("Year")
                                 .font(Font.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.CustomLightGray)
+
                             Text("Thursdays")
                                 .font(Font.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.CustomLightGray)
+
                         }
                         
                     }
@@ -100,7 +133,7 @@ struct clubProfileHome: View {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Text("edit")
                     .font(Font.custom("Montserrat-Regular", size: 18))
-                    .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .foregroundColor(Color.CustomOrange)
                 }
                 
             }
