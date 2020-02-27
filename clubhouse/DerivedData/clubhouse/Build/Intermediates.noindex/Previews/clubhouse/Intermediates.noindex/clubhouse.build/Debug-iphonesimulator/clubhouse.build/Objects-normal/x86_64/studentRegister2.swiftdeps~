@@ -10,7 +10,10 @@ provides-member:
 - ["9clubhouse25studentRegister2_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - !private "..<"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
 - !private "Button"
 - !private "Circle"
 - !private "Color"
@@ -19,16 +22,18 @@ depends-top-level:
 - !private "Font"
 - !private "ForEach"
 - !private "HStack"
+- "Image"
+- !private "ImagePicker"
 - !private "IntegerLiteralType"
 - !private "Picker"
 - "PreviewProvider"
-- !private "Rectangle"
 - !private "Spacer"
 - "State"
 - "String"
 - "StringLiteralType"
 - !private "Text"
 - !private "TextField"
+- "UIImage"
 - !private "VStack"
 - "View"
 - !private "ZStack"
@@ -37,7 +42,6 @@ depends-top-level:
 depends-member:
 - !private ["7SwiftUI10AnimatableP", "fill"]
 - !private ["7SwiftUI10AnimatableP", "init"]
-- !private ["7SwiftUI10AnimatableP", "stroke"]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "count"]
@@ -50,13 +54,14 @@ depends-member:
 - !private ["s7CVarArgP", "white"]
 - !private ["7SwiftUI6CircleV", "fill"]
 - !private ["7SwiftUI6CircleV", "init"]
-- !private ["7SwiftUI6CircleV", "stroke"]
 - !private ["Sl", "count"]
 - !private ["Sl", "subscript"]
 - !private ["Sl", "white"]
+- !private ["7SwiftUI5ColorV", "CustomOrange"]
 - !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI5ColorV", "gray"]
 - !private ["7SwiftUI5ColorV", "init"]
+- !private ["7SwiftUI5ColorV", "secondary"]
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["SL", "white"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
@@ -69,10 +74,12 @@ depends-member:
 - !private ["s17CustomReflectableP", "gray"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "CustomOrange"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "edgesIgnoringSafeArea"]
 - !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "secondary"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["10Foundation12DataProtocolP", "count"]
@@ -86,11 +93,11 @@ depends-member:
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
-- !private ["7SwiftUI18DynamicViewContentP", "labelsHidden"]
 - !private ["SE", "count"]
 - !private ["SE", "gray"]
 - !private ["SE", "subscript"]
 - !private ["SE", "white"]
+- !private ["SQ", "CustomOrange"]
 - !private ["SQ", "all"]
 - !private ["SQ", "count"]
 - !private ["SQ", "custom"]
@@ -102,6 +109,9 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "leading"]
 - !private ["SQ", "padding"]
+- !private ["SQ", "resizable"]
+- !private ["SQ", "scaledToFit"]
+- !private ["SQ", "secondary"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "tag"]
 - !private ["SQ", "white"]
@@ -111,25 +121,32 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "white"]
 - !private ["s23ExpressibleByNilLiteralP", "gray"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
 - !private ["s32ExpressibleByStringInterpolationP", "white"]
 - !private ["s26ExpressibleByStringLiteralP", "white"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "white"]
 - !private ["7SwiftUI4FontV", "custom"]
 - !private ["7SwiftUI7ForEachV", "init"]
-- !private ["7SwiftUI7ForEachV", "labelsHidden"]
 - !private ["7SwiftUI7GestureP", "gray"]
+- !private ["7SwiftUI7GestureP", "white"]
 - !private ["7SwiftUI6HStackV", "init"]
+- !private ["SH", "CustomOrange"]
 - !private ["SH", "count"]
 - !private ["SH", "custom"]
 - !private ["SH", "edgesIgnoringSafeArea"]
 - !private ["SH", "gray"]
 - !private ["SH", "init"]
+- !private ["SH", "secondary"]
 - !private ["SH", "subscript"]
 - !private ["SH", "white"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
+- !private ["7SwiftUI5ImageV", "init"]
+- !private ["7SwiftUI5ImageV", "resizable"]
+- !private ["7SwiftUI5ImageV", "scaledToFit"]
+- !private ["9clubhouse11ImagePickerV", "deinit"]
+- !private ["9clubhouse11ImagePickerV", "init"]
 - !private ["7SwiftUI15InsettableShapeP", "fill"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
-- !private ["7SwiftUI15InsettableShapeP", "stroke"]
 - !private ["s25LosslessStringConvertibleP", "white"]
 - !private ["s10MirrorPathP", "white"]
 - !private ["SM", "count"]
@@ -146,6 +163,7 @@ depends-member:
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["Sq", "gray"]
+- !private ["Sq", "white"]
 - !private ["7SwiftUI6PickerV", "init"]
 - !private ["7SwiftUI6PickerV", "labelsHidden"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -163,8 +181,6 @@ depends-member:
 - !private ["Sm", "white"]
 - !private ["SY", "all"]
 - !private ["SY", "horizontal"]
-- !private ["7SwiftUI9RectangleV", "fill"]
-- !private ["7SwiftUI9RectangleV", "init"]
 - !private ["ST", "count"]
 - !private ["ST", "subscript"]
 - !private ["ST", "white"]
@@ -174,10 +190,11 @@ depends-member:
 - !private ["s10SetAlgebraP", "horizontal"]
 - !private ["7SwiftUI5ShapeP", "fill"]
 - !private ["7SwiftUI5ShapeP", "init"]
-- !private ["7SwiftUI5ShapeP", "stroke"]
+- !private ["7SwiftUI10ShapeStyleP", "CustomOrange"]
 - !private ["7SwiftUI10ShapeStyleP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
+- !private ["7SwiftUI10ShapeStyleP", "secondary"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - ["7SwiftUI5StateV", "init"]
@@ -194,20 +211,25 @@ depends-member:
 - !private ["s16TextOutputStreamP", "white"]
 - !private ["s20TextOutputStreamableP", "white"]
 - !private ["So7UIColorC", "white"]
+- !private ["7SwiftUI29UIViewControllerRepresentableP", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI4ViewP", "$inputImage"]
 - !private ["7SwiftUI4ViewP", "$major"]
 - !private ["7SwiftUI4ViewP", "$name"]
+- !private ["7SwiftUI4ViewP", "$showingImagePicker"]
 - !private ["7SwiftUI4ViewP", "$year"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Circle"]
 - !private ["7SwiftUI4ViewP", "Color"]
+- !private ["7SwiftUI4ViewP", "CustomOrange"]
 - !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "Image"]
+- !private ["7SwiftUI4ViewP", "ImagePicker"]
 - !private ["7SwiftUI4ViewP", "Picker"]
-- !private ["7SwiftUI4ViewP", "Rectangle"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TextField"]
@@ -228,17 +250,27 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "gray"]
+- !private ["7SwiftUI4ViewP", "image"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "inputImage"]
 - !private ["7SwiftUI4ViewP", "labelsHidden"]
+- !private ["7SwiftUI4ViewP", "loadImage"]
 - !private ["7SwiftUI4ViewP", "majors"]
-- !private ["7SwiftUI4ViewP", "overlay"]
+- !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "padding"]
-- !private ["7SwiftUI4ViewP", "stroke"]
+- !private ["7SwiftUI4ViewP", "resizable"]
+- !private ["7SwiftUI4ViewP", "scaledToFit"]
+- !private ["7SwiftUI4ViewP", "secondary"]
+- !private ["7SwiftUI4ViewP", "shadow"]
+- !private ["7SwiftUI4ViewP", "sheet"]
+- !private ["7SwiftUI4ViewP", "showingImagePicker"]
 - !private ["7SwiftUI4ViewP", "tag"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI4ViewP", "years"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["7SwiftUI6ZStackV", "init"]
+- !private ["7SwiftUI6ZStackV", "sheet"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "white"]
@@ -267,8 +299,11 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "studentRegister2"]
+- !private ["9clubhouse16studentRegister2V", "$image"]
+- !private ["9clubhouse16studentRegister2V", "$inputImage"]
 - ["9clubhouse16studentRegister2V", "$major"]
 - ["9clubhouse16studentRegister2V", "$name"]
+- !private ["9clubhouse16studentRegister2V", "$showingImagePicker"]
 - ["9clubhouse16studentRegister2V", "$year"]
 - ["9clubhouse16studentRegister2V", "Body"]
 - !private ["9clubhouse16studentRegister2V", "Button"]
@@ -278,28 +313,37 @@ depends-member:
 - !private ["9clubhouse16studentRegister2V", "Font"]
 - !private ["9clubhouse16studentRegister2V", "ForEach"]
 - !private ["9clubhouse16studentRegister2V", "HStack"]
+- ["9clubhouse16studentRegister2V", "Image"]
+- !private ["9clubhouse16studentRegister2V", "ImagePicker"]
 - !private ["9clubhouse16studentRegister2V", "Picker"]
-- !private ["9clubhouse16studentRegister2V", "Rectangle"]
 - !private ["9clubhouse16studentRegister2V", "Spacer"]
 - ["9clubhouse16studentRegister2V", "State"]
 - ["9clubhouse16studentRegister2V", "String"]
 - !private ["9clubhouse16studentRegister2V", "Text"]
 - !private ["9clubhouse16studentRegister2V", "TextField"]
+- ["9clubhouse16studentRegister2V", "UIImage"]
 - !private ["9clubhouse16studentRegister2V", "VStack"]
 - ["9clubhouse16studentRegister2V", "View"]
 - !private ["9clubhouse16studentRegister2V", "ZStack"]
 - ["9clubhouse16studentRegister2V", "_Default_Body"]
+- !private ["9clubhouse16studentRegister2V", "_image"]
+- !private ["9clubhouse16studentRegister2V", "_inputImage"]
 - !private ["9clubhouse16studentRegister2V", "_major"]
 - ["9clubhouse16studentRegister2V", "_makeView"]
 - ["9clubhouse16studentRegister2V", "_makeViewList"]
 - !private ["9clubhouse16studentRegister2V", "_name"]
+- !private ["9clubhouse16studentRegister2V", "_showingImagePicker"]
 - !private ["9clubhouse16studentRegister2V", "_year"]
 - ["9clubhouse16studentRegister2V", "body"]
 - ["9clubhouse16studentRegister2V", "deinit"]
+- !private ["9clubhouse16studentRegister2V", "image"]
 - ["9clubhouse16studentRegister2V", "init"]
+- !private ["9clubhouse16studentRegister2V", "inputImage"]
+- ["9clubhouse16studentRegister2V", "loadImage"]
 - ["9clubhouse16studentRegister2V", "major"]
 - ["9clubhouse16studentRegister2V", "majors"]
 - ["9clubhouse16studentRegister2V", "name"]
+- !private ["9clubhouse16studentRegister2V", "showingImagePicker"]
 - ["9clubhouse16studentRegister2V", "year"]
 - ["9clubhouse16studentRegister2V", "years"]
 - ["9clubhouse25studentRegister2_PreviewsV", "Previews"]
@@ -345,6 +389,8 @@ depends-nominal:
 - !private "7SwiftUI6HStackV"
 - !private "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
+- !private "7SwiftUI5ImageV"
+- !private "9clubhouse11ImagePickerV"
 - !private "7SwiftUI15InsettableShapeP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -364,7 +410,6 @@ depends-nominal:
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
-- !private "7SwiftUI9RectangleV"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
@@ -379,6 +424,7 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So7UIColorC"
+- !private "7SwiftUI29UIViewControllerRepresentableP"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -447,4 +493,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ccca6e397f85b1c9f61b1e88ecbf1fb7"
+interface-hash: "5a724aa0803d745fbb5af78540a8c40b"
