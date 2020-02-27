@@ -34,6 +34,34 @@
 			<key>uniqueIdentifier</key>
 			<string>7A68E8E6-C700-42AE-9E72-233858A67CF1</string>
 		</dict>
+		<key>90973C63-2847-4C0A-9183-628193FC666E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>90973C63-2847-4C0A-9183-628193FC666E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>clubhouse-abwfvclgzcfanigmbyezgshktyrh</string>
+			<key>timeStartedRecording</key>
+			<real>604525141.90960801</real>
+			<key>timeStoppedRecording</key>
+			<real>604525141.90986502</real>
+			<key>title</key>
+			<string>Build target clubhouse</string>
+			<key>uniqueIdentifier</key>
+			<string>90973C63-2847-4C0A-9183-628193FC666E</string>
+		</dict>
 		<key>91F92E54-3932-4B9D-91D3-A4926E85A4C1</key>
 		<dict>
 			<key>className</key>
@@ -61,34 +89,6 @@
 			<string>Build target clubhouseUITests</string>
 			<key>uniqueIdentifier</key>
 			<string>91F92E54-3932-4B9D-91D3-A4926E85A4C1</string>
-		</dict>
-		<key>CF5F7C08-E4DE-47CC-A12A-FF270FD43009</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>CF5F7C08-E4DE-47CC-A12A-FF270FD43009.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>clubhouse-abwfvclgzcfanigmbyezgshktyrh</string>
-			<key>timeStartedRecording</key>
-			<real>604524722.72725797</real>
-			<key>timeStoppedRecording</key>
-			<real>604524727.28286397</real>
-			<key>title</key>
-			<string>Build target clubhouse</string>
-			<key>uniqueIdentifier</key>
-			<string>CF5F7C08-E4DE-47CC-A12A-FF270FD43009</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
