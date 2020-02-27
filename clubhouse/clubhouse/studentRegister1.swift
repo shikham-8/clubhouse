@@ -1,5 +1,5 @@
 //
-//  clubRegister1.swift
+//  studentRegister1.swift
 //  clubhouse
 //
 //  Created by Samritha Nagesh on 2/13/20.
@@ -32,6 +32,7 @@ struct studentRegister1: View {
                         VStack(){
                             Text("Student Register")
                                .font(Font.custom("Montserrat-Regular", size: 28))
+                                .fontWeight(.medium)
                                .foregroundColor(Color.white)
                             Image("student1")
                             .resizable()
@@ -42,6 +43,7 @@ struct studentRegister1: View {
                     }
                     Text("Create your login information")
                         .font(Font.custom("Montserrat-Regular", size: 18))
+                        .fontWeight(.medium)
                     VStack (alignment: .leading){
                         Text("Email")
                             .font(Font.custom("Roboto-Regular", size: 16))
@@ -83,6 +85,7 @@ struct studentRegister1: View {
                         .border(Color.init(red: 1, green: 0.357, blue: 0.227))
                         .cornerRadius(10)
                         .padding(50)
+                        .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                 }
             }
         }
