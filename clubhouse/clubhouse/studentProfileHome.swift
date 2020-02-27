@@ -92,7 +92,7 @@ struct studentProfileHome: View {
                             }
                        }
                     }
-                    NavigationLink(destination: clubRegister2()) {
+                    NavigationLink(destination: studentProfileEdit()) {
                             Text("edit")
                                 .font(Font.custom("Montserrat-Medium", size: 18))
                                 .foregroundColor(Color.CustomOrange)
