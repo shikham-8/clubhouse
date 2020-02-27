@@ -66,7 +66,7 @@ struct clubTile: View {
         ZStack() {
         Rectangle()
             .fill(Color.white)
-            .frame(width: 375, height: 80)
+            .frame(width: 425, height: 80)
             HStack() {
                 circleImage()
                     .frame(width: 30, height: 30)

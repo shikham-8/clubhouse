@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//used for club icons
 struct circleImage: View {
     var body: some View {
         Image("creativeLabs").resizable().scaledToFit()
