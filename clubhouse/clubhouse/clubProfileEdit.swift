@@ -50,6 +50,7 @@ struct clubProfileEdit: View {
     var sizes = ["0-10","10-30", "30-50","50-100", "100+"]
     
     var body: some View {
+    ScrollView{
         ZStack{
            Color(.white)
                .edgesIgnoringSafeArea(.all)
@@ -107,7 +108,7 @@ struct clubProfileEdit: View {
                                 .padding(.horizontal,5)
                             .foregroundColor(.CustomDarkGray)
 
-                        }
+                        }.frame(height: 150)
                         List{
                             TextField("",text: $website)
                                 .font(Font.custom("Roboto-Regular", size: 14))
@@ -135,7 +136,7 @@ struct clubProfileEdit: View {
                             }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
-                        }
+                        }.frame(height: 150)
                     }
                    Text("Recruitment Process (N/A if None)")
                         .font(Font.custom("Roboto-Regular", size: 16))
@@ -162,12 +163,9 @@ struct clubProfileEdit: View {
                                 .padding(.horizontal,5)
                             .foregroundColor(.CustomDarkGray)
 
-                             Text("Meeting Days")
-                                .font(Font.custom("Roboto-Regular", size: 16))
-                                .padding(.horizontal,5)
-                            .foregroundColor(.CustomDarkGray)
+            
 
-                        }
+                        }.frame(height: 100)
                         List{
                             Toggle(isOn: $recruitingNow){Text("")}.padding(.horizontal,90)
                                 .toggleStyle(
@@ -183,8 +181,12 @@ struct clubProfileEdit: View {
                                 .foregroundColor(.CustomLightGray)
                                 .frame(width: 165, height: 19)
                                 .padding(.horizontal,60)
-                        }
+                        }.frame(height: 100)
                     }
+                    Text("Meeting Days")
+                       .font(Font.custom("Roboto-Regular", size: 16))
+                       .padding(.horizontal,30)
+                        .foregroundColor(.CustomDarkGray)
                 }
                    VStack (alignment: .center, spacing: 20) {
                         HStack (spacing: 10){
@@ -281,6 +283,7 @@ struct clubProfileEdit: View {
             }
         }
     }
+}
 }
 }
 
