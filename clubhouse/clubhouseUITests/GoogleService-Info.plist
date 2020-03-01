@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>48633979394-kl04u3dh4mulraidtlt2943bip9kkiit.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.48633979394-kl04u3dh4mulraidtlt2943bip9kkiit</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8piBB6rSeliIH4Y7D6TVnw-LdL9lE464</string>
+	<key>GCM_SENDER_ID</key>
+	<string>48633979394</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cs33.clubhouse</string>
+	<key>PROJECT_ID</key>
+	<string>clubhouse-93faa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>clubhouse-93faa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:48633979394:ios:1520dedbd29c8fe370bd1b</string>
+	<key>DATABASE_URL</key>
+	<string>https://clubhouse-93faa.firebaseio.com</string>
+</dict>
+</plist>
