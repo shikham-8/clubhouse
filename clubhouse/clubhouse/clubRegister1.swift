@@ -87,4 +87,5 @@ extension Color {
     static let CustomDarkGray = Color("CustomDarkGray")
     static let CustomLightGray = Color ("CustomLightGray")
     static let CustomOrange = Color ("CustomOrange")
+    static let CustomPurple = Color("CustomPurple")
 }
