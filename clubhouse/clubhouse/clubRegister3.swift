@@ -40,12 +40,11 @@ struct clubRegister3: View {
     @State var password:String = ""
     @State var password2:String = ""
     var body: some View {
+    NavigationView{
         ZStack(){
             Color(.white)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 100) {
-                Divider().background(Color.white)
-                Divider().background(Color.white)
                 Text("Contact Information")
                     .font(Font.custom("Montserrat-regular", size: 18))
                 VStack (alignment: .leading){
@@ -69,28 +68,36 @@ struct clubRegister3: View {
                         .padding(.horizontal,30)
                     Divider().background(Color.gray).frame(width: 200).padding(.horizontal,30)
                 }
-                HStack(){
-                    Button(action: {}){
+                HStack(spacing: 50){
+                    NavigationLink(destination: clubRegister2()) {
                         Text("back")
                             .font(Font.custom("Montserrat-Regular", size: 22))
-                            .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
+                            .foregroundColor(Color.CustomOrange)
                     }
                     .frame(width: 100, height: 30)
-                    .background(Color.white)
-                    .border(Color.init(red: 1, green: 0.357, blue: 0.227))
-                    .cornerRadius(10)
-                    Button(action: {}){
+                     .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.CustomOrange, lineWidth: 2)
+                        .shadow(color: Color.gray, radius: 3, x: -2, y: 5))
+                        .navigationBarTitle("", displayMode: .inline)
+                        .navigationBarHidden(true)
+                        .cornerRadius(10)
+
+                     NavigationLink(destination: studentExplore()) {
                         Text("finish")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
                     }
                     .frame(width: 100, height: 30)
-                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .background(Color.CustomOrange)
                     .cornerRadius(10)
+                    .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                     .navigationBarTitle("", displayMode: .inline)
+                     .navigationBarHidden(true)
+
                     
                 }
-                
-                    
+            }
             }
         }
     }
