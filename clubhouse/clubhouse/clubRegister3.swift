@@ -40,12 +40,11 @@ struct clubRegister3: View {
     @State var password:String = ""
     @State var password2:String = ""
     var body: some View {
+    NavigationView{
         ZStack(){
             Color(.white)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 100) {
-                Divider().background(Color.white)
-                Divider().background(Color.white)
                 Text("Contact Information")
                     .font(Font.custom("Montserrat-regular", size: 18))
                 VStack (alignment: .leading){
@@ -70,7 +69,7 @@ struct clubRegister3: View {
                     Divider().background(Color.gray).frame(width: 200).padding(.horizontal,30)
                 }
                 HStack(spacing: 50){
-                    Button(action: {}){
+                    NavigationLink(destination: clubRegister2()) {
                         Text("back")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.CustomOrange)
@@ -80,9 +79,11 @@ struct clubRegister3: View {
                         RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.CustomOrange, lineWidth: 2)
                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5))
-                    .cornerRadius(10)
+                        .navigationBarTitle("", displayMode: .inline)
+                        .navigationBarHidden(true)
+                        .cornerRadius(10)
 
-                    Button(action: {}){
+                     NavigationLink(destination: studentExplore()) {
                         Text("finish")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
@@ -91,11 +92,12 @@ struct clubRegister3: View {
                     .background(Color.CustomOrange)
                     .cornerRadius(10)
                     .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                     .navigationBarTitle("", displayMode: .inline)
+                     .navigationBarHidden(true)
 
                     
                 }
-                
-                    
+            }
             }
         }
     }

@@ -24,11 +24,11 @@ struct clubRegister2: View {
     
     var body: some View {
         NavigationView{
+            ScrollView{
         ZStack{
            Color(.white)
                .edgesIgnoringSafeArea(.all)
             VStack (spacing: 30){
-               Divider().background(Color.white)
                 Divider().background(Color.white)
                 Text("Tell us about your club...")
                     .font(Font.custom("Montserrat-Medium", size: 18))
@@ -63,7 +63,7 @@ struct clubRegister2: View {
                                 .font(Font.custom("Roboto-Regular", size: 16))
                                 .padding(.horizontal,30)
                             .foregroundColor(.CustomDarkGray)
-                        }
+                        }.frame(height: 100)
                         List{
                             Picker(selection: $size, label: Text("Size")){
                                 ForEach(0 ..< sizes.count){ index in
@@ -87,15 +87,15 @@ struct clubRegister2: View {
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
                                 .border(Color.CustomOrange)
-                        }
+                        }.frame(height: 100)
                     }
                    Text("Recruitment Process (N/A if None)")
                         .font(Font.custom("Roboto-Regular", size: 16))
-                        .padding(.horizontal,20)
+                        .padding(.horizontal,30)
                     .foregroundColor(.CustomDarkGray)
                     TextField("", text:$process)
                         .font(Font.custom("Roboto-Regular", size: 14))
-                        .padding(.horizontal,20)
+                        .padding(.horizontal,30)
                         .frame(width: 350, height: 82)
                         .background(Color.white)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -103,17 +103,13 @@ struct clubRegister2: View {
                         List{
                             Text("Recruiting Now?")
                                 .font(Font.custom("Roboto-Regular", size: 16))
-                                .padding(.horizontal,5)
+                                .padding(.horizontal,30)
                             .foregroundColor(.CustomDarkGray)
                             Text("Commitment")
                                 .font(Font.custom("Roboto-Regular", size: 16))
-                                .padding(.horizontal,5)
+                                .padding(.horizontal,30)
                             .foregroundColor(.CustomDarkGray)
-                             Text("Meeting Days")
-                                .font(Font.custom("Roboto-Regular", size: 16))
-                                .padding(.horizontal,5)
-                            .foregroundColor(.CustomDarkGray)
-                        }
+                        }.frame(height: 100)
                         List{
                             Toggle(isOn: $recruitingNow){Text("")}.padding(.horizontal,90)
                                 .toggleStyle(
@@ -130,8 +126,12 @@ struct clubRegister2: View {
                             }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
-                        }
+                        }.frame(height: 100)
                     }
+                    Text("Meeting Days")
+                    .font(Font.custom("Roboto-Regular", size: 16))
+                    .padding(.horizontal,50)
+                    .foregroundColor(.CustomDarkGray)
                 }
                 VStack (alignment: .center, spacing: 20) {
                         HStack (spacing: 10){
@@ -222,27 +222,31 @@ struct clubRegister2: View {
                                                 .foregroundColor(Color.CustomOrange)
                                         }
                                         .frame(width: 100, height: 30)
-                                    .overlay(
+                                        .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color.CustomOrange, lineWidth: 2)
                                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                                        .navigationBarHidden(true)
                                     )
-                        }
-                                   Button(action: {}){
-                                            Text("next")
-                                                .font(Font.custom("Montserrat-Regular", size: 22))
-                                                .foregroundColor(Color.white)
-                                        }
-                                        .frame(width: 100, height: 30)
-                                        .background(Color.CustomOrange)
-                                        .cornerRadius(10)
-                                    .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                                }
+                        NavigationLink(destination: clubRegister3()) {
+                                        Text("next")
+                                            .font(Font.custom("Montserrat-Regular", size: 22))
+                                            .foregroundColor(Color.white)
                                     }
+                                    .frame(width: 100, height: 30)
+                                    .background(Color.CustomOrange)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                                    .navigationBarHidden(true)
+                                }
                     }
+            }
             }
         }
     }
     }
+        
 }
 
 struct clubRegister2_Previews: PreviewProvider {

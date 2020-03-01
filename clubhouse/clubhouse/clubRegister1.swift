@@ -14,11 +14,11 @@ struct clubRegister1: View {
     @State var password2:String = ""
     var body: some View {
         NavigationView{
+            ScrollView{
             ZStack(){
                 Color(.white)
                     .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 80) {
-                    Divider().background(Color.white)
                     Divider().background(Color.white)
                     Text("Create your login information")
                         .font(Font.custom("Montserrat-Medium", size: 18))
@@ -66,9 +66,13 @@ struct clubRegister1: View {
                         .background(Color.CustomOrange)
                         .cornerRadius(10)
                         .padding(50)
-                    .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                        .navigationBarTitle("", displayMode: .inline)
+                        .navigationBarHidden(true)
+                        .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                        
                 }
             }
+        }
         }
     }
 }
