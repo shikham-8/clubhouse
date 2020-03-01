@@ -57,6 +57,7 @@
 		3ED88FEC23F4DF3E00EF3C0F /* clubProfileHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED88FEB23F4DF3E00EF3C0F /* clubProfileHome.swift */; };
 		E25B6D94240883E20069FFC2 /* circleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B6D92240883E10069FFC2 /* circleImage.swift */; };
 		E25B6D95240883E20069FFC2 /* studentExplore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B6D93240883E10069FFC2 /* studentExplore.swift */; };
+		E25B6D97240C426B0069FFC2 /* clubProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B6D96240C426B0069FFC2 /* clubProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		3ED88FEB23F4DF3E00EF3C0F /* clubProfileHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubProfileHome.swift; sourceTree = "<group>"; };
 		E25B6D92240883E10069FFC2 /* circleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleImage.swift; sourceTree = "<group>"; };
 		E25B6D93240883E10069FFC2 /* studentExplore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentExplore.swift; sourceTree = "<group>"; };
+		E25B6D96240C426B0069FFC2 /* clubProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				3EAE85542401F03D00951FEB /* studentRegister1.swift */,
 				E25B6D92240883E10069FFC2 /* circleImage.swift */,
 				E25B6D93240883E10069FFC2 /* studentExplore.swift */,
+				E25B6D96240C426B0069FFC2 /* clubProfile.swift */,
 				3EAE85962401F6E000951FEB /* studentRegister2.swift */,
 				3E99397B240745E6001B19AD /* imagePicker.swift */,
 				3E06294323F627A800F1A9BD /* clubRegister1.swift */,
@@ -434,6 +437,7 @@
 				3E99397E240752CD001B19AD /* studentProfileHome.swift in Sources */,
 				3E81AD1624084F0800A795A2 /* studentProfileEdit.swift in Sources */,
 				E25B6D95240883E20069FFC2 /* studentExplore.swift in Sources */,
+				E25B6D97240C426B0069FFC2 /* clubProfile.swift in Sources */,
 				3ED88FEA23F4D1B600EF3C0F /* clubProfileEdit.swift in Sources */,
 				3E5A0E3123F71E22002CDB34 /* clubRegister2.swift in Sources */,
 				3E7BC4C323F4CBFF00618F48 /* AppDelegate.swift in Sources */,

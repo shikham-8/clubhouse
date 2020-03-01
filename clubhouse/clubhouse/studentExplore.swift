@@ -61,8 +61,16 @@ struct recruitIcon: View {
 struct clubTile: View {
     @State var recruiting = false
     @State var name = ""
+    @State var tapped = false
+    
+    var tap: some Gesture {
+        TapGesture(count: 1)
+            .onEnded { _ in self.tapped = !self.tapped }
+    }
+    
     
     var body: some View {
+        //NavigationView {
         ZStack() {
         Rectangle()
             .fill(Color.white)
@@ -84,6 +92,7 @@ struct clubTile: View {
                 }
             }.padding()
         }
+       // }
     }
 }
 
