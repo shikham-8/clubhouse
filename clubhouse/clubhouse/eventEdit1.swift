@@ -6,7 +6,6 @@
 //  Created by Samritha Nagesh on 2/12/20.
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
-
 import SwiftUI
 
 
@@ -40,7 +39,6 @@ struct eventEdit1: View {
            Color(.white)
                .edgesIgnoringSafeArea(.all)
             VStack (spacing: 80){
-                Divider().background(Color.white)
                 ZStack {
                     VStack{
                         Text("New Event")
@@ -48,7 +46,7 @@ struct eventEdit1: View {
                             .fontWeight(.medium)
                         ZStack(){
                         Circle()
-                            .fill(Color.secondary)
+                            .fill(Color.CustomLightGray)
                             .frame(width:120, height:120)
 
                             if image != nil {
@@ -57,7 +55,7 @@ struct eventEdit1: View {
                                 .scaledToFit()
                             }
                           else {
-                                Text("Select photo")
+                                Text("Add Picture")
                                     .foregroundColor(.white)
                                 .font(Font.custom("Montserrat-regular", size: 14))
                             }
@@ -71,7 +69,7 @@ struct eventEdit1: View {
                     }
                 }
                 //Brief Description
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 40){
                     HStack{
                         Text("Event Name")
                             .font(Font.custom("Roboto-regular", size: 16))
@@ -100,8 +98,8 @@ struct eventEdit1: View {
                             }
                         }
                         .labelsHidden()
+                        .frame(width:50, height:20).clipped()
                         .border(Color.CustomPurple)
-                        .frame(width:50, height:50).clipped()
                         Picker(selection: $month, label: Text("Month")){
                             ForEach(0 ..< months.count){ index in
                                 Text(self.months[index]).tag(index)
@@ -110,8 +108,8 @@ struct eventEdit1: View {
                             }
                         }
                         .labelsHidden()
+                        .frame(width:50, height:20).clipped()
                         .border(Color.CustomPurple)
-                        .frame(width:50, height:50).clipped()
                         Picker(selection: $day, label: Text("Day")){
                             ForEach(0 ..< days.count){ index in
                                 Text(self.days[index]).tag(index)
@@ -121,8 +119,8 @@ struct eventEdit1: View {
 
                         }
                         .labelsHidden()
+                        .frame(width:50, height:20).clipped()
                         .border(Color.CustomPurple)
-                        .frame(width:50, height:50).clipped()
                         Spacer()
                     }
                     HStack{
@@ -139,8 +137,8 @@ struct eventEdit1: View {
                                 }
                             }
                             .labelsHidden()
+                            .frame(width:70, height:30).clipped()
                             .border(Color.CustomPurple)
-                            .frame(width:100, height:50).clipped()
                         Spacer()
                     }
                     VStack(alignment: .leading){
@@ -160,7 +158,7 @@ struct eventEdit1: View {
                                 .foregroundColor(.CustomLightGray)
                                 .padding(.horizontal, 30)
                             VStack{
-                                TextField("Formal, Business Casual, etc.", text: $dresscode)
+                                TextField("dress code", text: $dresscode)
                                     .font(Font.custom("Roboto-Regular", size: 14))
                                     .foregroundColor(.CustomDarkGray)
                                     .padding(.horizontal,90)
@@ -192,4 +190,3 @@ struct eventEdit1_Previews: PreviewProvider {
         eventEdit1()
     }
 }
-
