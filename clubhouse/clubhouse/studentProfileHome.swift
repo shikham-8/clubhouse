@@ -98,6 +98,7 @@ struct studentProfileHome: View {
                                 .foregroundColor(Color.CustomOrange)
                                 .padding()
                         }
+                        .navigationBarHidden(true)
                         .frame(width: 100, height: 50)
                         .padding(50)
                 }

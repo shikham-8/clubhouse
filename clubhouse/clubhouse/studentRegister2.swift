@@ -27,12 +27,13 @@ struct studentRegister2: View {
         image = Image(uiImage: inputImage)
     }
     
+   
     var body: some View {
+         NavigationView {
         ZStack{
            Color(.white)
                .edgesIgnoringSafeArea(.all)
             VStack (spacing: 100){
-                Divider().background(Color.white)
                 ZStack {
                     VStack{
                         Text("About You")
@@ -65,17 +66,17 @@ struct studentRegister2: View {
                 
                
                 //Brief Description
-                VStack(alignment: .leading){
-                    
-                   Text("Name")
-                       .font(Font.custom("Roboto-regular", size: 16))
-                       .padding(.horizontal, 30)
-                   TextField("full name", text: $name)
-                       .font(Font.custom("Roboto-Regular", size: 14))
-                       .foregroundColor(.gray)
-                       .padding(.horizontal,30)
-                   Divider().background(Color.gray).frame(width: 300).padding(.horizontal,30)
-                   
+                VStack(alignment: .leading, spacing: 60){
+                    VStack(alignment: .leading){
+                       Text("Name")
+                           .font(Font.custom("Roboto-regular", size: 16))
+                           .padding(.horizontal, 30)
+                       TextField("full name", text: $name)
+                           .font(Font.custom("Roboto-Regular", size: 14))
+                           .foregroundColor(.gray)
+                           .padding(.horizontal,30)
+                       Divider().background(Color.gray).frame(width: 300).padding(.horizontal,30)
+                    }
                     
                     HStack{
                         Text("Year")
@@ -85,13 +86,13 @@ struct studentRegister2: View {
                         Picker(selection: $year, label: Text("Year")){
                             ForEach(0 ..< years.count){ index in
                                 Text(self.years[index]).tag(index)
-                                    .foregroundColor(Color.CustomOrange)
+                                    .foregroundColor(Color.CustomPurple)
                                     .font(Font.custom("Roboto-Regular", size: 12))
                             }
                         }
                         .labelsHidden()
-                        .border(Color.CustomOrange)
-                        .frame(width:200, height:50).clipped()
+                        .frame(width:100, height:30).clipped()
+                        .border(Color.CustomPurple)
                         Spacer()
                     }
                     HStack{
@@ -102,13 +103,13 @@ struct studentRegister2: View {
                         Picker(selection: $major, label: Text("Major")){
                                 ForEach(0 ..< majors.count){ index in
                                     Text(self.majors[index]).tag(index)
-                                        .foregroundColor(Color.CustomOrange)
+                                        .foregroundColor(Color.CustomPurple)
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                             }
                             .labelsHidden()
-                            .border(Color.CustomOrange)
-                            .frame(width:200, height:50).clipped()
+                            .frame(width:150, height:30).clipped()
+                            .border(Color.CustomPurple)
                         Spacer()
                     }
                 }
@@ -117,7 +118,7 @@ struct studentRegister2: View {
                Button(action: {}){
                         Text("back")
                             .font(Font.custom("Montserrat-Regular", size: 22))
-                            .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
+                            .foregroundColor(Color.CustomPurple)
                     }
                     .frame(width: 100, height: 30)
                     .background(Color.white)
@@ -125,23 +126,24 @@ struct studentRegister2: View {
                     .cornerRadius(10)
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.CustomOrange, lineWidth: 2)
+                        .stroke(Color.CustomPurple, lineWidth: 2)
                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                     )
-               Button(action: {}){
+               NavigationLink(destination: studentRegister1()) {
                         Text("next")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
                     }
                     .frame(width: 100, height: 30)
-                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .background(Color.CustomPurple)
                     .cornerRadius(10)
                     .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                 }
             }
         }
+        }
     }
-}
+    }
 
 struct studentRegister2_Previews: PreviewProvider {
     static var previews: some View {

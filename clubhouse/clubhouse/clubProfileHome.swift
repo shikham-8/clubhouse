@@ -10,19 +10,19 @@ import SwiftUI
 
 struct clubProfileHome: View {
     var body: some View {
+    NavigationView{
+        ScrollView{
         ZStack{
            Color(.white)
                .edgesIgnoringSafeArea(.all)
-            VStack (spacing: 60){
+            VStack (spacing: 40){
                 //Logo + Title
                 VStack {
-                    Spacer()
                     Image("creativeLabs")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100.0, height: 100.0)
                         .clipShape(Circle())
-                    Divider().background(Color.white)
                     Text("[Club Name]")
                         .font(Font.custom("Montserrat-Regular", size: 24))
                     .foregroundColor(.CustomDarkGray)
@@ -60,7 +60,7 @@ struct clubProfileHome: View {
                                 .padding(.horizontal,5)
                             .foregroundColor(.CustomDarkGray)
 
-                        }
+                        }.frame(height: 120)
                         List{
                             Text("www.creativelabs.com")
                                 .font(Font.custom("Roboto-Regular", size: 14))
@@ -74,7 +74,7 @@ struct clubProfileHome: View {
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
-                        }
+                        }.frame(height: 120)
                     }
 
                 }
@@ -111,7 +111,7 @@ struct clubProfileHome: View {
                                 .padding(.horizontal,5)
                             .foregroundColor(.CustomDarkGray)
 
-                        }
+                        }.frame(height: 120)
                         List{
                             Text("Yes")
                                 .font(Font.custom("Roboto-Regular", size: 14))
@@ -125,21 +125,22 @@ struct clubProfileHome: View {
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
-                        }
+                        }.frame(height: 120)
                         
                     }
                 }
                 //Edit Button
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                 NavigationLink(destination: clubProfileEdit()) {
                     Text("edit")
                     .font(Font.custom("Montserrat-Regular", size: 18))
                     .foregroundColor(Color.CustomOrange)
-                }
+                }.navigationBarHidden(true)
                 
             }
         }
     }
 }
+}}
 
 struct clubProfileHome_Previews: PreviewProvider {
     static var previews: some View {

@@ -5,7 +5,6 @@
 //  Created by Samritha Nagesh on 2/12/20.
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
-
 import SwiftUI
 struct ColoredToggleStyle: ToggleStyle {
     var label = ""
@@ -50,6 +49,7 @@ struct clubProfileEdit: View {
     var sizes = ["0-10","10-30", "30-50","50-100", "100+"]
     
     var body: some View {
+    NavigationView{
     ScrollView{
         ZStack{
            Color(.white)
@@ -62,7 +62,6 @@ struct clubProfileEdit: View {
                    .aspectRatio(contentMode: .fit)
                    .frame(width: 100.0, height: 100.0)
                    .clipShape(Circle())
-                Divider().background(Color.white)
                 //Brief Description
                 VStack(alignment: .leading){
                     HStack {
@@ -269,12 +268,13 @@ struct clubProfileEdit: View {
                                             }
                                             .clipShape(Circle())
                                         }.padding(.horizontal,20)
-                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                      NavigationLink(destination: clubProfileHome()) {
                                        Text("Save")
                                            .font(Font.custom("Montserrat-Medium", size: 24))
                                            .foregroundColor(.white)
                                            .padding()
                                    }
+                                    .navigationBarHidden(true)
                                    .frame(width: 297, height: 40, alignment: .center)
                                    .background(Color.CustomOrange)
                                    .cornerRadius(10)
@@ -285,7 +285,8 @@ struct clubProfileEdit: View {
     }
 }
 }
-}
+        
+    }}
 
 
 struct clubProfileEdit_Previews: PreviewProvider {
@@ -293,7 +294,3 @@ struct clubProfileEdit_Previews: PreviewProvider {
         clubProfileEdit()
     }
 }
-
-
-
-

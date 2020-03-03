@@ -74,7 +74,7 @@ struct studentRegister1: View {
                             .padding(.horizontal,30)
                         Divider().background(Color.gray).frame(width: 200).padding(.horizontal,30)
                     }
-                    NavigationLink(destination: clubRegister2()) {
+                    NavigationLink(destination: studentRegister2()) {
                             Text("next")
                                 .font(Font.custom("Montserrat-Medium", size: 24))
                                 .foregroundColor(.white)

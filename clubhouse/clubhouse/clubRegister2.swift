@@ -5,7 +5,6 @@
 //  Created by Samritha Nagesh on 2/12/20.
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
-
 import SwiftUI
 
 struct clubRegister2: View {

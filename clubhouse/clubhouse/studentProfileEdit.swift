@@ -93,13 +93,13 @@ struct studentProfileEdit: View {
                         Picker(selection: $year, label: Text("Year")){
                             ForEach(0 ..< years.count){ index in
                                 Text(self.years[index]).tag(index)
-                                    .foregroundColor(Color.CustomOrange)
+                                    .foregroundColor(Color.CustomPurple)
                                     .font(Font.custom("Roboto-Regular", size: 12))
                             }
                         }
                         .labelsHidden()
-                        .border(Color.CustomOrange)
-                        .frame(width:200, height:50).clipped()
+                        .frame(width:150, height:30).clipped()
+                        .border(Color.CustomPurple)
                         Spacer()
                     }
                     HStack{
@@ -110,13 +110,13 @@ struct studentProfileEdit: View {
                         Picker(selection: $major, label: Text("Major")){
                                 ForEach(0 ..< majors.count){ index in
                                     Text(self.majors[index]).tag(index)
-                                        .foregroundColor(Color.CustomOrange)
+                                        .foregroundColor(Color.CustomPurple)
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                             }
                             .labelsHidden()
-                            .border(Color.CustomOrange)
-                            .frame(width:200, height:50).clipped()
+                            .frame(width:150, height:30).clipped()
+                            .border(Color.CustomPurple)
                         Spacer()
                     }
                 }
@@ -126,8 +126,9 @@ struct studentProfileEdit: View {
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
                     }
+                    .navigationBarHidden(true)
                     .frame(width: 100, height: 30)
-                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .background(Color.CustomPurple)
                     .cornerRadius(10)
                     .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
             }

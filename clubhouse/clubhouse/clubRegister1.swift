@@ -5,18 +5,15 @@
 //  Created by Samritha Nagesh on 2/13/20.
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
-
 import SwiftUI
-import Firebase
-
-
+//import Firebase
 
 struct clubRegister1: View {
     @State var email:String = "" //may not impose restrictions for correct email input
     @State var password:String = ""
     @State var password2:String = ""
     @State private var shouldTransit: Bool = false
-    func addUser(emailt: String, passwordt : String)
+   /* func addUser(emailt: String, passwordt : String)
     {
         let emailText = emailt
         let passwordText = passwordt
@@ -24,6 +21,7 @@ struct clubRegister1: View {
                    authResult, error in
         }
     }
+ */
     var body: some View {
         NavigationView{
             ScrollView{
@@ -73,10 +71,11 @@ struct clubRegister1: View {
                                 .font(Font.custom("Montserrat-Medium", size: 24))
                                 .foregroundColor(.white)
                                 .padding()
-                                .onTapGesture{
+                               /* .onTapGesture{
                                     self.addUser(emailt: self.email, passwordt: self.password)
                                     self.shouldTransit = true
                                 }
+ */
                         }
                         .frame(width: 100, height: 50)
                         .background(Color.CustomOrange)
@@ -99,12 +98,10 @@ struct clubRegister1_Previews: PreviewProvider {
     }
 }
 
-<<<<<<< HEAD
-=======
+
 extension Color {
     static let CustomDarkGray = Color("CustomDarkGray")
     static let CustomLightGray = Color ("CustomLightGray")
     static let CustomOrange = Color ("CustomOrange")
     static let CustomPurple = Color("CustomPurple")
 }
->>>>>>> d3e7bf3b1ac7aa401fdfe4ad663be92d15660657
