@@ -23,11 +23,39 @@ struct clubRegister2: View {
     
     var body: some View {
         NavigationView{
-            ScrollView{
+        ScrollView{
         ZStack{
            Color(.white)
                .edgesIgnoringSafeArea(.all)
-            VStack (spacing: 30){
+            VStack (spacing: 40){
+                ZStack(){
+                GeometryReader { geometry in
+                    Rectangle().fill(Color.CustomPurple)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                    }.frame(height: 200)
+                    VStack(spacing: 50){
+                        Divider()
+                        Divider()
+                        Divider()
+                        Text("Club Register")
+                           .font(Font.custom("Montserrat-Regular", size: 28))
+                            .fontWeight(.medium)
+                           .foregroundColor(Color.white)
+                        HStack(){
+                            Rectangle().fill(Color.CustomPurple)
+                                .frame(width: 80, height: 10)
+                            Rectangle().fill(Color.CustomPurple)
+                            .frame(width: 80, height: 10)
+                            Rectangle().fill(Color.white)
+                                .frame(width: 80, height: 10)
+                                .border(Color.CustomPurple)
+                        
+                        }
+                        
+                    }
+                }
                 Divider().background(Color.white)
                 Text("Tell us about your club...")
                     .font(Font.custom("Montserrat-Medium", size: 18))
@@ -243,7 +271,7 @@ struct clubRegister2: View {
             }
             }
         }
-    }
+    }.edgesIgnoringSafeArea(.top)
     }
         
 }

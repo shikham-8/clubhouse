@@ -40,10 +40,37 @@ struct clubRegister3: View {
     @State var password2:String = ""
     var body: some View {
     NavigationView{
+    ScrollView{
         ZStack(){
-            Color(.white)
-                .edgesIgnoringSafeArea(.all)
             VStack(spacing: 100) {
+                ZStack(){
+                GeometryReader { geometry in
+                    VStack(){
+                        Rectangle().fill(Color.CustomPurple)
+                        .frame(width: 450, height: 200)
+
+                    }
+                    .edgesIgnoringSafeArea(.all)
+                    }
+                    VStack(spacing: 60){
+                        Spacer()
+                        Spacer()
+                        Text("Club Register")
+                           .font(Font.custom("Montserrat-Regular", size: 28))
+                            .fontWeight(.medium)
+                           .foregroundColor(Color.white)
+                        HStack(){
+                            Rectangle().fill(Color.CustomPurple)
+                                .frame(width: 80, height: 10)
+                            Rectangle().fill(Color.CustomPurple)
+                            .frame(width: 80, height: 10)
+                            Rectangle().fill(Color.CustomPurple)
+                            .frame(width: 80, height: 10)
+                        
+                        }
+                        
+                    }
+                }
                 Text("Contact Information")
                     .font(Font.custom("Montserrat-regular", size: 18))
                 VStack (alignment: .leading){
@@ -100,6 +127,7 @@ struct clubRegister3: View {
             }
             }
         }
+    }.edgesIgnoringSafeArea(.top)
     }
 }
 

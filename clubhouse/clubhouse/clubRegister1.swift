@@ -24,18 +24,13 @@ struct clubRegister1: View {
  */
     var body: some View {
         NavigationView{
-            ScrollView{
             ZStack(){
-                Color(.white)
-                    .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 60) {
                     ZStack(){
                     GeometryReader { geometry in
                         VStack(){
                             Rectangle().fill(Color.CustomPurple)
                             .frame(width: 450, height: 200)
-                            Divider()
-                            Divider()
 
                         }
                         .edgesIgnoringSafeArea(.all)
@@ -98,13 +93,15 @@ struct clubRegister1: View {
                         Divider().background(Color.clear).frame(width: 200).padding(.horizontal,30)
                     }
                     HStack(){
+                        Spacer()
+                        Spacer()
                         NavigationLink(destination: StudentOrClub()){
                             Text("back")
                                 .font(Font.custom("Montserrat-Regular", size: 22))
                                 .foregroundColor(Color.CustomPurple)
                         }
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true)
                         .frame(width: 100, height: 30)
                         .background(Color.white)
                         .border(Color.CustomPurple)
@@ -131,10 +128,10 @@ struct clubRegister1: View {
                             .cornerRadius(10)
                             .padding(50)
                             .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                        Spacer()
                     }
                 }
             }
-        }
         }
     }
 }
