@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>7A68E8E6-C700-42AE-9E72-233858A67CF1</key>
+		<key>4AE219EE-74AD-4B21-93EF-E7B26BE04068</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>7A68E8E6-C700-42AE-9E72-233858A67CF1.xcactivitylog</string>
+			<string>4AE219EE-74AD-4B21-93EF-E7B26BE04068.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -24,17 +24,17 @@
 				<string>S</string>
 			</dict>
 			<key>signature</key>
-			<string>clubhouseTests-abwfvclgzcfanigmbyezgshktyrh</string>
+			<string>clubhouseTests-gyjdfgnxfwljakcwanmqammftysd</string>
 			<key>timeStartedRecording</key>
-			<real>604524545.59278297</real>
+			<real>605059822.81563604</real>
 			<key>timeStoppedRecording</key>
-			<real>604524546.37707198</real>
+			<real>605059823.61112905</real>
 			<key>title</key>
 			<string>Build target clubhouseTests</string>
 			<key>uniqueIdentifier</key>
-			<string>7A68E8E6-C700-42AE-9E72-233858A67CF1</string>
+			<string>4AE219EE-74AD-4B21-93EF-E7B26BE04068</string>
 		</dict>
-		<key>90973C63-2847-4C0A-9183-628193FC666E</key>
+		<key>8747E30E-4DBB-420A-9704-8635A4DCB12E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>90973C63-2847-4C0A-9183-628193FC666E.xcactivitylog</string>
+			<string>8747E30E-4DBB-420A-9704-8635A4DCB12E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -52,17 +52,17 @@
 				<string>W</string>
 			</dict>
 			<key>signature</key>
-			<string>clubhouse-abwfvclgzcfanigmbyezgshktyrh</string>
+			<string>clubhouse-gyjdfgnxfwljakcwanmqammftysd</string>
 			<key>timeStartedRecording</key>
-			<real>604525141.90960801</real>
+			<real>605060382.28865004</real>
 			<key>timeStoppedRecording</key>
-			<real>604525141.90986502</real>
+			<real>605060382.28894198</real>
 			<key>title</key>
 			<string>Build target clubhouse</string>
 			<key>uniqueIdentifier</key>
-			<string>90973C63-2847-4C0A-9183-628193FC666E</string>
+			<string>8747E30E-4DBB-420A-9704-8635A4DCB12E</string>
 		</dict>
-		<key>91F92E54-3932-4B9D-91D3-A4926E85A4C1</key>
+		<key>DF889CE8-38CE-423B-AC01-BCFF2B9BCDA3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,7 +71,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>91F92E54-3932-4B9D-91D3-A4926E85A4C1.xcactivitylog</string>
+			<string>DF889CE8-38CE-423B-AC01-BCFF2B9BCDA3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -80,15 +80,15 @@
 				<string>S</string>
 			</dict>
 			<key>signature</key>
-			<string>clubhouseUITests-abwfvclgzcfanigmbyezgshktyrh</string>
+			<string>clubhouseUITests-gyjdfgnxfwljakcwanmqammftysd</string>
 			<key>timeStartedRecording</key>
-			<real>604118544.09101796</real>
+			<real>604885080.17000794</real>
 			<key>timeStoppedRecording</key>
-			<real>604118545.94875503</real>
+			<real>604885087.41975605</real>
 			<key>title</key>
 			<string>Build target clubhouseUITests</string>
 			<key>uniqueIdentifier</key>
-			<string>91F92E54-3932-4B9D-91D3-A4926E85A4C1</string>
+			<string>DF889CE8-38CE-423B-AC01-BCFF2B9BCDA3</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

@@ -12,8 +12,11 @@ provides-member:
 - ["7SwiftUI5ColorV", "CustomDarkGray"]
 - ["7SwiftUI5ColorV", "CustomLightGray"]
 - ["7SwiftUI5ColorV", "CustomOrange"]
+- ["7SwiftUI5ColorV", "CustomPurple"]
 provides-dynamic-lookup:
 depends-top-level:
+- "Bool"
+- "BooleanLiteralType"
 - "Color"
 - !private "Divider"
 - !private "FloatLiteralType"
@@ -22,6 +25,7 @@ depends-top-level:
 - !private "NavigationLink"
 - !private "NavigationView"
 - "PreviewProvider"
+- !private "ScrollView"
 - "State"
 - "String"
 - "StringLiteralType"
@@ -41,6 +45,7 @@ depends-member:
 - ["7SwiftUI5ColorV", "CustomDarkGray"]
 - ["7SwiftUI5ColorV", "CustomLightGray"]
 - ["7SwiftUI5ColorV", "CustomOrange"]
+- ["7SwiftUI5ColorV", "CustomPurple"]
 - !private ["7SwiftUI5ColorV", "black"]
 - !private ["7SwiftUI5ColorV", "clear"]
 - !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
@@ -92,6 +97,7 @@ depends-member:
 - !private ["SQ", "gray"]
 - !private ["SQ", "horizontal"]
 - ["SQ", "init"]
+- !private ["SQ", "inline"]
 - !private ["SQ", "leading"]
 - !private ["SQ", "padding"]
 - !private ["SQ", "white"]
@@ -120,6 +126,7 @@ depends-member:
 - !private ["SH", "edgesIgnoringSafeArea"]
 - !private ["SH", "gray"]
 - ["SH", "init"]
+- !private ["SH", "inline"]
 - !private ["SH", "white"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
 - !private ["s25LosslessStringConvertibleP", "white"]
@@ -151,6 +158,7 @@ depends-member:
 - !private ["Sm", "white"]
 - !private ["SY", "all"]
 - !private ["SY", "horizontal"]
+- !private ["7SwiftUI10ScrollViewV", "init"]
 - !private ["ST", "white"]
 - !private ["7SwiftUI4EdgeO3SetV", "all"]
 - !private ["7SwiftUI4EdgeO3SetV", "horizontal"]
@@ -178,11 +186,13 @@ depends-member:
 - !private ["7SwiftUI9TextFieldV", "init"]
 - !private ["s16TextOutputStreamP", "white"]
 - !private ["s20TextOutputStreamableP", "white"]
+- !private ["7SwiftUI17NavigationBarItemV16TitleDisplayModeO", "inline"]
 - !private ["So7UIColorC", "white"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI4ViewP", "$email"]
 - !private ["7SwiftUI4ViewP", "$password"]
 - !private ["7SwiftUI4ViewP", "$password2"]
+- !private ["7SwiftUI4ViewP", "$shouldTransit"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "CustomDarkGray"]
@@ -192,6 +202,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
+- !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TextField"]
 - !private ["7SwiftUI4ViewP", "VStack"]
@@ -212,6 +223,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "gray"]
 - ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "shadow"]
 - !private ["7SwiftUI4ViewP", "white"]
@@ -240,12 +253,15 @@ depends-member:
 - ["9clubhouse13clubRegister1V", "$email"]
 - ["9clubhouse13clubRegister1V", "$password"]
 - ["9clubhouse13clubRegister1V", "$password2"]
+- !private ["9clubhouse13clubRegister1V", "$shouldTransit"]
 - ["9clubhouse13clubRegister1V", "Body"]
+- ["9clubhouse13clubRegister1V", "Bool"]
 - !private ["9clubhouse13clubRegister1V", "Color"]
 - !private ["9clubhouse13clubRegister1V", "Divider"]
 - !private ["9clubhouse13clubRegister1V", "Font"]
 - !private ["9clubhouse13clubRegister1V", "NavigationLink"]
 - !private ["9clubhouse13clubRegister1V", "NavigationView"]
+- !private ["9clubhouse13clubRegister1V", "ScrollView"]
 - ["9clubhouse13clubRegister1V", "State"]
 - ["9clubhouse13clubRegister1V", "String"]
 - !private ["9clubhouse13clubRegister1V", "Text"]
@@ -259,6 +275,7 @@ depends-member:
 - ["9clubhouse13clubRegister1V", "_makeViewList"]
 - !private ["9clubhouse13clubRegister1V", "_password"]
 - !private ["9clubhouse13clubRegister1V", "_password2"]
+- !private ["9clubhouse13clubRegister1V", "_shouldTransit"]
 - ["9clubhouse13clubRegister1V", "body"]
 - !private ["9clubhouse13clubRegister1V", "clubRegister2"]
 - ["9clubhouse13clubRegister1V", "deinit"]
@@ -266,6 +283,7 @@ depends-member:
 - ["9clubhouse13clubRegister1V", "init"]
 - ["9clubhouse13clubRegister1V", "password"]
 - ["9clubhouse13clubRegister1V", "password2"]
+- !private ["9clubhouse13clubRegister1V", "shouldTransit"]
 - ["9clubhouse22clubRegister1_PreviewsV", "Previews"]
 - ["9clubhouse22clubRegister1_PreviewsV", "View"]
 - ["9clubhouse22clubRegister1_PreviewsV", "_Default_Previews"]
@@ -318,6 +336,7 @@ depends-nominal:
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "SY"
+- !private "7SwiftUI10ScrollViewV"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
@@ -329,6 +348,7 @@ depends-nominal:
 - !private "7SwiftUI9TextFieldV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "7SwiftUI17NavigationBarItemV16TitleDisplayModeO"
 - !private "So7UIColorC"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
@@ -396,4 +416,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6e03f15cd3b086ae81757d434491c917"
+interface-hash: "24d2be7ee9b6466470fefcf78bb93061"

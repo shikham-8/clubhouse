@@ -30,6 +30,7 @@ depends-top-level:
 - "PreviewProvider"
 - !private "RoundedBorderTextFieldStyle"
 - !private "RoundedRectangle"
+- !private "ScrollView"
 - "State"
 - "String"
 - "StringLiteralType"
@@ -43,6 +44,7 @@ depends-top-level:
 - !private "clubRegister1"
 - "clubRegister2"
 - "clubRegister2_Previews"
+- !private "clubRegister3"
 depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "stroke"]
@@ -161,6 +163,7 @@ depends-member:
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
 - !private ["7SwiftUI15InsettableShapeP", "stroke"]
+- !private ["7SwiftUI4ListV", "frame"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["s25LosslessStringConvertibleP", "white"]
 - !private ["s10MirrorPathP", "white"]
@@ -175,6 +178,7 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["7SwiftUI14NavigationLinkV", "frame"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
@@ -201,6 +205,7 @@ depends-member:
 - !private ["7SwiftUI27RoundedBorderTextFieldStyleV", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "stroke"]
+- !private ["7SwiftUI10ScrollViewV", "init"]
 - !private ["ST", "count"]
 - !private ["ST", "subscript"]
 - !private ["ST", "white"]
@@ -261,6 +266,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Picker"]
 - !private ["7SwiftUI4ViewP", "RoundedBorderTextFieldStyle"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
+- !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TextField"]
 - !private ["7SwiftUI4ViewP", "Toggle"]
@@ -276,6 +282,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "clipShape"]
 - !private ["7SwiftUI4ViewP", "clipped"]
 - !private ["7SwiftUI4ViewP", "clubRegister1"]
+- !private ["7SwiftUI4ViewP", "clubRegister3"]
 - !private ["7SwiftUI4ViewP", "clubTypes"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
 - !private ["7SwiftUI4ViewP", "day"]
@@ -287,6 +294,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "labelsHidden"]
 - !private ["7SwiftUI4ViewP", "meetings"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "shadow"]
@@ -353,6 +361,7 @@ depends-member:
 - !private ["9clubhouse13clubRegister2V", "Picker"]
 - !private ["9clubhouse13clubRegister2V", "RoundedBorderTextFieldStyle"]
 - !private ["9clubhouse13clubRegister2V", "RoundedRectangle"]
+- !private ["9clubhouse13clubRegister2V", "ScrollView"]
 - ["9clubhouse13clubRegister2V", "State"]
 - ["9clubhouse13clubRegister2V", "String"]
 - !private ["9clubhouse13clubRegister2V", "Text"]
@@ -375,6 +384,7 @@ depends-member:
 - !private ["9clubhouse13clubRegister2V", "_type"]
 - ["9clubhouse13clubRegister2V", "body"]
 - !private ["9clubhouse13clubRegister2V", "clubRegister1"]
+- !private ["9clubhouse13clubRegister2V", "clubRegister3"]
 - ["9clubhouse13clubRegister2V", "clubTypes"]
 - ["9clubhouse13clubRegister2V", "commitment"]
 - ["9clubhouse13clubRegister2V", "day"]
@@ -399,6 +409,8 @@ depends-member:
 - ["9clubhouse22clubRegister2_PreviewsV", "init"]
 - ["9clubhouse22clubRegister2_PreviewsV", "platform"]
 - ["9clubhouse22clubRegister2_PreviewsV", "previews"]
+- !private ["9clubhouse13clubRegister3V", "deinit"]
+- !private ["9clubhouse13clubRegister3V", "init"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "Sa"
@@ -457,6 +469,7 @@ depends-nominal:
 - !private "SY"
 - !private "7SwiftUI27RoundedBorderTextFieldStyleV"
 - !private "7SwiftUI16RoundedRectangleV"
+- !private "7SwiftUI10ScrollViewV"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
@@ -493,6 +506,7 @@ depends-nominal:
 - !private "9clubhouse13clubRegister1V"
 - "9clubhouse13clubRegister2V"
 - "9clubhouse22clubRegister2_PreviewsV"
+- !private "9clubhouse13clubRegister3V"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"

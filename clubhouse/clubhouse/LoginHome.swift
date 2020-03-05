@@ -16,16 +16,15 @@ struct LoginHome: View {
                 .edgesIgnoringSafeArea(.all)
             VStack (spacing: 200){
                 VStack {
-                    Image("creativeLabs")
+                    Image("LOGO")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200.0, height: 200.0)
                         .clipShape(Circle())
                         Divider()
                     Divider()
-                    Text("clubhouse")
+                    Text("grapevine")
                         .font(Font.custom("Montserrat-Medium", size: 40))
-                    Divider()
                 }
                 
                 VStack {

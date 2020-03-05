@@ -4,6 +4,7 @@
 <array>
 	<string>clubhouse</string>
 	<string>SwiftUI</string>
+	<string>Firebase</string>
 	<string>UIKit</string>
 	<string>XCTest</string>
 </array>

@@ -32,7 +32,7 @@ depends-top-level:
 - !private "VStack"
 - "View"
 - !private "ZStack"
-- !private "clubRegister2"
+- !private "studentProfileEdit"
 - "studentProfileHome"
 - "studentProfileHome_Previews"
 depends-member:
@@ -135,8 +135,8 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["7SwiftUI14NavigationLinkV", "frame"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
 - !private ["Sq", "medium"]
@@ -201,7 +201,6 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "clubRegister2"]
 - !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "email"]
 - !private ["7SwiftUI4ViewP", "fill"]
@@ -213,11 +212,13 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "major"]
 - !private ["7SwiftUI4ViewP", "medium"]
 - !private ["7SwiftUI4ViewP", "name"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "password"]
 - !private ["7SwiftUI4ViewP", "showPassword"]
 - !private ["7SwiftUI4ViewP", "some"]
+- !private ["7SwiftUI4ViewP", "studentProfileEdit"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI4ViewP", "year"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -247,8 +248,8 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "studentProfileHome"]
-- !private ["9clubhouse13clubRegister2V", "deinit"]
-- !private ["9clubhouse13clubRegister2V", "init"]
+- !private ["9clubhouse18studentProfileEditV", "deinit"]
+- !private ["9clubhouse18studentProfileEditV", "init"]
 - ["9clubhouse18studentProfileHomeV", "$email"]
 - ["9clubhouse18studentProfileHomeV", "$major"]
 - ["9clubhouse18studentProfileHomeV", "$name"]
@@ -283,7 +284,6 @@ depends-member:
 - !private ["9clubhouse18studentProfileHomeV", "_showPassword"]
 - !private ["9clubhouse18studentProfileHomeV", "_year"]
 - ["9clubhouse18studentProfileHomeV", "body"]
-- !private ["9clubhouse18studentProfileHomeV", "clubRegister2"]
 - ["9clubhouse18studentProfileHomeV", "deinit"]
 - ["9clubhouse18studentProfileHomeV", "email"]
 - ["9clubhouse18studentProfileHomeV", "init"]
@@ -291,6 +291,7 @@ depends-member:
 - ["9clubhouse18studentProfileHomeV", "name"]
 - ["9clubhouse18studentProfileHomeV", "password"]
 - ["9clubhouse18studentProfileHomeV", "showPassword"]
+- !private ["9clubhouse18studentProfileHomeV", "studentProfileEdit"]
 - ["9clubhouse18studentProfileHomeV", "year"]
 - ["9clubhouse27studentProfileHome_PreviewsV", "Previews"]
 - ["9clubhouse27studentProfileHome_PreviewsV", "View"]
@@ -380,7 +381,7 @@ depends-nominal:
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
-- !private "9clubhouse13clubRegister2V"
+- !private "9clubhouse18studentProfileEditV"
 - "9clubhouse18studentProfileHomeV"
 - "9clubhouse27studentProfileHome_PreviewsV"
 depends-dynamic-lookup:

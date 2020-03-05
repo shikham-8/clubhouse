@@ -17,7 +17,7 @@ depends-top-level:
 - !private "Circle"
 - !private "Color"
 - !private "Divider"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - !private "Font"
 - !private "ForEach"
 - !private "HStack"
@@ -56,7 +56,7 @@ depends-member:
 - !private ["Sl", "count"]
 - !private ["Sl", "subscript"]
 - !private ["Sl", "white"]
-- !private ["7SwiftUI5ColorV", "CustomOrange"]
+- !private ["7SwiftUI5ColorV", "CustomPurple"]
 - !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI5ColorV", "gray"]
 - !private ["7SwiftUI5ColorV", "init"]
@@ -75,7 +75,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "medium"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "white"]
-- !private ["s23CustomStringConvertibleP", "CustomOrange"]
+- !private ["s23CustomStringConvertibleP", "CustomPurple"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "edgesIgnoringSafeArea"]
 - !private ["s23CustomStringConvertibleP", "gray"]
@@ -100,7 +100,7 @@ depends-member:
 - !private ["SE", "medium"]
 - !private ["SE", "subscript"]
 - !private ["SE", "white"]
-- !private ["SQ", "CustomOrange"]
+- !private ["SQ", "CustomPurple"]
 - !private ["SQ", "all"]
 - !private ["SQ", "count"]
 - !private ["SQ", "custom"]
@@ -137,7 +137,7 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "medium"]
 - !private ["7SwiftUI7GestureP", "white"]
 - !private ["7SwiftUI6HStackV", "init"]
-- !private ["SH", "CustomOrange"]
+- !private ["SH", "CustomPurple"]
 - !private ["SH", "count"]
 - !private ["SH", "custom"]
 - !private ["SH", "edgesIgnoringSafeArea"]
@@ -168,8 +168,8 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["7SwiftUI14NavigationLinkV", "frame"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["Sq", "gray"]
@@ -201,7 +201,7 @@ depends-member:
 - !private ["s10SetAlgebraP", "horizontal"]
 - !private ["7SwiftUI5ShapeP", "fill"]
 - !private ["7SwiftUI5ShapeP", "init"]
-- !private ["7SwiftUI10ShapeStyleP", "CustomOrange"]
+- !private ["7SwiftUI10ShapeStyleP", "CustomPurple"]
 - !private ["7SwiftUI10ShapeStyleP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
@@ -234,7 +234,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Circle"]
 - !private ["7SwiftUI4ViewP", "Color"]
-- !private ["7SwiftUI4ViewP", "CustomOrange"]
+- !private ["7SwiftUI4ViewP", "CustomPurple"]
 - !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
@@ -271,6 +271,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "loadImage"]
 - !private ["7SwiftUI4ViewP", "majors"]
 - !private ["7SwiftUI4ViewP", "medium"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "resizable"]

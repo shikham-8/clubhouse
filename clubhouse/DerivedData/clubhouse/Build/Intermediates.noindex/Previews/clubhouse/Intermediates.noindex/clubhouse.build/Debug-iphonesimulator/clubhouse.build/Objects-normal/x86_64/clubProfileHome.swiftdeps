@@ -10,7 +10,7 @@ provides-member:
 - ["9clubhouse24clubProfileHome_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Button"
+- !private "BooleanLiteralType"
 - !private "Circle"
 - !private "Color"
 - !private "Divider"
@@ -20,20 +20,22 @@ depends-top-level:
 - !private "Image"
 - !private "IntegerLiteralType"
 - !private "List"
+- !private "NavigationLink"
+- !private "NavigationView"
 - "PreviewProvider"
 - !private "RoundedBorderTextFieldStyle"
-- !private "Spacer"
+- !private "ScrollView"
 - !private "StringLiteralType"
 - !private "Text"
 - !private "VStack"
 - "View"
 - !private "ZStack"
+- !private "clubProfileEdit"
 - "clubProfileHome"
 - "clubProfileHome_Previews"
 depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["SK", "white"]
-- !private ["7SwiftUI6ButtonV", "init"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s12CaseIterableP", "fit"]
 - !private ["7SwiftUI6CircleV", "init"]
@@ -108,6 +110,7 @@ depends-member:
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
+- !private ["7SwiftUI4ListV", "frame"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["s25LosslessStringConvertibleP", "white"]
 - !private ["s10MirrorPathP", "white"]
@@ -118,6 +121,9 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["Sq", "CustomDarkGray"]
@@ -134,6 +140,7 @@ depends-member:
 - !private ["SY", "all"]
 - !private ["SY", "horizontal"]
 - !private ["7SwiftUI27RoundedBorderTextFieldStyleV", "init"]
+- !private ["7SwiftUI10ScrollViewV", "init"]
 - !private ["ST", "white"]
 - !private ["7SwiftUI4EdgeO3SetV", "all"]
 - !private ["7SwiftUI4EdgeO3SetV", "horizontal"]
@@ -146,7 +153,6 @@ depends-member:
 - !private ["7SwiftUI10ShapeStyleP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
-- !private ["7SwiftUI6SpacerV", "init"]
 - !private ["SS", "white"]
 - !private ["Sy", "white"]
 - !private ["7SwiftUI4TextV", "font"]
@@ -160,7 +166,6 @@ depends-member:
 - !private ["So7UIColorC", "white"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Circle"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "CustomDarkGray"]
@@ -171,8 +176,10 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "RoundedBorderTextFieldStyle"]
-- !private ["7SwiftUI4ViewP", "Spacer"]
+- !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
@@ -184,11 +191,13 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "clipShape"]
+- !private ["7SwiftUI4ViewP", "clubProfileEdit"]
 - !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI4ViewP", "textFieldStyle"]
@@ -214,8 +223,9 @@ depends-member:
 - !private ["7SwiftUI16_PreviewProviderP", "clubProfileHome"]
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["9clubhouse15clubProfileEditV", "deinit"]
+- !private ["9clubhouse15clubProfileEditV", "init"]
 - ["9clubhouse15clubProfileHomeV", "Body"]
-- !private ["9clubhouse15clubProfileHomeV", "Button"]
 - !private ["9clubhouse15clubProfileHomeV", "Circle"]
 - !private ["9clubhouse15clubProfileHomeV", "Color"]
 - !private ["9clubhouse15clubProfileHomeV", "Divider"]
@@ -223,8 +233,10 @@ depends-member:
 - !private ["9clubhouse15clubProfileHomeV", "HStack"]
 - !private ["9clubhouse15clubProfileHomeV", "Image"]
 - !private ["9clubhouse15clubProfileHomeV", "List"]
+- !private ["9clubhouse15clubProfileHomeV", "NavigationLink"]
+- !private ["9clubhouse15clubProfileHomeV", "NavigationView"]
 - !private ["9clubhouse15clubProfileHomeV", "RoundedBorderTextFieldStyle"]
-- !private ["9clubhouse15clubProfileHomeV", "Spacer"]
+- !private ["9clubhouse15clubProfileHomeV", "ScrollView"]
 - !private ["9clubhouse15clubProfileHomeV", "Text"]
 - !private ["9clubhouse15clubProfileHomeV", "VStack"]
 - ["9clubhouse15clubProfileHomeV", "View"]
@@ -233,6 +245,7 @@ depends-member:
 - ["9clubhouse15clubProfileHomeV", "_makeView"]
 - ["9clubhouse15clubProfileHomeV", "_makeViewList"]
 - ["9clubhouse15clubProfileHomeV", "body"]
+- !private ["9clubhouse15clubProfileHomeV", "clubProfileEdit"]
 - ["9clubhouse15clubProfileHomeV", "deinit"]
 - ["9clubhouse15clubProfileHomeV", "init"]
 - ["9clubhouse24clubProfileHome_PreviewsV", "Previews"]
@@ -248,7 +261,6 @@ depends-member:
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "SK"
-- !private "7SwiftUI6ButtonV"
 - !private "s7CVarArgP"
 - !private "s12CaseIterableP"
 - !private "7SwiftUI6CircleV"
@@ -286,18 +298,20 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "7SwiftUI14NavigationLinkV"
+- !private "7SwiftUI14NavigationViewV"
 - !private "s9OptionSetP"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "SY"
 - !private "7SwiftUI27RoundedBorderTextFieldStyleV"
+- !private "7SwiftUI10ScrollViewV"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
 - !private "7SwiftUI5ShapeP"
 - !private "7SwiftUI10ShapeStyleP"
-- !private "7SwiftUI6SpacerV"
 - !private "SS"
 - !private "Sy"
 - !private "7SwiftUI4TextV"
@@ -319,6 +333,7 @@ depends-nominal:
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
+- !private "9clubhouse15clubProfileEditV"
 - "9clubhouse15clubProfileHomeV"
 - "9clubhouse24clubProfileHome_PreviewsV"
 depends-dynamic-lookup:

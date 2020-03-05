@@ -29,10 +29,13 @@ depends-top-level:
 - !private "Image"
 - !private "IntegerLiteralType"
 - !private "List"
+- !private "NavigationLink"
+- !private "NavigationView"
 - !private "Picker"
 - "PreviewProvider"
 - !private "RoundedBorderTextFieldStyle"
 - !private "RoundedRectangle"
+- !private "ScrollView"
 - "Self"
 - "State"
 - "String"
@@ -48,6 +51,7 @@ depends-top-level:
 - !private "ZStack"
 - "clubProfileEdit"
 - "clubProfileEdit_Previews"
+- !private "clubProfileHome"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "horizontal"]
 - !private ["7SwiftUI9AlignmentV", "center"]
@@ -64,7 +68,6 @@ depends-member:
 - !private ["SB", "horizontal"]
 - !private ["Sb", "toggle"]
 - !private ["7SwiftUI6ButtonV", "clipShape"]
-- !private ["7SwiftUI6ButtonV", "frame"]
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["12CoreGraphics7CGFloatV", "horizontal"]
 - !private ["s7CVarArgP", "count"]
@@ -237,6 +240,7 @@ depends-member:
 - !private ["7SwiftUI15InsettableShapeP", "fill"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
 - !private ["7SwiftUI15InsettableShapeP", "stroke"]
+- !private ["7SwiftUI4ListV", "frame"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["s25LosslessStringConvertibleP", "toggle"]
 - !private ["s25LosslessStringConvertibleP", "white"]
@@ -252,6 +256,9 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["Sj", "horizontal"]
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
@@ -280,6 +287,7 @@ depends-member:
 - !private ["7SwiftUI18RoundedCornerStyleO", "circular"]
 - !private ["7SwiftUI16RoundedRectangleV", "fill"]
 - !private ["7SwiftUI16RoundedRectangleV", "init"]
+- !private ["7SwiftUI10ScrollViewV", "init"]
 - !private ["ST", "count"]
 - !private ["ST", "subscript"]
 - !private ["ST", "white"]
@@ -360,8 +368,11 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "Picker"]
 - !private ["7SwiftUI4ViewP", "RoundedBorderTextFieldStyle"]
+- !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TextField"]
 - !private ["7SwiftUI4ViewP", "Toggle"]
@@ -377,6 +388,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "clipShape"]
 - !private ["7SwiftUI4ViewP", "clipped"]
+- !private ["7SwiftUI4ViewP", "clubProfileHome"]
 - !private ["7SwiftUI4ViewP", "clubTypes"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
 - !private ["7SwiftUI4ViewP", "day"]
@@ -388,6 +400,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "gray"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "labelsHidden"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "offset"]
 - !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "padding"]
@@ -461,8 +474,11 @@ depends-member:
 - !private ["9clubhouse15clubProfileEditV", "HStack"]
 - !private ["9clubhouse15clubProfileEditV", "Image"]
 - !private ["9clubhouse15clubProfileEditV", "List"]
+- !private ["9clubhouse15clubProfileEditV", "NavigationLink"]
+- !private ["9clubhouse15clubProfileEditV", "NavigationView"]
 - !private ["9clubhouse15clubProfileEditV", "Picker"]
 - !private ["9clubhouse15clubProfileEditV", "RoundedBorderTextFieldStyle"]
+- !private ["9clubhouse15clubProfileEditV", "ScrollView"]
 - ["9clubhouse15clubProfileEditV", "State"]
 - ["9clubhouse15clubProfileEditV", "String"]
 - !private ["9clubhouse15clubProfileEditV", "Text"]
@@ -485,6 +501,7 @@ depends-member:
 - !private ["9clubhouse15clubProfileEditV", "_type"]
 - !private ["9clubhouse15clubProfileEditV", "_website"]
 - ["9clubhouse15clubProfileEditV", "body"]
+- !private ["9clubhouse15clubProfileEditV", "clubProfileHome"]
 - ["9clubhouse15clubProfileEditV", "clubTypes"]
 - ["9clubhouse15clubProfileEditV", "commitment"]
 - ["9clubhouse15clubProfileEditV", "day"]
@@ -509,6 +526,8 @@ depends-member:
 - ["9clubhouse24clubProfileEdit_PreviewsV", "init"]
 - ["9clubhouse24clubProfileEdit_PreviewsV", "platform"]
 - ["9clubhouse24clubProfileEdit_PreviewsV", "previews"]
+- !private ["9clubhouse15clubProfileHomeV", "deinit"]
+- !private ["9clubhouse15clubProfileHomeV", "init"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "7SwiftUI9AlignmentV"
@@ -570,6 +589,8 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "7SwiftUI14NavigationLinkV"
+- !private "7SwiftUI14NavigationViewV"
 - !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
@@ -581,6 +602,7 @@ depends-nominal:
 - !private "7SwiftUI27RoundedBorderTextFieldStyleV"
 - !private "7SwiftUI18RoundedCornerStyleO"
 - !private "7SwiftUI16RoundedRectangleV"
+- !private "7SwiftUI10ScrollViewV"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
@@ -625,6 +647,7 @@ depends-nominal:
 - !private "7SwiftUI11_VectorMathP"
 - "9clubhouse15clubProfileEditV"
 - "9clubhouse24clubProfileEdit_PreviewsV"
+- !private "9clubhouse15clubProfileHomeV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
