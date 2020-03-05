@@ -11,6 +11,12 @@ import SwiftUI
 //strategy for explore page:
 //make a struct/view for the individual club rows -- with image, name, recruiting
 //have a full page view that combines all of these as an array in the main page
+struct testData: Identifiable {
+    var id = UUID()
+    var club: String
+    var recruiting: Bool
+}
+
 struct SearchBar: UIViewRepresentable {
 
     @Binding var text: String
@@ -51,9 +57,9 @@ struct recruitIcon: View {
         VStack() {
         Image(systemName: "person.3.fill")
         //conditionally render this based on recruiting prop
-            .foregroundColor(Color.CustomOrange)
+            .foregroundColor(Color.CustomPurple)
             Text("Recruiting")
-            .foregroundColor(Color.CustomOrange)
+            .foregroundColor(Color.CustomPurple)
             .font(Font.custom("Montserrat-Medium", size: 12))
         }
     }
@@ -61,7 +67,7 @@ struct recruitIcon: View {
 struct clubTile: View {
     @State var recruiting = false
     @State var name = ""
-    
+    @State var categories = "UCLA Club"
     var body: some View {
         ZStack() {
         Rectangle()
@@ -73,7 +79,7 @@ struct clubTile: View {
                 VStack(alignment: .leading) {
                     Text(name)
                         .font(Font.custom("Montserrat-Medium", size: 20))
-                    Text("Categories")
+                    Text(self.categories)
                         .foregroundColor(Color.gray)
                 }.padding(.horizontal)
                 
@@ -81,6 +87,7 @@ struct clubTile: View {
                 if self.recruiting
                 {
                     recruitIcon()
+                    
                 }
             }.padding()
         }
@@ -103,14 +110,34 @@ struct exploreHeader: View {
 }
 struct studentExplore: View {
     @State var clubs = [
-        "Creative Labs", "ACM", "GlobeMed", "BMES", "asdf", "testing"
+        "Creative Labs", "ACM", "GlobeMed", "BMES", "SWE", "Club WaterSki", "Lettuce Club", "DevX", "Photography Club", "Club Tennis"
     ]
+    @State var recruiting = [true, true, false, true, true, false, true, false, true, false]
+    @State var i = 0
+    
+//        ["Creative Labs", true],
+//        ["ACM", true],
+//        ["GlobeMed", false],
+//        ["BMES", true],
+//        ["SWE", true],
+//        ["Club WaterSki", false],
+//        ["Lettuce Club", true],
+//        ["DevX", false],
+//        ["Photography Club", true],
+//        ["Bruin Consulting", false]
+//        true, true, false, true, true, false, true, false, true, false
+       
+    
+//    @State var i : Int
+    
     @State private var searchText : String = ""
     @State private var showSaved : Bool = false
     //SAVED FUNCTIONALITY STILL NEEDS TO BE IMPLEMENTED
     @State private var isFiltered : Bool = false
     @State private var isSorted : Bool = false
     
+    //@State var i = 0
+
     var body: some View {
         ZStack() {
         
@@ -125,17 +152,17 @@ struct studentExplore: View {
                                     .foregroundColor(!self.showSaved ? Color.white : Color.gray)
                              }
                              .frame(width: 100, height: 30)
-                    .background(!self.showSaved ? Color.CustomOrange : Color.white)
+                    .background(!self.showSaved ? Color.CustomPurple : Color.white)
                              .cornerRadius(10)
 //                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                 Spacer()
                     Button(action: {self.showSaved = true}){
                         Text("Saved")
                             .font(Font.custom("Montserrat-Regular", size: 14))
-                            .foregroundColor(self.showSaved ? Color.white : Color.gray)
+                            .foregroundColor(self.showSaved ?  Color.white : Color.gray)
                     }
                     .frame(width: 100, height: 30)
-                    .background(self.showSaved ? Color.CustomOrange : Color.white)
+                    .background(self.showSaved ? Color.CustomPurple : Color.white)
                     .cornerRadius(10)}.padding(.horizontal).background(Color.white)
                
                 VStack(spacing: 0) {
@@ -147,42 +174,51 @@ struct studentExplore: View {
                         Button(action: {self.isFiltered.toggle()}) {
                     Text("Filter")
                     .font(Font.custom("Montserrat-Regular", size: 14))
-                        .foregroundColor(!self.isFiltered ? Color.CustomOrange : Color.white)
+                        .foregroundColor(!self.isFiltered ? Color.CustomPurple : Color.white)
                         }
                         .frame(width: 80, height: 20)
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.CustomOrange, lineWidth: 1)
+                            .stroke(Color.CustomPurple, lineWidth: 1)
                             
                             
-                        ).background(!self.isFiltered ? Color.white : Color.CustomOrange)
+                        ).background(!self.isFiltered ? Color.white : Color.CustomPurple)
                         
                         Button(action: {self.isSorted.toggle()}) {
                         Text("Sort")
                         .font(Font.custom("Montserrat-Regular", size: 14))
-                            .foregroundColor(!self.isSorted ? Color.CustomOrange : Color.white)
+                            .foregroundColor(!self.isSorted ? Color.CustomPurple : Color.white)
                             }
                             .frame(width: 80, height: 20)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.CustomOrange, lineWidth: 1)
+                            .stroke(Color.CustomPurple , lineWidth: 1)
                                 
                                 
-                            ).background(!self.isSorted ? Color.white : Color.CustomOrange)
+                            ).background(!self.isSorted ? Color.white : Color.CustomPurple)
                     }.padding(.bottom).background(Color.white)
                     ForEach(self.clubs.filter{
                     self.searchText.isEmpty ? true : $0.lowercased().contains(self.searchText.lowercased())
                 }, id: \.self) {c in
-                    clubTile( recruiting: true, name: c)
+                    clubTile( recruiting: (c=="GlobeMed" || c=="DevX" || c=="Club WaterSki") ? false : true, name: c, categories: (c=="Creative Labs" || c=="ACM" || c=="SWE" || c=="DevX" || c=="BMES" ? "Engineering, Technology" : "Sports, Misc.") )
+
                 }
+                    
+                
                 }
             }
         }
-    .background(Color.gray)
+    .background(Color.white)
 
     }
     }
+
+    func recruitingFunc() -> Bool {
+        self.i += 1
+        return self.recruiting[i]
+    }
 }
+
 
 struct studentExplore_Previews: PreviewProvider {
     static var previews: some View {
