@@ -24,7 +24,7 @@ struct studentProfileHome: View {
                     ZStack(){
                     GeometryReader { geometry in
                         VStack(){
-                            Rectangle().fill(Color.init(red: 1, green: 0.357, blue: 0.227))
+                            Rectangle().fill(Color.CustomPurple)
                             .frame(width: 450, height: 300)
                             Divider()
                             Divider()
@@ -95,7 +95,7 @@ struct studentProfileHome: View {
                     NavigationLink(destination: studentProfileEdit()) {
                             Text("edit")
                                 .font(Font.custom("Montserrat-Medium", size: 18))
-                                .foregroundColor(Color.CustomOrange)
+                                .foregroundColor(Color.CustomPurple)
                                 .padding()
                         }
                         .navigationBarHidden(true)

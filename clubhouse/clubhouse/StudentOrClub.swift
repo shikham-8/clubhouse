@@ -26,33 +26,26 @@ struct StudentOrClub: View {
                         //Image ("Student")
                         Text ("Student")
                             .font(Font.custom("Montserrat-Medium", size: 24))
-                    }
+                            .foregroundColor(.white)
+                    }.navigationBarTitle("")
+                    .navigationBarHidden(true)
                         .frame(width: 300, height: 100, alignment: .center)
-                        .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                        .background(Color.CustomPurple)
                         .cornerRadius(10)
-                   // Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                   //     VStack {
-                  //          Image ("Student")
-                  //      Text ("Student")
-                  //          .font(Font.custom("Montserrat-Medium", size: 24))
-                  //      }
-                 //   }
-                 //   .frame(width: 300, height: 100, alignment: .center)
-                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
-                    .cornerRadius(10)
+                        .background(Color.white)
+                        .cornerRadius(10)
                     Divider()
                     NavigationLink(destination: clubRegister1()) {
                         //Image ("Student")
                         Text ("Club")
                             .font(Font.custom("Montserrat-Medium", size: 24))
+                            .foregroundColor(.white)
                     }
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
                         .frame(width: 300, height: 100, alignment: .center)
-                        .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                        .background(Color.CustomPurple)
                         .cornerRadius(10)
-                    .frame(width: 300, height: 100, alignment: .center)
-                    .background(Color.white)
-                    .border(Color.init(red: 1, green: 0.357, blue: 0.227))
-                    .cornerRadius(10)
                     Divider()
                 }
             }

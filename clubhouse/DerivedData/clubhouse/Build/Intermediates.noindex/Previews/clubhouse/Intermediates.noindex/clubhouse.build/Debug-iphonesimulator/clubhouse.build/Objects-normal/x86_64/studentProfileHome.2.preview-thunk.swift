@@ -21,7 +21,7 @@ extension studentProfileHome {
                     ZStack(){
                     GeometryReader { geometry in
                         VStack(){
-                            Rectangle().fill(Color.init(red: __designTimeInteger("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 1), green: __designTimeFloat("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 0.357), blue: __designTimeFloat("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].modifier[0].arg[0].value.arg[2].value", fallback: 0.227)))
+                            Rectangle().fill(Color.CustomPurple)
                             .frame(width: __designTimeInteger("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].modifier[1].arg[0].value", fallback: 450), height: __designTimeInteger("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].modifier[1].arg[1].value", fallback: 300))
                             Divider()
                             Divider()
@@ -92,7 +92,7 @@ extension studentProfileHome {
                     NavigationLink(destination: studentProfileEdit()) {
                             Text(__designTimeString("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].arg[0].value.[0].value", fallback: "edit"))
                                 .font(Font.custom(__designTimeString("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Montserrat-Medium"), size: __designTimeInteger("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 18)))
-                                .foregroundColor(Color.CustomOrange)
+                                .foregroundColor(Color.CustomPurple)
                                 .padding()
                         }
                         .navigationBarHidden(__designTimeBoolean("#24925.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].modifier[0].arg[0].value", fallback: true))

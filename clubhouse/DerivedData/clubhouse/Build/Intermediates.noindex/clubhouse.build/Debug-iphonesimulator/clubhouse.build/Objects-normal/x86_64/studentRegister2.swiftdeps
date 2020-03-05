@@ -14,13 +14,13 @@ depends-top-level:
 - !private "..<"
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
-- !private "Button"
 - !private "Circle"
 - !private "Color"
 - !private "Divider"
 - !private "FloatLiteralType"
 - !private "Font"
 - !private "ForEach"
+- !private "GeometryReader"
 - !private "HStack"
 - "Image"
 - !private "ImagePicker"
@@ -29,11 +29,13 @@ depends-top-level:
 - !private "NavigationView"
 - !private "Picker"
 - "PreviewProvider"
+- !private "Rectangle"
 - !private "RoundedRectangle"
 - !private "Spacer"
 - "State"
 - "String"
 - "StringLiteralType"
+- !private "StudentTabView"
 - !private "Text"
 - !private "TextField"
 - "UIImage"
@@ -52,8 +54,6 @@ depends-member:
 - !private ["SK", "count"]
 - !private ["SK", "subscript"]
 - !private ["SK", "white"]
-- !private ["7SwiftUI6ButtonV", "frame"]
-- !private ["7SwiftUI6ButtonV", "init"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "white"]
@@ -139,6 +139,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "white"]
 - !private ["7SwiftUI4FontV", "custom"]
 - !private ["7SwiftUI7ForEachV", "init"]
+- !private ["7SwiftUI14GeometryReaderV", "init"]
 - !private ["7SwiftUI7GestureP", "gray"]
 - !private ["7SwiftUI7GestureP", "medium"]
 - !private ["7SwiftUI7GestureP", "white"]
@@ -175,8 +176,8 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["7SwiftUI14NavigationLinkV", "frame"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
@@ -200,6 +201,8 @@ depends-member:
 - !private ["Sm", "white"]
 - !private ["SY", "all"]
 - !private ["SY", "horizontal"]
+- !private ["7SwiftUI9RectangleV", "fill"]
+- !private ["7SwiftUI9RectangleV", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "stroke"]
 - !private ["ST", "count"]
@@ -223,6 +226,8 @@ depends-member:
 - ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["SS", "white"]
 - !private ["Sy", "white"]
+- !private ["9clubhouse14StudentTabViewV", "deinit"]
+- !private ["9clubhouse14StudentTabViewV", "init"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "fontWeight"]
 - !private ["7SwiftUI4TextV", "foregroundColor"]
@@ -235,6 +240,7 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "white"]
 - !private ["So7UIColorC", "white"]
 - !private ["7SwiftUI29UIViewControllerRepresentableP", "init"]
+- !private ["7SwiftUI6VStackV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI4ViewP", "$inputImage"]
 - !private ["7SwiftUI4ViewP", "$major"]
@@ -242,21 +248,23 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "$showingImagePicker"]
 - !private ["7SwiftUI4ViewP", "$year"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Circle"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "CustomPurple"]
 - !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
+- !private ["7SwiftUI4ViewP", "GeometryReader"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "ImagePicker"]
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "Picker"]
+- !private ["7SwiftUI4ViewP", "Rectangle"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
+- !private ["7SwiftUI4ViewP", "StudentTabView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TextField"]
 - !private ["7SwiftUI4ViewP", "VStack"]
@@ -284,6 +292,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "loadImage"]
 - !private ["7SwiftUI4ViewP", "majors"]
 - !private ["7SwiftUI4ViewP", "medium"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "padding"]
@@ -341,22 +351,24 @@ depends-member:
 - !private ["9clubhouse16studentRegister2V", "$showingImagePicker"]
 - ["9clubhouse16studentRegister2V", "$year"]
 - ["9clubhouse16studentRegister2V", "Body"]
-- !private ["9clubhouse16studentRegister2V", "Button"]
 - !private ["9clubhouse16studentRegister2V", "Circle"]
 - !private ["9clubhouse16studentRegister2V", "Color"]
 - !private ["9clubhouse16studentRegister2V", "Divider"]
 - !private ["9clubhouse16studentRegister2V", "Font"]
 - !private ["9clubhouse16studentRegister2V", "ForEach"]
+- !private ["9clubhouse16studentRegister2V", "GeometryReader"]
 - !private ["9clubhouse16studentRegister2V", "HStack"]
 - ["9clubhouse16studentRegister2V", "Image"]
 - !private ["9clubhouse16studentRegister2V", "ImagePicker"]
 - !private ["9clubhouse16studentRegister2V", "NavigationLink"]
 - !private ["9clubhouse16studentRegister2V", "NavigationView"]
 - !private ["9clubhouse16studentRegister2V", "Picker"]
+- !private ["9clubhouse16studentRegister2V", "Rectangle"]
 - !private ["9clubhouse16studentRegister2V", "RoundedRectangle"]
 - !private ["9clubhouse16studentRegister2V", "Spacer"]
 - ["9clubhouse16studentRegister2V", "State"]
 - ["9clubhouse16studentRegister2V", "String"]
+- !private ["9clubhouse16studentRegister2V", "StudentTabView"]
 - !private ["9clubhouse16studentRegister2V", "Text"]
 - !private ["9clubhouse16studentRegister2V", "TextField"]
 - ["9clubhouse16studentRegister2V", "UIImage"]
@@ -399,7 +411,6 @@ depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "Sa"
 - !private "SK"
-- !private "7SwiftUI6ButtonV"
 - !private "s7CVarArgP"
 - !private "7SwiftUI6CircleV"
 - !private "Sl"
@@ -424,6 +435,7 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7ForEachV"
+- !private "7SwiftUI14GeometryReaderV"
 - !private "7SwiftUI7GestureP"
 - !private "7SwiftUI6HStackV"
 - !private "SH"
@@ -451,6 +463,7 @@ depends-nominal:
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
+- !private "7SwiftUI9RectangleV"
 - !private "7SwiftUI16RoundedRectangleV"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
@@ -461,6 +474,7 @@ depends-nominal:
 - "7SwiftUI5StateV"
 - !private "SS"
 - !private "Sy"
+- !private "9clubhouse14StudentTabViewV"
 - !private "7SwiftUI4TextV"
 - !private "7SwiftUI9TextFieldV"
 - !private "s16TextOutputStreamP"

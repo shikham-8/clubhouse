@@ -10,6 +10,7 @@ provides-member:
 - ["9clubhouse24clubProfileHome_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "BooleanLiteralType"
 - !private "Circle"
 - !private "Color"
 - !private "Divider"
@@ -121,6 +122,7 @@ depends-member:
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "horizontal"]
@@ -195,6 +197,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI4ViewP", "textFieldStyle"]

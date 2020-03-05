@@ -8,7 +8,7 @@
 import SwiftUI
 struct ColoredToggleStyle: ToggleStyle {
     var label = ""
-    var onColor = Color.CustomOrange
+    var onColor = Color.CustomPurple
     var offColor = Color.gray
     var thumbColor = Color.white
 
@@ -169,7 +169,7 @@ struct clubProfileEdit: View {
                             Toggle(isOn: $recruitingNow){Text("")}.padding(.horizontal,90)
                                 .toggleStyle(
                                     ColoredToggleStyle(label: "",
-                                                       onColor: Color.CustomOrange))
+                                                       onColor: Color.CustomPurple))
                                 .frame(width:49, height:23)
                                 .padding(.horizontal,50)
                             .foregroundColor(.CustomLightGray)
@@ -276,7 +276,7 @@ struct clubProfileEdit: View {
                                    }
                                     .navigationBarHidden(true)
                                    .frame(width: 297, height: 40, alignment: .center)
-                                   .background(Color.CustomOrange)
+                                   .background(Color.CustomPurple)
                                    .cornerRadius(10)
                     .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                     }

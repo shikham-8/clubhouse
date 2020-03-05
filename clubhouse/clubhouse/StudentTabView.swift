@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TabViewTest: View {
+struct StudentTabView: View {
     var body: some View {
         TabView {
          studentExplore()
@@ -25,8 +25,8 @@ struct TabViewTest: View {
     }
 }
 
-struct TabViewTest_Previews: PreviewProvider {
+struct StudentTabView_Previews: PreviewProvider {
     static var previews: some View {
-        TabViewTest()
+        StudentTabView()
     }
 }

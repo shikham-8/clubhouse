@@ -133,7 +133,7 @@ struct clubProfileHome: View {
                  NavigationLink(destination: clubProfileEdit()) {
                     Text("edit")
                     .font(Font.custom("Montserrat-Regular", size: 18))
-                    .foregroundColor(Color.CustomOrange)
+                    .foregroundColor(Color.CustomPurple)
                 }.navigationBarHidden(true)
                 
             }

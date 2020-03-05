@@ -45,12 +45,12 @@ extension clubRegister3 {
                     NavigationLink(destination: clubRegister2()) {
                         Text(__designTimeString("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "back"))
                             .font(Font.custom(__designTimeString("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].arg[1].value.[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Montserrat-Regular"), size: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].arg[1].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 22)))
-                            .foregroundColor(Color.CustomOrange)
+                            .foregroundColor(Color.CustomPurple)
                     }
                     .frame(width: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[0].arg[0].value", fallback: 100), height: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[0].arg[1].value", fallback: 30))
                      .overlay(
                         RoundedRectangle(cornerRadius: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[1].arg[0].value.arg[0].value", fallback: 10))
-                        .stroke(Color.CustomOrange, lineWidth: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[1].arg[0].value.modifier[0].arg[1].value", fallback: 2))
+                        .stroke(Color.CustomPurple, lineWidth: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[1].arg[0].value.modifier[0].arg[1].value", fallback: 2))
                         .shadow(color: Color.gray, radius: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[1].arg[0].value.modifier[1].arg[1].value", fallback: 3), x: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[1].arg[0].value.modifier[1].arg[2].value", fallback: -2), y: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[1].arg[0].value.modifier[1].arg[3].value", fallback: 5)))
                         .navigationBarTitle(__designTimeString("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.[0].value", fallback: ""), displayMode: .inline)
                         .navigationBarHidden(__designTimeBoolean("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[3].arg[0].value", fallback: true))
@@ -62,7 +62,7 @@ extension clubRegister3 {
                             .foregroundColor(Color.init(.white))
                     }
                     .frame(width: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[0].arg[0].value", fallback: 100), height: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[0].arg[1].value", fallback: 30))
-                    .background(Color.CustomOrange)
+                    .background(Color.CustomPurple)
                     .cornerRadius(__designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[2].arg[0].value", fallback: 10))
                     .shadow(color: Color.gray, radius: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[3].arg[1].value", fallback: 3), x: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[3].arg[2].value", fallback: -2), y: __designTimeInteger("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[3].arg[3].value", fallback: 5))
                      .navigationBarTitle(__designTimeString("#21846.[2].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[1].modifier[4].arg[0].value.[0].value", fallback: ""), displayMode: .inline)

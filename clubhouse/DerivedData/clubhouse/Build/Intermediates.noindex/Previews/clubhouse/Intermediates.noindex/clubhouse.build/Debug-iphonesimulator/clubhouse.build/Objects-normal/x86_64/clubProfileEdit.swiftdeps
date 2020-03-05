@@ -84,7 +84,7 @@ depends-member:
 - !private ["Sl", "white"]
 - !private ["7SwiftUI5ColorV", "CustomDarkGray"]
 - !private ["7SwiftUI5ColorV", "CustomLightGray"]
-- ["7SwiftUI5ColorV", "CustomOrange"]
+- ["7SwiftUI5ColorV", "CustomPurple"]
 - !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
 - ["7SwiftUI5ColorV", "gray"]
 - !private ["7SwiftUI5ColorV", "init"]
@@ -131,7 +131,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "white"]
 - !private ["s23CustomStringConvertibleP", "CustomDarkGray"]
 - !private ["s23CustomStringConvertibleP", "CustomLightGray"]
-- ["s23CustomStringConvertibleP", "CustomOrange"]
+- ["s23CustomStringConvertibleP", "CustomPurple"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "easeInOut"]
 - !private ["s23CustomStringConvertibleP", "edgesIgnoringSafeArea"]
@@ -167,7 +167,7 @@ depends-member:
 - !private ["SE", "white"]
 - !private ["SQ", "CustomDarkGray"]
 - !private ["SQ", "CustomLightGray"]
-- ["SQ", "CustomOrange"]
+- ["SQ", "CustomPurple"]
 - !private ["SQ", "all"]
 - !private ["SQ", "aspectRatio"]
 - !private ["SQ", "center"]
@@ -219,7 +219,7 @@ depends-member:
 - !private ["7SwiftUI6HStackV", "padding"]
 - !private ["SH", "CustomDarkGray"]
 - !private ["SH", "CustomLightGray"]
-- ["SH", "CustomOrange"]
+- ["SH", "CustomPurple"]
 - !private ["SH", "circular"]
 - !private ["SH", "count"]
 - !private ["SH", "custom"]
@@ -300,7 +300,7 @@ depends-member:
 - !private ["7SwiftUI5ShapeP", "stroke"]
 - !private ["7SwiftUI10ShapeStyleP", "CustomDarkGray"]
 - !private ["7SwiftUI10ShapeStyleP", "CustomLightGray"]
-- ["7SwiftUI10ShapeStyleP", "CustomOrange"]
+- ["7SwiftUI10ShapeStyleP", "CustomPurple"]
 - !private ["7SwiftUI10ShapeStyleP", "edgesIgnoringSafeArea"]
 - ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
@@ -361,7 +361,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "ColoredToggleStyle"]
 - !private ["7SwiftUI4ViewP", "CustomDarkGray"]
 - !private ["7SwiftUI4ViewP", "CustomLightGray"]
-- ["7SwiftUI4ViewP", "CustomOrange"]
+- ["7SwiftUI4ViewP", "CustomPurple"]
 - !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
@@ -697,4 +697,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a1fc192b89259e19c5f571484634b1cd"
+interface-hash: "f697d8bd43daec42eaba7b4c57a7cc89"

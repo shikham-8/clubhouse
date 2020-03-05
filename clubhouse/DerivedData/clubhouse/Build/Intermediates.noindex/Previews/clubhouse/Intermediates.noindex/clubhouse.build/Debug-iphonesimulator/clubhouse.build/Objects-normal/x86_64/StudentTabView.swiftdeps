@@ -1,21 +1,21 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "TabViewTest"
-- "TabViewTest_Previews"
+- "StudentTabView"
+- "StudentTabView_Previews"
 provides-nominal:
-- "9clubhouse11TabViewTestV"
-- "9clubhouse20TabViewTest_PreviewsV"
+- "9clubhouse14StudentTabViewV"
+- "9clubhouse23StudentTabView_PreviewsV"
 provides-member:
-- ["9clubhouse11TabViewTestV", ""]
-- ["9clubhouse20TabViewTest_PreviewsV", ""]
+- ["9clubhouse14StudentTabViewV", ""]
+- ["9clubhouse23StudentTabView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "Image"
 - "PreviewProvider"
 - !private "StringLiteralType"
+- "StudentTabView"
+- "StudentTabView_Previews"
 - !private "TabView"
-- "TabViewTest"
-- "TabViewTest_Previews"
 - !private "Text"
 - "View"
 - !private "studentExplore"
@@ -24,37 +24,37 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["7SwiftUI5ImageV", "init"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
-- !private ["7SwiftUI15PreviewProviderP", "TabViewTest"]
+- !private ["7SwiftUI15PreviewProviderP", "StudentTabView"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "_platform"]
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- ["9clubhouse14StudentTabViewV", "Body"]
+- !private ["9clubhouse14StudentTabViewV", "Image"]
+- !private ["9clubhouse14StudentTabViewV", "TabView"]
+- !private ["9clubhouse14StudentTabViewV", "Text"]
+- ["9clubhouse14StudentTabViewV", "View"]
+- ["9clubhouse14StudentTabViewV", "_Default_Body"]
+- ["9clubhouse14StudentTabViewV", "_makeView"]
+- ["9clubhouse14StudentTabViewV", "_makeViewList"]
+- ["9clubhouse14StudentTabViewV", "body"]
+- ["9clubhouse14StudentTabViewV", "deinit"]
+- ["9clubhouse14StudentTabViewV", "init"]
+- !private ["9clubhouse14StudentTabViewV", "studentExplore"]
+- !private ["9clubhouse14StudentTabViewV", "studentProfileHome"]
+- ["9clubhouse23StudentTabView_PreviewsV", "Previews"]
+- !private ["9clubhouse23StudentTabView_PreviewsV", "StudentTabView"]
+- ["9clubhouse23StudentTabView_PreviewsV", "View"]
+- ["9clubhouse23StudentTabView_PreviewsV", "_Default_Previews"]
+- ["9clubhouse23StudentTabView_PreviewsV", "_platform"]
+- ["9clubhouse23StudentTabView_PreviewsV", "_previews"]
+- ["9clubhouse23StudentTabView_PreviewsV", "deinit"]
+- ["9clubhouse23StudentTabView_PreviewsV", "init"]
+- ["9clubhouse23StudentTabView_PreviewsV", "platform"]
+- ["9clubhouse23StudentTabView_PreviewsV", "previews"]
 - !private ["7SwiftUI7TabViewV", "init"]
-- ["9clubhouse11TabViewTestV", "Body"]
-- !private ["9clubhouse11TabViewTestV", "Image"]
-- !private ["9clubhouse11TabViewTestV", "TabView"]
-- !private ["9clubhouse11TabViewTestV", "Text"]
-- ["9clubhouse11TabViewTestV", "View"]
-- ["9clubhouse11TabViewTestV", "_Default_Body"]
-- ["9clubhouse11TabViewTestV", "_makeView"]
-- ["9clubhouse11TabViewTestV", "_makeViewList"]
-- ["9clubhouse11TabViewTestV", "body"]
-- ["9clubhouse11TabViewTestV", "deinit"]
-- ["9clubhouse11TabViewTestV", "init"]
-- !private ["9clubhouse11TabViewTestV", "studentExplore"]
-- !private ["9clubhouse11TabViewTestV", "studentProfileHome"]
-- ["9clubhouse20TabViewTest_PreviewsV", "Previews"]
-- !private ["9clubhouse20TabViewTest_PreviewsV", "TabViewTest"]
-- ["9clubhouse20TabViewTest_PreviewsV", "View"]
-- ["9clubhouse20TabViewTest_PreviewsV", "_Default_Previews"]
-- ["9clubhouse20TabViewTest_PreviewsV", "_platform"]
-- ["9clubhouse20TabViewTest_PreviewsV", "_previews"]
-- ["9clubhouse20TabViewTest_PreviewsV", "deinit"]
-- ["9clubhouse20TabViewTest_PreviewsV", "init"]
-- ["9clubhouse20TabViewTest_PreviewsV", "platform"]
-- ["9clubhouse20TabViewTest_PreviewsV", "previews"]
 - !private ["7SwiftUI4TextV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Image"]
@@ -71,7 +71,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "tabItem"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
-- !private ["7SwiftUI16_PreviewProviderP", "TabViewTest"]
+- !private ["7SwiftUI16_PreviewProviderP", "StudentTabView"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "_platform"]
@@ -88,9 +88,9 @@ depends-nominal:
 - !private "SQ"
 - !private "7SwiftUI5ImageV"
 - "7SwiftUI15PreviewProviderP"
+- "9clubhouse14StudentTabViewV"
+- "9clubhouse23StudentTabView_PreviewsV"
 - !private "7SwiftUI7TabViewV"
-- "9clubhouse11TabViewTestV"
-- "9clubhouse20TabViewTest_PreviewsV"
 - !private "7SwiftUI4TextV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -146,4 +146,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "dddf46fa0060e43747cc42f607d7bbeb"
+interface-hash: "85201e116c7502107d4e1a7351337355"

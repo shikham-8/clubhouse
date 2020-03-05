@@ -35,18 +35,18 @@ struct LoginHome: View {
                             .padding()
                     }
                     .frame(width: 250, height: 50, alignment: .center)
-                    .background(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .background(Color.CustomPurple)
                     .cornerRadius(10)
                     Divider()
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         Text("Login")
                             .font(Font.custom("Montserrat-Medium", size: 24))
-                            .foregroundColor(Color.init(red: 1, green: 0.357, blue: 0.227))
+                            .foregroundColor(Color.CustomPurple)
                             .padding()
                     }
                     .frame(width: 250, height: 50, alignment: .center)
                     .background(Color.white)
-                    .border(Color.init(red: 1, green: 0.357, blue: 0.227))
+                    .border(Color.CustomPurple)
                     .cornerRadius(10)
                     Divider()
                 }

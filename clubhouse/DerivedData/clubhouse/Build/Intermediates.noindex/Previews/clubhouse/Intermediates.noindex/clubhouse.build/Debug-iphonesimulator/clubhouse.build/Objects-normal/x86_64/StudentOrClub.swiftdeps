@@ -10,9 +10,10 @@ provides-member:
 - ["9clubhouse22StudentOrClub_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "BooleanLiteralType"
 - !private "Color"
 - !private "Divider"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - !private "Font"
 - !private "IntegerLiteralType"
 - !private "NavigationLink"
@@ -32,31 +33,38 @@ depends-member:
 - !private ["SK", "white"]
 - !private ["s7CVarArgP", "white"]
 - !private ["Sl", "white"]
+- !private ["7SwiftUI5ColorV", "CustomPurple"]
 - !private ["7SwiftUI5ColorV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI5ColorV", "init"]
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["SL", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "CustomPurple"]
 - !private ["s23CustomStringConvertibleP", "edgesIgnoringSafeArea"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["Se", "white"]
 - !private ["7SwiftUI7DividerV", "init"]
 - !private ["SE", "white"]
+- !private ["SQ", "CustomPurple"]
 - !private ["SQ", "all"]
 - !private ["SQ", "center"]
 - !private ["SQ", "custom"]
 - !private ["SQ", "edgesIgnoringSafeArea"]
 - !private ["SQ", "font"]
+- !private ["SQ", "foregroundColor"]
 - !private ["SQ", "init"]
 - !private ["SQ", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "all"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "white"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
 - !private ["s32ExpressibleByStringInterpolationP", "white"]
 - !private ["s26ExpressibleByStringLiteralP", "white"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "white"]
 - !private ["7SwiftUI4FontV", "custom"]
+- !private ["7SwiftUI7GestureP", "white"]
+- !private ["SH", "CustomPurple"]
 - !private ["SH", "custom"]
 - !private ["SH", "edgesIgnoringSafeArea"]
 - !private ["SH", "init"]
@@ -70,10 +78,11 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["7SwiftUI14NavigationLinkV", "frame"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarTitle"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["s9OptionSetP", "all"]
+- !private ["Sq", "white"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "StudentOrClub"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -87,6 +96,7 @@ depends-member:
 - !private ["ST", "white"]
 - !private ["7SwiftUI4EdgeO3SetV", "all"]
 - !private ["s10SetAlgebraP", "all"]
+- !private ["7SwiftUI10ShapeStyleP", "CustomPurple"]
 - !private ["7SwiftUI10ShapeStyleP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
@@ -121,6 +131,7 @@ depends-member:
 - ["9clubhouse22StudentOrClub_PreviewsV", "platform"]
 - ["9clubhouse22StudentOrClub_PreviewsV", "previews"]
 - !private ["7SwiftUI4TextV", "font"]
+- !private ["7SwiftUI4TextV", "foregroundColor"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["s16TextOutputStreamP", "white"]
 - !private ["s20TextOutputStreamableP", "white"]
@@ -128,6 +139,7 @@ depends-member:
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Color"]
+- !private ["7SwiftUI4ViewP", "CustomPurple"]
 - !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
@@ -141,13 +153,15 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "border"]
 - !private ["7SwiftUI4ViewP", "clubRegister1"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
 - !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "font"]
+- !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "studentRegister1"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -189,10 +203,12 @@ depends-nominal:
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FontV"
+- !private "7SwiftUI7GestureP"
 - !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -206,6 +222,7 @@ depends-nominal:
 - !private "7SwiftUI14NavigationLinkV"
 - !private "7SwiftUI14NavigationViewV"
 - !private "s9OptionSetP"
+- !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "SY"

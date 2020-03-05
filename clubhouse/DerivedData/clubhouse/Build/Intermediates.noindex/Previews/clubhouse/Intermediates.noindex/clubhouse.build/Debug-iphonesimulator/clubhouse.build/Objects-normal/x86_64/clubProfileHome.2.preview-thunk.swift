@@ -136,7 +136,7 @@ extension clubProfileHome {
                  NavigationLink(destination: clubProfileEdit()) {
                     Text(__designTimeString("#21876.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].arg[0].value.[0].value", fallback: "edit"))
                     .font(Font.custom(__designTimeString("#21876.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Montserrat-Regular"), size: __designTimeInteger("#21876.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].arg[1].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 18)))
-                    .foregroundColor(Color.CustomOrange)
+                    .foregroundColor(Color.CustomPurple)
                 }.navigationBarHidden(__designTimeBoolean("#21876.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[3].modifier[0].arg[0].value", fallback: true))
                 
             }

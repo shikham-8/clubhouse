@@ -38,18 +38,18 @@ extension LoginHome {
                             .padding()
                     }
                     .frame(width: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[0].modifier[0].arg[0].value", fallback: 250), height: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[0].modifier[0].arg[1].value", fallback: 50), alignment: .center)
-                    .background(Color.init(red: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value", fallback: 1), green: __designTimeFloat("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value", fallback: 0.357), blue: __designTimeFloat("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[2].value", fallback: 0.227)))
+                    .background(Color.CustomPurple)
                     .cornerRadius(__designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[0].modifier[2].arg[0].value", fallback: 10))
                     Divider()
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         Text(__designTimeString("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].arg[1].value.[0].arg[0].value.[0].value", fallback: "Login"))
                             .font(Font.custom(__designTimeString("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].arg[1].value.[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Montserrat-Medium"), size: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].arg[1].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 24)))
-                            .foregroundColor(Color.init(red: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].arg[1].value.[0].modifier[1].arg[0].value.arg[0].value", fallback: 1), green: __designTimeFloat("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].arg[1].value.[0].modifier[1].arg[0].value.arg[1].value", fallback: 0.357), blue: __designTimeFloat("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].arg[1].value.[0].modifier[1].arg[0].value.arg[2].value", fallback: 0.227)))
+                            .foregroundColor(Color.CustomPurple)
                             .padding()
                     }
                     .frame(width: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].modifier[0].arg[0].value", fallback: 250), height: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].modifier[0].arg[1].value", fallback: 50), alignment: .center)
                     .background(Color.white)
-                    .border(Color.init(red: __designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].modifier[2].arg[0].value.arg[0].value", fallback: 1), green: __designTimeFloat("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].modifier[2].arg[0].value.arg[1].value", fallback: 0.357), blue: __designTimeFloat("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].modifier[2].arg[0].value.arg[2].value", fallback: 0.227)))
+                    .border(Color.CustomPurple)
                     .cornerRadius(__designTimeInteger("#25276.[1].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[1].arg[0].value.[2].modifier[3].arg[0].value", fallback: 10))
                     Divider()
                 }

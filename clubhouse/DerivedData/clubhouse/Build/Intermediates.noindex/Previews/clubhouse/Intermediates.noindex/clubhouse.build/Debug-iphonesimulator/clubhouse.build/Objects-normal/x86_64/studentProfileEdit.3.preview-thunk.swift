@@ -99,7 +99,7 @@ extension studentProfileEdit {
                                 }, "#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2].arg[2].value.[0]")
                             }
                             .labelsHidden()
-                            .frame(width:__designTimeInteger("#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2].modifier[1].arg[0].value", fallback: 200), height:__designTimeInteger("#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2].modifier[1].arg[1].value", fallback: 50)).clipped()
+                            .frame(width:__designTimeInteger("#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2].modifier[1].arg[0].value", fallback: 150), height:__designTimeInteger("#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2].modifier[1].arg[1].value", fallback: 30)).clipped()
                             .border(__designTimeSelection(Color.CustomPurple, "#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2].modifier[3].arg[0].value")), "#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[2]")
                         __designTimeSelection(Spacer(), "#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7].arg[0].value.[3]")
                     }, "#25294.[1].[10].property.[0].[0].arg[0].value.[1].arg[1].value.[2].arg[2].value.[7]")

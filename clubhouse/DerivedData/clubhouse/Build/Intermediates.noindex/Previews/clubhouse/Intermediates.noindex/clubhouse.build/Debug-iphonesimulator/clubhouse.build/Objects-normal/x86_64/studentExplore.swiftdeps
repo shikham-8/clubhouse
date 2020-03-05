@@ -1,5 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "testData"
 - "SearchBar"
 - "recruitIcon"
 - "clubTile"
@@ -7,6 +8,7 @@ provides-top-level:
 - "studentExplore"
 - "studentExplore_Previews"
 provides-nominal:
+- "9clubhouse8testDataV"
 - "9clubhouse9SearchBarV"
 - "9clubhouse9SearchBarV11CoordinatorC"
 - "9clubhouse11recruitIconV"
@@ -15,6 +17,7 @@ provides-nominal:
 - "9clubhouse14studentExploreV"
 - "9clubhouse23studentExplore_PreviewsV"
 provides-member:
+- ["9clubhouse8testDataV", ""]
 - ["9clubhouse9SearchBarV", ""]
 - ["9clubhouse9SearchBarV11CoordinatorC", ""]
 - ["9clubhouse11recruitIconV", ""]
@@ -26,6 +29,8 @@ provides-dynamic-lookup:
 - "searchBar"
 depends-top-level:
 - !private "!"
+- !private "+="
+- !private "=="
 - "AssignmentPrecedence"
 - "Binding"
 - "Bool"
@@ -36,8 +41,9 @@ depends-top-level:
 - !private "Font"
 - !private "ForEach"
 - !private "HStack"
+- "Identifiable"
 - !private "Image"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "NSObject"
 - "PreviewProvider"
 - !private "Rectangle"
@@ -54,6 +60,7 @@ depends-top-level:
 - "UISearchBarDelegate"
 - "UIViewRepresentable"
 - "UIViewRepresentableContext"
+- "UUID"
 - !private "VStack"
 - "View"
 - !private "ZStack"
@@ -63,6 +70,8 @@ depends-top-level:
 - "recruitIcon"
 - "studentExplore"
 - "studentExplore_Previews"
+- "testData"
+- !private "||"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "bottom"]
 - !private ["s18AdditiveArithmeticP", "horizontal"]
@@ -73,10 +82,12 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "stroke"]
 - !private ["7SwiftUI10AnimatableP", "zero"]
 - !private ["Sa", "filter"]
+- !private ["Sa", "subscript"]
 - !private ["SK", "contains"]
 - !private ["SK", "filter"]
 - !private ["SK", "isEmpty"]
 - !private ["SK", "lowercased"]
+- !private ["SK", "subscript"]
 - !private ["SB", "bottom"]
 - !private ["SB", "horizontal"]
 - !private ["Sb", "toggle"]
@@ -115,13 +126,15 @@ depends-member:
 - !private ["s7CVarArgP", "searchBarStyle"]
 - ["s7CVarArgP", "searchBarTextDidBeginEditing"]
 - ["s7CVarArgP", "searchBarTextDidEndEditing"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "toggle"]
 - !private ["Sl", "contains"]
 - !private ["Sl", "filter"]
 - !private ["Sl", "isEmpty"]
 - !private ["Sl", "lowercased"]
-- !private ["7SwiftUI5ColorV", "CustomOrange"]
+- !private ["Sl", "subscript"]
+- !private ["7SwiftUI5ColorV", "CustomPurple"]
 - !private ["7SwiftUI5ColorV", "gray"]
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["SL", "bottom"]
@@ -130,6 +143,7 @@ depends-member:
 - !private ["SL", "isEmpty"]
 - !private ["SL", "lowercased"]
 - !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["9clubhouse9SearchBarV11CoordinatorC", "$text"]
 - ["9clubhouse9SearchBarV11CoordinatorC", "Binding"]
 - ["9clubhouse9SearchBarV11CoordinatorC", "String"]
@@ -155,7 +169,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "filter"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "lowercased"]
 - !private ["s28CustomDebugStringConvertibleP", "none"]
@@ -173,19 +187,22 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "searchBarTextDidBeginEditing"]
 - ["s28CustomDebugStringConvertibleP", "searchBarTextDidEndEditing"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "bottom"]
 - !private ["s17CustomReflectableP", "contains"]
 - !private ["s17CustomReflectableP", "filter"]
 - !private ["s17CustomReflectableP", "horizontal"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "lowercased"]
 - !private ["s17CustomReflectableP", "none"]
 - !private ["s17CustomReflectableP", "some"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "toggle"]
 - !private ["s17CustomReflectableP", "zero"]
-- !private ["s23CustomStringConvertibleP", "CustomOrange"]
+- !private ["s23CustomStringConvertibleP", "CustomPurple"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_text"]
 - !private ["s23CustomStringConvertibleP", "autocapitalizationType"]
@@ -195,7 +212,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "horizontal"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "lowercased"]
 - !private ["s23CustomStringConvertibleP", "placeholder"]
@@ -211,18 +228,22 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "searchBarStyle"]
 - ["s23CustomStringConvertibleP", "searchBarTextDidBeginEditing"]
 - ["s23CustomStringConvertibleP", "searchBarTextDidEndEditing"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "bottom"]
 - !private ["Se", "contains"]
 - !private ["Se", "filter"]
 - !private ["Se", "horizontal"]
+- ["Se", "init"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "lowercased"]
 - !private ["Se", "none"]
 - !private ["Se", "some"]
+- !private ["Se", "subscript"]
 - !private ["Se", "toggle"]
 - !private ["Se", "zero"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
@@ -234,13 +255,15 @@ depends-member:
 - !private ["SE", "contains"]
 - !private ["SE", "filter"]
 - !private ["SE", "horizontal"]
+- ["SE", "init"]
 - !private ["SE", "isEmpty"]
 - !private ["SE", "lowercased"]
 - !private ["SE", "none"]
 - !private ["SE", "some"]
+- !private ["SE", "subscript"]
 - !private ["SE", "toggle"]
 - !private ["SE", "zero"]
-- !private ["SQ", "CustomOrange"]
+- !private ["SQ", "CustomPurple"]
 - ["SQ", ""]
 - !private ["SQ", "_text"]
 - !private ["SQ", "autocapitalizationType"]
@@ -254,7 +277,7 @@ depends-member:
 - !private ["SQ", "foregroundColor"]
 - !private ["SQ", "gray"]
 - !private ["SQ", "horizontal"]
-- !private ["SQ", "init"]
+- ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "leading"]
 - !private ["SQ", "lowercased"]
@@ -274,6 +297,7 @@ depends-member:
 - ["SQ", "searchBarTextDidBeginEditing"]
 - ["SQ", "searchBarTextDidEndEditing"]
 - !private ["SQ", "some"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "text"]
 - !private ["SQ", "toggle"]
 - !private ["SQ", "white"]
@@ -281,6 +305,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "bottom"]
 - !private ["s25ExpressibleByArrayLiteralP", "filter"]
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contains"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
@@ -308,7 +333,7 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "some"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["7SwiftUI6HStackV", "padding"]
-- !private ["SH", "CustomOrange"]
+- !private ["SH", "CustomPurple"]
 - ["SH", ""]
 - !private ["SH", "_text"]
 - !private ["SH", "autocapitalizationType"]
@@ -319,7 +344,7 @@ depends-member:
 - !private ["SH", "filter"]
 - !private ["SH", "gray"]
 - !private ["SH", "horizontal"]
-- !private ["SH", "init"]
+- ["SH", "init"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "lowercased"]
 - !private ["SH", "minimal"]
@@ -338,10 +363,16 @@ depends-member:
 - ["SH", "searchBarTextDidBeginEditing"]
 - ["SH", "searchBarTextDidEndEditing"]
 - !private ["SH", "some"]
+- !private ["SH", "subscript"]
 - !private ["SH", "text"]
 - !private ["SH", "toggle"]
 - !private ["SH", "white"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
+- ["s12IdentifiableP", "ID"]
+- ["s12IdentifiableP", "UUID"]
+- ["s12IdentifiableP", ""]
+- ["s12IdentifiableP", "_Default_ID"]
+- ["s12IdentifiableP", "id"]
 - !private ["7SwiftUI5ImageV", "foregroundColor"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["7SwiftUI15InsettableShapeP", "fill"]
@@ -355,7 +386,9 @@ depends-member:
 - !private ["s10MirrorPathP", "isEmpty"]
 - !private ["s10MirrorPathP", "lowercased"]
 - !private ["SM", "filter"]
+- !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "autocapitalizationType"]
 - !private ["So8NSCodingP", "contains"]
 - !private ["So8NSCodingP", "delegate"]
@@ -446,16 +479,19 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["7SwiftUI15PreviewProviderP", "studentExplore"]
 - !private ["Sk", "filter"]
+- !private ["Sk", "subscript"]
 - !private ["Sm", "contains"]
 - !private ["Sm", "filter"]
 - !private ["Sm", "isEmpty"]
 - !private ["Sm", "lowercased"]
+- !private ["Sm", "subscript"]
 - !private ["SY", "bottom"]
 - !private ["SY", "horizontal"]
 - !private ["SY", "minimal"]
 - !private ["SY", "none"]
 - !private ["7SwiftUI9RectangleV", "fill"]
 - !private ["7SwiftUI9RectangleV", "init"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "stroke"]
 - !private ["7SwiftUI10ScrollViewV", "background"]
@@ -493,6 +529,7 @@ depends-member:
 - !private ["ST", "filter"]
 - !private ["ST", "isEmpty"]
 - !private ["ST", "lowercased"]
+- !private ["ST", "subscript"]
 - !private ["7SwiftUI4EdgeO3SetV", "bottom"]
 - !private ["7SwiftUI4EdgeO3SetV", "horizontal"]
 - !private ["s10SetAlgebraP", "bottom"]
@@ -500,7 +537,7 @@ depends-member:
 - !private ["7SwiftUI5ShapeP", "fill"]
 - !private ["7SwiftUI5ShapeP", "init"]
 - !private ["7SwiftUI5ShapeP", "stroke"]
-- !private ["7SwiftUI10ShapeStyleP", "CustomOrange"]
+- !private ["7SwiftUI10ShapeStyleP", "CustomPurple"]
 - !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["s13SignedNumericP", "bottom"]
@@ -689,6 +726,7 @@ depends-member:
 - !private ["7SwiftUI19UIViewRepresentableP", "text"]
 - ["7SwiftUI19UIViewRepresentableP", "updateUIView"]
 - !private ["7SwiftUI26UIViewRepresentableContextV", "coordinator"]
+- ["10Foundation4UUIDV", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI6VStackV", "padding"]
 - !private ["7SwiftUI16VectorArithmeticP", "bottom"]
@@ -699,7 +737,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Coordinator"]
-- !private ["7SwiftUI4ViewP", "CustomOrange"]
+- !private ["7SwiftUI4ViewP", "CustomPurple"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "HStack"]
@@ -724,6 +762,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_overrideSizeThatFits"]
 - !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "categories"]
 - !private ["7SwiftUI4ViewP", "circleImage"]
 - !private ["7SwiftUI4ViewP", "clubTile"]
 - !private ["7SwiftUI4ViewP", "clubs"]
@@ -735,6 +774,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "gray"]
+- !private ["7SwiftUI4ViewP", "i"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "isFiltered"]
 - !private ["7SwiftUI4ViewP", "isSorted"]
@@ -758,6 +798,7 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s15_CVarArgAlignedP", "bottom"]
 - !private ["s15_CVarArgAlignedP", "horizontal"]
 - !private ["s22_CVarArgPassedAsDoubleP", "bottom"]
@@ -768,6 +809,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
@@ -784,10 +826,12 @@ depends-member:
 - !private ["s19_HasContiguousBytesP", "filter"]
 - !private ["s19_HasContiguousBytesP", "isEmpty"]
 - !private ["s19_HasContiguousBytesP", "lowercased"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "_text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "autocapitalizationType"]
@@ -836,10 +880,12 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "filter"]
 - !private ["s21_ObjectiveCBridgeableP", "horizontal"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "lowercased"]
 - !private ["s21_ObjectiveCBridgeableP", "none"]
 - !private ["s21_ObjectiveCBridgeableP", "some"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
@@ -861,6 +907,7 @@ depends-member:
 - !private ["9clubhouse11circleImageV", "deinit"]
 - !private ["9clubhouse11circleImageV", "frame"]
 - !private ["9clubhouse11circleImageV", "init"]
+- ["9clubhouse8clubTileV", "$categories"]
 - ["9clubhouse8clubTileV", "$name"]
 - ["9clubhouse8clubTileV", "$recruiting"]
 - ["9clubhouse8clubTileV", "Body"]
@@ -875,11 +922,13 @@ depends-member:
 - ["9clubhouse8clubTileV", "View"]
 - !private ["9clubhouse8clubTileV", "ZStack"]
 - ["9clubhouse8clubTileV", "_Default_Body"]
+- !private ["9clubhouse8clubTileV", "_categories"]
 - ["9clubhouse8clubTileV", "_makeView"]
 - ["9clubhouse8clubTileV", "_makeViewList"]
 - !private ["9clubhouse8clubTileV", "_name"]
 - !private ["9clubhouse8clubTileV", "_recruiting"]
 - ["9clubhouse8clubTileV", "body"]
+- ["9clubhouse8clubTileV", "categories"]
 - !private ["9clubhouse8clubTileV", "circleImage"]
 - ["9clubhouse8clubTileV", "deinit"]
 - ["9clubhouse8clubTileV", "init"]
@@ -919,8 +968,10 @@ depends-member:
 - ["9clubhouse11recruitIconV", "deinit"]
 - ["9clubhouse11recruitIconV", "init"]
 - ["9clubhouse14studentExploreV", "$clubs"]
+- ["9clubhouse14studentExploreV", "$i"]
 - !private ["9clubhouse14studentExploreV", "$isFiltered"]
 - !private ["9clubhouse14studentExploreV", "$isSorted"]
+- ["9clubhouse14studentExploreV", "$recruiting"]
 - !private ["9clubhouse14studentExploreV", "$searchText"]
 - !private ["9clubhouse14studentExploreV", "$showSaved"]
 - ["9clubhouse14studentExploreV", "Body"]
@@ -942,10 +993,12 @@ depends-member:
 - !private ["9clubhouse14studentExploreV", "ZStack"]
 - ["9clubhouse14studentExploreV", "_Default_Body"]
 - !private ["9clubhouse14studentExploreV", "_clubs"]
+- !private ["9clubhouse14studentExploreV", "_i"]
 - !private ["9clubhouse14studentExploreV", "_isFiltered"]
 - !private ["9clubhouse14studentExploreV", "_isSorted"]
 - ["9clubhouse14studentExploreV", "_makeView"]
 - ["9clubhouse14studentExploreV", "_makeViewList"]
+- !private ["9clubhouse14studentExploreV", "_recruiting"]
 - !private ["9clubhouse14studentExploreV", "_searchText"]
 - !private ["9clubhouse14studentExploreV", "_showSaved"]
 - ["9clubhouse14studentExploreV", "body"]
@@ -953,9 +1006,12 @@ depends-member:
 - ["9clubhouse14studentExploreV", "clubs"]
 - ["9clubhouse14studentExploreV", "deinit"]
 - !private ["9clubhouse14studentExploreV", "exploreHeader"]
+- ["9clubhouse14studentExploreV", "i"]
 - ["9clubhouse14studentExploreV", "init"]
 - !private ["9clubhouse14studentExploreV", "isFiltered"]
 - !private ["9clubhouse14studentExploreV", "isSorted"]
+- ["9clubhouse14studentExploreV", "recruiting"]
+- ["9clubhouse14studentExploreV", "recruitingFunc"]
 - !private ["9clubhouse14studentExploreV", "searchText"]
 - !private ["9clubhouse14studentExploreV", "showSaved"]
 - ["9clubhouse23studentExplore_PreviewsV", "Previews"]
@@ -968,6 +1024,16 @@ depends-member:
 - ["9clubhouse23studentExplore_PreviewsV", "platform"]
 - ["9clubhouse23studentExplore_PreviewsV", "previews"]
 - !private ["9clubhouse23studentExplore_PreviewsV", "studentExplore"]
+- ["9clubhouse8testDataV", "Bool"]
+- ["9clubhouse8testDataV", "ID"]
+- ["9clubhouse8testDataV", "String"]
+- ["9clubhouse8testDataV", "UUID"]
+- ["9clubhouse8testDataV", "_Default_ID"]
+- ["9clubhouse8testDataV", "club"]
+- ["9clubhouse8testDataV", "deinit"]
+- ["9clubhouse8testDataV", "id"]
+- ["9clubhouse8testDataV", "init"]
+- ["9clubhouse8testDataV", "recruiting"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "7SwiftUI10AnimatableP"
@@ -986,14 +1052,14 @@ depends-nominal:
 - !private "10Foundation15ContiguousBytesP"
 - "9clubhouse9SearchBarV11CoordinatorC"
 - "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
-- !private "Se"
+- "Se"
 - "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI18DynamicViewContentP"
 - !private "7SwiftUI10EdgeInsetsV"
-- !private "SE"
+- "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -1011,6 +1077,7 @@ depends-nominal:
 - !private "7SwiftUI6HStackV"
 - "SH"
 - !private "7SwiftUI19HorizontalAlignmentV"
+- "s12IdentifiableP"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI15InsettableShapeP"
 - !private "s25LosslessStringConvertibleP"
@@ -1034,6 +1101,7 @@ depends-nominal:
 - !private "Sm"
 - !private "SY"
 - !private "7SwiftUI9RectangleV"
+- "10Foundation20ReferenceConvertibleP"
 - !private "7SwiftUI16RoundedRectangleV"
 - !private "7SwiftUI10ScrollViewV"
 - "9clubhouse9SearchBarV"
@@ -1075,6 +1143,7 @@ depends-nominal:
 - !private "So6UIViewC"
 - "7SwiftUI19UIViewRepresentableP"
 - !private "7SwiftUI26UIViewRepresentableContextV"
+- "10Foundation4UUIDV"
 - !private "7SwiftUI6VStackV"
 - !private "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
@@ -1094,7 +1163,7 @@ depends-nominal:
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 - !private "7SwiftUI11_VectorMathP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
@@ -1104,6 +1173,7 @@ depends-nominal:
 - "9clubhouse11recruitIconV"
 - "9clubhouse14studentExploreV"
 - "9clubhouse23studentExplore_PreviewsV"
+- "9clubhouse8testDataV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -1153,4 +1223,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e4fc8c3fb327025d3a9537c5b4cd979a"
+interface-hash: "8afcbfaed899112e8f5dc5c5ac1e0f96"

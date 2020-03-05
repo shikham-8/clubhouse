@@ -2,15 +2,15 @@
 import SwiftUI
 import SwiftUI
 
-extension TabViewTest_Previews {
+extension StudentTabView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
         #sourceLocation(file: "/Users/samnagesh/Desktop/clubhouse/clubhouse/clubhouse/StudentTabView.swift", line: 30)
-        AnyView(TabViewTest())
+        AnyView(StudentTabView())
 #sourceLocation()
     }
 }
 
-extension TabViewTest {
+extension StudentTabView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
         #sourceLocation(file: "/Users/samnagesh/Desktop/clubhouse/clubhouse/clubhouse/StudentTabView.swift", line: 13)
         AnyView(TabView {
@@ -29,5 +29,5 @@ extension TabViewTest {
     }
 }
 
-typealias TabViewTest = clubhouse.TabViewTest
-typealias TabViewTest_Previews = clubhouse.TabViewTest_Previews
+typealias StudentTabView = clubhouse.StudentTabView
+typealias StudentTabView_Previews = clubhouse.StudentTabView_Previews

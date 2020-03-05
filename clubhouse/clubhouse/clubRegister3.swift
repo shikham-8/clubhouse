@@ -71,15 +71,15 @@ struct clubRegister3: View {
                     NavigationLink(destination: clubRegister2()) {
                         Text("back")
                             .font(Font.custom("Montserrat-Regular", size: 22))
-                            .foregroundColor(Color.CustomOrange)
+                            .foregroundColor(Color.CustomPurple)
                     }
+                    .navigationBarTitle("")
+                    .navigationBarHidden(true)
                     .frame(width: 100, height: 30)
                      .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.CustomOrange, lineWidth: 2)
+                        .stroke(Color.CustomPurple, lineWidth: 2)
                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5))
-                        .navigationBarTitle("", displayMode: .inline)
-                        .navigationBarHidden(true)
                         .cornerRadius(10)
 
                      NavigationLink(destination: studentExplore()) {
@@ -87,12 +87,13 @@ struct clubRegister3: View {
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
                     }
+                    .navigationBarTitle("")
+                    .navigationBarHidden(true)
                     .frame(width: 100, height: 30)
-                    .background(Color.CustomOrange)
+                    .background(Color.CustomPurple)
                     .cornerRadius(10)
                     .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                      .navigationBarTitle("", displayMode: .inline)
-                     .navigationBarHidden(true)
 
                     
                 }

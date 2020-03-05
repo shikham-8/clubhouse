@@ -67,25 +67,25 @@ struct clubRegister2: View {
                             Picker(selection: $size, label: Text("Size")){
                                 ForEach(0 ..< sizes.count){ index in
                                     Text(self.sizes[index]).tag(index)
-                                        .foregroundColor(Color.CustomOrange)
+                                        .foregroundColor(Color.CustomPurple)
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
-                                .border(Color.CustomOrange)
+                                .border(Color.CustomPurple)
                             }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
                            Picker(selection: $type, label: Text("Club Type")){
                                 ForEach(0 ..< clubTypes.count){ index in
                                     Text(self.clubTypes[index]).tag(index)
-                                        .foregroundColor(Color.CustomOrange)
+                                        .foregroundColor(Color.CustomPurple)
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                             }
                                 .labelsHidden()
                                 .frame(width:165, height:20).clipped()
-                                .border(Color.CustomOrange)
+                                .border(Color.CustomPurple)
                         }.frame(height: 100)
                     }
                    Text("Recruitment Process (N/A if None)")
@@ -113,13 +113,13 @@ struct clubRegister2: View {
                             Toggle(isOn: $recruitingNow){Text("")}.padding(.horizontal,90)
                                 .toggleStyle(
                                     ColoredToggleStyle(label: "",
-                                                       onColor: Color.CustomOrange))
+                                                       onColor: Color.CustomPurple))
                                 .frame(width:49, height:23)
                                 .padding(.horizontal,50)
                             Picker(selection: $type, label: Text("Commitment")){
                                 ForEach(0 ..< meetings.count){ index in
                                     Text(self.meetings[index]).tag(index)
-                                        .foregroundColor(Color.CustomOrange)
+                                        .foregroundColor(Color.CustomPurple)
                                         .font(Font.custom("Roboto-Regular", size: 12))
                                 }
                             }
@@ -215,29 +215,29 @@ struct clubRegister2: View {
                                         }.padding(.horizontal,20)
                     HStack(spacing: 50){
                         NavigationLink(destination: clubRegister1()) {
-                                   Button(action: {}){
-                                            Text("back")
-                                                .font(Font.custom("Montserrat-Regular", size: 22))
-                                                .foregroundColor(Color.CustomOrange)
-                                        }
-                                        .frame(width: 100, height: 30)
-                                        .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.CustomOrange, lineWidth: 2)
-                                        .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
-                                        .navigationBarHidden(true)
-                                    )
+                                    Text("back")
+                                        .font(Font.custom("Montserrat-Regular", size: 22))
+                                        .foregroundColor(Color.CustomPurple)
                                 }
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true)
+                                .frame(width: 100, height: 30)
+                                .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.CustomPurple, lineWidth: 2)
+                                .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                            )
                         NavigationLink(destination: clubRegister3()) {
                                         Text("next")
                                             .font(Font.custom("Montserrat-Regular", size: 22))
                                             .foregroundColor(Color.white)
                                     }
+                                    .navigationBarTitle("")
+                                    .navigationBarHidden(true)
                                     .frame(width: 100, height: 30)
-                                    .background(Color.CustomOrange)
+                                    .background(Color.CustomPurple)
                                     .cornerRadius(10)
                                     .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
-                                    .navigationBarHidden(true)
                                 }
                     }
             }

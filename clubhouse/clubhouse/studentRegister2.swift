@@ -33,7 +33,34 @@ struct studentRegister2: View {
         ZStack{
            Color(.white)
                .edgesIgnoringSafeArea(.all)
-            VStack (spacing: 100){
+            VStack (spacing: 60){
+                ZStack(){
+                GeometryReader { geometry in
+                    VStack(){
+                        Rectangle().fill(Color.CustomPurple)
+                        .frame(width: 450, height: 200)
+                        Divider().background(Color.white)
+                        Divider().background(Color.white)
+
+                    }
+                    .edgesIgnoringSafeArea(.all)
+                    }
+                    VStack(spacing: 50){
+                        Text("Student Register")
+                           .font(Font.custom("Montserrat-Regular", size: 28))
+                            .fontWeight(.medium)
+                           .foregroundColor(Color.white)
+                        Divider()
+                        HStack(){
+                            Rectangle().fill(Color.CustomPurple)
+                                .frame(width: 80, height: 10)
+                            Rectangle().fill(Color.CustomPurple)
+                                .frame(width: 80, height: 10)
+                        
+                        }
+                        
+                    }
+                }
                 ZStack {
                     VStack{
                         Text("About You")
@@ -115,11 +142,13 @@ struct studentRegister2: View {
                 }
                 
                 HStack(){
-               Button(action: {}){
+                    NavigationLink(destination: studentRegister1()){
                         Text("back")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.CustomPurple)
                     }
+                    .navigationBarHidden(true)
+                    .navigationBarTitle("")
                     .frame(width: 100, height: 30)
                     .background(Color.white)
                     .border(Color.init(red: 1, green: 0.357, blue: 0.227))
@@ -129,11 +158,13 @@ struct studentRegister2: View {
                         .stroke(Color.CustomPurple, lineWidth: 2)
                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                     )
-               NavigationLink(destination: studentRegister1()) {
+                    NavigationLink(destination: StudentTabView()) {
                         Text("next")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
                     }
+                    .navigationBarHidden(true)
+                    .navigationBarTitle("")
                     .frame(width: 100, height: 30)
                     .background(Color.CustomPurple)
                     .cornerRadius(10)

@@ -28,7 +28,38 @@ struct clubRegister1: View {
             ZStack(){
                 Color(.white)
                     .edgesIgnoringSafeArea(.all)
-                VStack(spacing: 80) {
+                VStack(spacing: 60) {
+                    ZStack(){
+                    GeometryReader { geometry in
+                        VStack(){
+                            Rectangle().fill(Color.CustomPurple)
+                            .frame(width: 450, height: 200)
+                            Divider()
+                            Divider()
+
+                        }
+                        .edgesIgnoringSafeArea(.all)
+                        }
+                        VStack(spacing: 60){
+                            Spacer()
+                            Text("Club Register")
+                               .font(Font.custom("Montserrat-Regular", size: 28))
+                                .fontWeight(.medium)
+                               .foregroundColor(Color.white)
+                            HStack(){
+                                Rectangle().fill(Color.CustomPurple)
+                                    .frame(width: 80, height: 10)
+                                Rectangle().fill(Color.white)
+                                    .frame(width: 80, height: 10)
+                                    .border(Color.CustomPurple)
+                                Rectangle().fill(Color.white)
+                                    .frame(width: 80, height: 10)
+                                    .border(Color.CustomPurple)
+                            
+                            }
+                            
+                        }
+                    }
                     Divider().background(Color.white)
                     Text("Create your login information")
                         .font(Font.custom("Montserrat-Medium", size: 18))
@@ -66,7 +97,24 @@ struct clubRegister1: View {
 
                         Divider().background(Color.clear).frame(width: 200).padding(.horizontal,30)
                     }
-                    NavigationLink(destination: clubRegister2(), isActive: $shouldTransit) {
+                    HStack(){
+                        NavigationLink(destination: StudentOrClub()){
+                            Text("back")
+                                .font(Font.custom("Montserrat-Regular", size: 22))
+                                .foregroundColor(Color.CustomPurple)
+                        }
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                        .frame(width: 100, height: 30)
+                        .background(Color.white)
+                        .border(Color.CustomPurple)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.CustomPurple, lineWidth: 2)
+                            .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                        )
+                        NavigationLink(destination: clubRegister2(), isActive: $shouldTransit) {
                             Text("next")
                                 .font(Font.custom("Montserrat-Medium", size: 24))
                                 .foregroundColor(.white)
@@ -75,16 +123,15 @@ struct clubRegister1: View {
                                     self.addUser(emailt: self.email, passwordt: self.password)
                                     self.shouldTransit = true
                                 }
- */
-                        }
-                        .frame(width: 100, height: 50)
-                        .background(Color.CustomOrange)
-                        .cornerRadius(10)
-                        .padding(50)
-                        .navigationBarTitle("", displayMode: .inline)
+     */
+                        }.navigationBarTitle("")
                         .navigationBarHidden(true)
-                        .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
-                        
+                            .frame(width: 100, height: 30)
+                            .background(Color.CustomPurple)
+                            .cornerRadius(10)
+                            .padding(50)
+                            .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
+                    }
                 }
             }
         }
