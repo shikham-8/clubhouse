@@ -6,6 +6,7 @@
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
 import SwiftUI
+import Firebase
 
 struct clubRegister2: View {
     @State var name: String = ""
@@ -19,7 +20,37 @@ struct clubRegister2: View {
     @State var selectedDay = true
     var clubTypes = ["Academic","Business", "Professional", "Cultural"]
     var sizes = ["0-10 members","10-30 members", "30-50 members","50-100 members", "100+ members"]
-    var meetings = ["Weekly", "Bi-weekly", "Month", "Quarter", "Year"]
+    var meetings = ["Weekly", "Bi-weekly", "Monthly", "Quarterly", "Yearly"]
+    @State private var shouldTransit: Bool = false
+    
+    let db = Firestore.firestore()
+    
+    func newClub(){
+        //print("error1")
+        //let variable =
+        //Auth.auth()
+        let user = Auth.auth().currentUser
+        let tempEmail = user?.email
+        
+        let recruitingNow1 = recruitingNow ? "true" : "false"
+        //if let tempEmail = String(Auth.auth().currentUser?.email)
+        db.collection("clubs").document(tempEmail!).setData([
+            "name" : name,
+            "description" : description,
+            "recruitment process" : process,
+            "club size" : size,
+            "type" : type,
+            "currently recruiting" : recruitingNow1,
+            "commitment" : commitment,
+            "days" : day
+        ]) { (error) in
+            if let e = error {
+                print("error with firestore: clubs, \(e)")
+            } else{
+                print("success")
+            }
+        }
+    }
     
     var body: some View {
         NavigationView{
@@ -255,10 +286,15 @@ struct clubRegister2: View {
                                 .stroke(Color.CustomPurple, lineWidth: 2)
                                 .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                             )
-                        NavigationLink(destination: clubRegister3()) {
+                        NavigationLink(destination: clubRegister3(), isActive: $shouldTransit) {
                                         Text("next")
                                             .font(Font.custom("Montserrat-Regular", size: 22))
                                             .foregroundColor(Color.white)
+                                            .onTapGesture{
+                                                self.newClub()
+                                                self.shouldTransit = true
+                                            }
+
                                     }
                                     .navigationBarTitle("")
                                     .navigationBarHidden(true)

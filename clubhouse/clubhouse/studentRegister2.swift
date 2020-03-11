@@ -8,6 +8,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 
 struct studentRegister2: View {
@@ -21,6 +22,28 @@ struct studentRegister2: View {
     
     var years = ["1st","2nd", "3rd","4th", "other"]
     var majors = ["North Campus", "South Campus"]
+    @State private var shouldTransit: Bool = false
+
+    let db = Firestore.firestore()
+
+
+    func newStudent(){
+        let user = Auth.auth().currentUser
+        let tempEmail = user?.email
+        db.collection("students").document(tempEmail!).setData([
+            "name" : name,
+            "year" : year,
+            "major" : major
+        //figure out images
+        ]) { (error) in
+            if let e = error {
+                print("error with firestore: students, \(e)")
+            } else{
+                print("success")
+            }
+        }
+        
+    }
     
     func loadImage() {
         guard let inputImage = inputImage else { return }
@@ -158,10 +181,15 @@ struct studentRegister2: View {
                         .stroke(Color.CustomPurple, lineWidth: 2)
                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                     )
-                    NavigationLink(destination: StudentTabView()) {
+                    NavigationLink(destination: StudentTabView(), isActive: $shouldTransit) {
                         Text("next")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
+                            .onTapGesture{
+                                self.newStudent()
+                                self.shouldTransit = true
+                            }
+
                     }
                     .navigationBarHidden(true)
                     .navigationBarTitle("")

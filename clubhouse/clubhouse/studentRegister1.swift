@@ -7,11 +7,21 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct studentRegister1: View {
     @State var email:String = ""
     @State var password:String = ""
     @State var password2:String = ""
+    @State private var shouldTransit: Bool = false
+    func addUser(emailt: String, passwordt : String)
+    {
+        let emailText = emailt
+        let passwordText = passwordt
+        Auth.auth().createUser(withEmail: emailText, password: passwordText){
+                   authResult, error in
+        }
+    }
     var body: some View {
         NavigationView{
             ZStack(){
@@ -98,11 +108,15 @@ struct studentRegister1: View {
                             .shadow(color: Color.gray, radius: 3, x: -2, y: 5)
                         )
                         
-                        NavigationLink(destination: studentRegister2()) {
+                        NavigationLink(destination: studentRegister2(), isActive: $shouldTransit) {
                                 Text("next")
                                     .font(Font.custom("Montserrat-Medium", size: 24))
                                     .foregroundColor(.white)
                                     .padding()
+                                    .onTapGesture{
+                                        self.addUser(emailt: self.email, passwordt: self.password)
+                                        self.shouldTransit = true
+                                }
                             }.navigationBarHidden(true)
                             .navigationBarTitle("")
                             .frame(width: 100, height: 30)

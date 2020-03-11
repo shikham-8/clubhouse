@@ -7,15 +7,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 //strategy for explore page:
 //make a struct/view for the individual club rows -- with image, name, recruiting
 //have a full page view that combines all of these as an array in the main page
-struct testData: Identifiable {
-    var id = UUID()
-    var club: String
-    var recruiting: Bool
-}
+
+
+//struct testData: Identifiable {
+//    var id = UUID()
+//    var club: String
+//    var recruiting: Bool
+//}
 
 struct SearchBar: UIViewRepresentable {
 
@@ -65,9 +68,18 @@ struct recruitIcon: View {
     }
 }
 struct clubTile: View {
-    @State var recruiting = false
+    //@State var recruiting = false
     @State var name = ""
     @State var categories = "UCLA Club"
+    
+    @State var recruitingStr = "false"
+    
+    init(rec: String, name1 : String, categories1: String) {
+        recruitingStr = rec
+        name = name1
+        categories = categories1
+    }
+    
     var body: some View {
         ZStack() {
         Rectangle()
@@ -84,7 +96,7 @@ struct clubTile: View {
                 }.padding(.horizontal)
                 
                 Spacer()
-                if self.recruiting
+                if (self.recruitingStr == "true")
                 {
                     recruitIcon()
                     
@@ -135,10 +147,39 @@ struct studentExplore: View {
     //SAVED FUNCTIONALITY STILL NEEDS TO BE IMPLEMENTED
     @State private var isFiltered : Bool = false
     @State private var isSorted : Bool = false
+    @State var clubTiles = []
+    let db = Firestore.firestore()
+
     
     //@State var i = 0
+    
+    func fill(){
+           
+               db.collection("clubs").getDocuments { (querySnapshot, error) in
+                   if let e = error{
+                       print("whatever")
+                   } else {
+                       if let snapShotDocuments = querySnapshot?.documents {
+                           for doc in snapShotDocuments{
+                            let data = doc.data()
+                     
+                            let type2 = (data["type"] as? String)!
+                            let recruitingNow2 = (data["currently recruiting"] as? String)!
+                            let name2 = (data["name"] as? String)!
+                            let tile = clubTile(rec: recruitingNow2, name1: name2, categories1: type2)
+                            self.clubTiles.append(tile)
+
+                               }
+
+                           }
+                       }
+                   }
+               }
+
 
     var body: some View {
+        
+        
         ZStack() {
         
         ScrollView {
@@ -197,12 +238,14 @@ struct studentExplore: View {
                                 
                             ).background(!self.isSorted ? Color.white : Color.CustomPurple)
                     }.padding(.bottom).background(Color.white)
-                    ForEach(self.clubs.filter{
-                    self.searchText.isEmpty ? true : $0.lowercased().contains(self.searchText.lowercased())
-                }, id: \.self) {c in
-                    clubTile( recruiting: (c=="GlobeMed" || c=="DevX" || c=="Club WaterSki") ? false : true, name: c, categories: (c=="Creative Labs" || c=="ACM" || c=="SWE" || c=="DevX" || c=="BMES" ? "Engineering, Technology" : "Sports, Misc.") )
-
-                }
+                    
+                
+//                    ForEach(self.clubs.filter{
+//                    self.searchText.isEmpty ? true : $0.lowercased().contains(self.searchText.lowercased())
+//                }, id: \.self) {c in
+//                    clubTile( recruiting: (c=="GlobeMed" || c=="DevX" || c=="Club WaterSki") ? false : true, name: c, categories: (c=="Creative Labs" || c=="ACM" || c=="SWE" || c=="DevX" || c=="BMES" ? "Engineering, Technology" : "Sports, Misc.") )
+//
+//                }
                     
                 
                 }
@@ -210,7 +253,7 @@ struct studentExplore: View {
         }
     .background(Color.white)
 
-    }
+    }.onAppear(perform: fill)
     }
 
     func recruitingFunc() -> Bool {

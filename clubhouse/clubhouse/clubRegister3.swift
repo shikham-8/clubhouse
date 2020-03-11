@@ -6,8 +6,11 @@
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
 import SwiftUI
+import Firebase
+
 struct CheckboxFieldView : View {
     @State var checkState:Bool = false ;
+    
     var body: some View {
          Button(action:
             {
@@ -36,8 +39,28 @@ struct CheckboxFieldView : View {
 }
 struct clubRegister3: View {
     @State var email:String = ""
-    @State var password:String = ""
+    @State var password:String = ""//are we sure about this one??
     @State var password2:String = ""
+    @State private var shouldTransit: Bool = false
+    
+    let db = Firestore.firestore()
+    
+    func addToClub(){
+        
+        let user = Auth.auth().currentUser
+        let tempEmail = user?.email
+        db.collection("clubs").document(tempEmail!).setData([
+            "contact email" : email,
+            "website" : password
+        ], merge:true) { (error) in
+            if let e = error {
+                print("error with firestore: clubs, \(e)")
+            } else{
+                print("success")
+                
+            }
+        }
+    }
     var body: some View {
     NavigationView{
     ScrollView{
@@ -109,10 +132,14 @@ struct clubRegister3: View {
                         .shadow(color: Color.gray, radius: 3, x: -2, y: 5))
                         .cornerRadius(10)
 
-                     NavigationLink(destination: studentExplore()) {
+                     NavigationLink(destination: clubProfileHome(), isActive: $shouldTransit) {
                         Text("finish")
                             .font(Font.custom("Montserrat-Regular", size: 22))
                             .foregroundColor(Color.init(.white))
+                            .onTapGesture{
+                                self.addToClub()
+                                self.shouldTransit = true
+                            }
                     }
                     .navigationBarTitle("")
                     .navigationBarHidden(true)

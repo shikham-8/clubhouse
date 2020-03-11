@@ -6,14 +6,14 @@
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
 import SwiftUI
-//import Firebase
+import Firebase
 
 struct clubRegister1: View {
     @State var email:String = "" //may not impose restrictions for correct email input
     @State var password:String = ""
     @State var password2:String = ""
     @State private var shouldTransit: Bool = false
-   /* func addUser(emailt: String, passwordt : String)
+    func addUser(emailt: String, passwordt : String)
     {
         let emailText = emailt
         let passwordText = passwordt
@@ -21,7 +21,7 @@ struct clubRegister1: View {
                    authResult, error in
         }
     }
- */
+ 
     var body: some View {
         NavigationView{
             ZStack(){
@@ -116,11 +116,11 @@ struct clubRegister1: View {
                                 .font(Font.custom("Montserrat-Medium", size: 24))
                                 .foregroundColor(.white)
                                 .padding()
-                               /* .onTapGesture{
+                                .onTapGesture{
                                     self.addUser(emailt: self.email, passwordt: self.password)
                                     self.shouldTransit = true
                                 }
-     */
+     
                         }.navigationBarTitle("")
                         .navigationBarHidden(true)
                             .frame(width: 100, height: 30)

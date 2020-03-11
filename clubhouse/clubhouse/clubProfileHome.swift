@@ -7,8 +7,53 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct clubProfileHome: View {
+        
+    @State var name: String = ""
+    @State var description: String = ""
+    @State var process: String = ""
+    @State var size: String = ""
+    @State var type: String = ""
+    @State var recruitingNow: String = ""
+    @State var commitment: String = "Year"
+    @State var day: String = ""
+   // @State var selectedDay = true
+    @State var website: String = ""
+      
+       let db = Firestore.firestore()
+    
+    func fill(){
+        let user = Auth.auth().currentUser
+        let tempEmail = user?.email
+        
+            db.collection("clubs").getDocuments { (querySnapshot, error) in
+                if let e = error{
+                    print("whatever")
+                } else {
+                    if let snapShotDocuments = querySnapshot?.documents {
+                        for doc in snapShotDocuments{
+                            if (tempEmail == doc.documentID){
+                                let data = doc.data()
+                                self.name = (data["name"] as? String)!
+                                self.size = (data["club size"] as? String)!
+                                self.description = (data["description"] as? String)!
+                                self.process = (data["recruitment process"] as? String)!
+                                self.type = (data["type"] as? String)!
+                                self.recruitingNow = (data["currently recruiting"] as? String)!
+                                self.commitment = (data["commitment"] as? String)!
+                                self.day = (data["days"] as? String)!
+                                self.website = (data["website"] as? String)!
+                               // self.email = tempEmail!
+                            }
+                        }
+                    }
+                }
+            }
+
+    }
+    
     var body: some View {
     NavigationView{
         ScrollView{
@@ -23,7 +68,7 @@ struct clubProfileHome: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100.0, height: 100.0)
                         .clipShape(Circle())
-                    Text("[Club Name]")
+                    Text(self.name)
                         .font(Font.custom("Montserrat-Regular", size: 24))
                     .foregroundColor(.CustomDarkGray)
 
@@ -35,7 +80,7 @@ struct clubProfileHome: View {
                         .padding(.horizontal,20)
                     .foregroundColor(.CustomDarkGray)
 
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis")
+                    Text(self.description)
                         .font(Font.custom("Roboto-Regular", size: 14))
                         .foregroundColor(.CustomLightGray)
                         .frame(width: 336, height: 62)
@@ -62,15 +107,15 @@ struct clubProfileHome: View {
 
                         }.frame(height: 120)
                         List{
-                            Text("www.creativelabs.com")
+                            Text(self.website)
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
-                            Text("30-50")
+                            Text(self.size)
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
-                            Text("Business, Professional")
+                            Text(self.type)
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
@@ -85,7 +130,7 @@ struct clubProfileHome: View {
                         .padding(.horizontal,20)
                     .foregroundColor(.CustomDarkGray)
 
-                   Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis")
+                    Text(self.process)
                         .font(Font.custom("Roboto-Regular", size: 14))
                     .foregroundColor(.CustomLightGray)
 
@@ -113,15 +158,15 @@ struct clubProfileHome: View {
 
                         }.frame(height: 120)
                         List{
-                            Text("Yes")
+                            Text(self.recruitingNow)
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
-                            Text("Year")
+                            Text(self.commitment)
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
-                            Text("Thursdays")
+                            Text(self.day)
                                 .font(Font.custom("Roboto-Regular", size: 14))
                             .foregroundColor(.CustomLightGray)
 
@@ -139,7 +184,7 @@ struct clubProfileHome: View {
             }
         }
     }
-}
+}.onAppear(perform: fill)
 }}
 
 struct clubProfileHome_Previews: PreviewProvider {
