@@ -1,16 +1,3 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
-
-
-FOUNDATION_EXPORT double FirebaseFirestoreSwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char FirebaseFirestoreSwiftVersionString[];
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:df56db0f4cfba8fab88133a9e206396db0b9fbef88ca2fb2bf6caa26715ee789
+size 336

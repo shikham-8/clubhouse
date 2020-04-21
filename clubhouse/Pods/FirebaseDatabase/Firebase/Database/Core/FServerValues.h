@@ -1,33 +1,3 @@
-/*
- * Copyright 2017 Google
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-#import "FClock.h"
-#import "FCompoundWrite.h"
-#import "FNode.h"
-#import "FSparseSnapshotTree.h"
-#import <Foundation/Foundation.h>
-
-@interface FServerValues : NSObject
-
-+ (NSDictionary *)generateServerValues:(id<FClock>)clock;
-+ (id)resolveDeferredValueCompoundWrite:(FCompoundWrite *)write
-                       withServerValues:(NSDictionary *)serverValues;
-+ (id<FNode>)resolveDeferredValueSnapshot:(id<FNode>)node
-                         withServerValues:(NSDictionary *)serverValues;
-+ (id)resolveDeferredValueTree:(FSparseSnapshotTree *)tree
-              withServerValues:(NSDictionary *)serverValues;
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:be69dc1f0f978639df7c889f6fc4755eecc00455d843ea1c2d89fae3a61f51d4
+size 1208

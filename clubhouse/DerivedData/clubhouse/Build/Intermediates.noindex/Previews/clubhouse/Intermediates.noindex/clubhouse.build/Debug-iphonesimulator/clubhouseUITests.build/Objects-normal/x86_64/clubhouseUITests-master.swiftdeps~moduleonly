@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "faf67a98900190c8eeae541a5555ece0"
-build_time: [1583192284, 127329000]
-inputs:
-  "/Users/samnagesh/Desktop/clubhouse/clubhouse/clubhouseUITests/clubhouseUITests.swift": [1583111865, 179269548]

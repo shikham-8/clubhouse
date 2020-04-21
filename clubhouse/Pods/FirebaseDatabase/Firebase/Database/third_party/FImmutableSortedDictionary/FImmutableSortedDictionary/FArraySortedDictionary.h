@@ -1,21 +1,3 @@
-#import <Foundation/Foundation.h>
-#import "FImmutableSortedDictionary.h"
-
-/**
- * This is an array backed implementation of FImmutableSortedDictionary. It uses arrays and linear lookups to achieve
- * good memory efficiency while maintaining good performance for small collections. It also uses less allocations than
- * a comparable red black tree. To avoid degrading performance with increasing collection size it will automatically
- * convert to a FTreeSortedDictionary after an insert call above a certain threshold.
- */
-@interface FArraySortedDictionary : FImmutableSortedDictionary
-
-+ (FArraySortedDictionary *)fromDictionary:(NSDictionary *)dictionary withComparator:(NSComparator)comparator;
-
-- (id)initWithComparator:(NSComparator)comparator;
-
-#pragma mark -
-#pragma mark Properties
-
-@property (nonatomic, copy, readonly) NSComparator comparator;
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:664f18647082a31dce8c2ecef328c922504daeab9a00d66b0f4ea3e0974fff2d
+size 859

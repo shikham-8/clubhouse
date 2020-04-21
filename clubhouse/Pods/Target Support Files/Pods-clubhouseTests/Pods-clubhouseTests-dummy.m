@@ -1,5 +1,3 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_clubhouseTests : NSObject
-@end
-@implementation PodsDummy_Pods_clubhouseTests
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:400f00d07a161312ef7988fdbe2c891a5f1e8a7add92009e0f890520242c4caa
+size 142

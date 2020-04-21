@@ -1,33 +1,3 @@
-/*
- * Copyright 2018 Google
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-#import "FIRAuthSettings.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@implementation FIRAuthSettings
-
-- (instancetype)init {
-  self = [super init];
-  if (self) {
-    _appVerificationDisabledForTesting = NO;
-  }
-  return self;
-}
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d8edcacb46bf08bbd925d4ba1bf4037cdfc185a8d9bc3771781e15033bbc6f8
+size 833

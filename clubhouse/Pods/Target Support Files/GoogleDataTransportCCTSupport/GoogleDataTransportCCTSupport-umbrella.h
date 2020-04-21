@@ -1,17 +1,3 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
-
-#import "cct.nanopb.h"
-
-FOUNDATION_EXPORT double GoogleDataTransportCCTSupportVersionNumber;
-FOUNDATION_EXPORT const unsigned char GoogleDataTransportCCTSupportVersionString[];
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a42e7398aaf2933744c0317cff4a1bf3e5aaa6d77839fcd3d9dfb980e90947ab
+size 373

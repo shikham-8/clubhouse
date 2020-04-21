@@ -1,6 +1,3 @@
-framework module GoogleDataTransportCCTSupport {
-  umbrella header "GoogleDataTransportCCTSupport-umbrella.h"
-
-  export *
-  module * { export * }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af4d796027a94e60187af086aa6b866bfcaad4ad1e56aab5cdcfc3120087d8e9
+size 148

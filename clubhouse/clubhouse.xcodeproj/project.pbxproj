@@ -12,7 +12,7 @@
 		3E5A0E3123F71E22002CDB34 /* clubRegister2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A0E3023F71E22002CDB34 /* clubRegister2.swift */; };
 		3E7BC4C323F4CBFF00618F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */; };
 		3E7BC4C523F4CBFF00618F48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C423F4CBFF00618F48 /* SceneDelegate.swift */; };
-		3E7BC4C723F4CBFF00618F48 /* LoginHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C623F4CBFF00618F48 /* LoginHome.swift */; };
+		3E7BC4C723F4CBFF00618F48 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C623F4CBFF00618F48 /* HomePage.swift */; };
 		3E7BC4C923F4CC0300618F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C823F4CC0300618F48 /* Assets.xcassets */; };
 		3E7BC4CC23F4CC0300618F48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7BC4CB23F4CC0300618F48 /* Preview Assets.xcassets */; };
 		3E7BC4CF23F4CC0300618F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7BC4CD23F4CC0300618F48 /* LaunchScreen.storyboard */; };
@@ -54,10 +54,11 @@
 		3EAE85932401F2B400951FEB /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE85752401F2B400951FEB /* Montserrat-SemiBoldItalic.ttf */; };
 		3EAE85942401F2B400951FEB /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE85762401F2B400951FEB /* Montserrat-ExtraBoldItalic.ttf */; };
 		3EAE85972401F6E000951FEB /* studentRegister2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE85962401F6E000951FEB /* studentRegister2.swift */; };
+		3ED704EF2446B10B00234E5D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED704EE2446B10B00234E5D /* LoginPage.swift */; };
+		3ED704F12446B32000234E5D /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED704F02446B32000234E5D /* SignupPage.swift */; };
 		3ED88FEA23F4D1B600EF3C0F /* clubProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED88FE923F4D1B600EF3C0F /* clubProfileEdit.swift */; };
 		3ED88FEC23F4DF3E00EF3C0F /* clubProfileHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED88FEB23F4DF3E00EF3C0F /* clubProfileHome.swift */; };
 		81907228240C4BE8004DFBC4 /* StudentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81907227240C4BE8004DFBC4 /* StudentTabView.swift */; };
-		8190722A240C660F004DFBC4 /* StudentOrClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81907229240C660F004DFBC4 /* StudentOrClub.swift */; };
 		8190722C240C732C004DFBC4 /* eventEdit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190722B240C732C004DFBC4 /* eventEdit1.swift */; };
 		E25B6D94240883E20069FFC2 /* circleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B6D92240883E10069FFC2 /* circleImage.swift */; };
 		E25B6D95240883E20069FFC2 /* studentExplore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B6D93240883E10069FFC2 /* studentExplore.swift */; };
@@ -91,7 +92,7 @@
 		3E7BC4BF23F4CBFF00618F48 /* clubhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clubhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7BC4C423F4CBFF00618F48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E7BC4C623F4CBFF00618F48 /* LoginHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHome.swift; sourceTree = "<group>"; };
+		3E7BC4C623F4CBFF00618F48 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		3E7BC4C823F4CC0300618F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7BC4CB23F4CC0300618F48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E7BC4CE23F4CC0300618F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,6 +139,8 @@
 		3EAE85752401F2B400951FEB /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.ttf"; path = "Fonts/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		3EAE85762401F2B400951FEB /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBoldItalic.ttf"; path = "Fonts/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3EAE85962401F6E000951FEB /* studentRegister2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentRegister2.swift; sourceTree = "<group>"; };
+		3ED704EE2446B10B00234E5D /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		3ED704F02446B32000234E5D /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		3ED88FE923F4D1B600EF3C0F /* clubProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubProfileEdit.swift; sourceTree = "<group>"; };
 		3ED88FEB23F4DF3E00EF3C0F /* clubProfileHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubProfileHome.swift; sourceTree = "<group>"; };
 		42AFCAF52C957ED7968E1D8D /* Pods_clubhouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clubhouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +150,6 @@
 		641749CA0E1F55AF004FD96B /* Pods-clubhouse-clubhouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clubhouse-clubhouseUITests.debug.xcconfig"; path = "Target Support Files/Pods-clubhouse-clubhouseUITests/Pods-clubhouse-clubhouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		813D407E6E07B4C1AE1B17F6 /* Pods-clubhouse-clubhouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clubhouse-clubhouseUITests.release.xcconfig"; path = "Target Support Files/Pods-clubhouse-clubhouseUITests/Pods-clubhouse-clubhouseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		81907227240C4BE8004DFBC4 /* StudentTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTabView.swift; sourceTree = "<group>"; };
-		81907229240C660F004DFBC4 /* StudentOrClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentOrClub.swift; sourceTree = "<group>"; };
 		8190722B240C732C004DFBC4 /* eventEdit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventEdit1.swift; sourceTree = "<group>"; };
 		94BBA47A3594DBEF7B4E3B85 /* Pods-clubhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clubhouse.release.xcconfig"; path = "Target Support Files/Pods-clubhouse/Pods-clubhouse.release.xcconfig"; sourceTree = "<group>"; };
 		E25B6D92240883E10069FFC2 /* circleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleImage.swift; sourceTree = "<group>"; };
@@ -212,7 +214,6 @@
 				3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */,
 				E25B6D92240883E10069FFC2 /* circleImage.swift */,
 				E25B6D93240883E10069FFC2 /* studentExplore.swift */,
-				81907229240C660F004DFBC4 /* StudentOrClub.swift */,
 				81907227240C4BE8004DFBC4 /* StudentTabView.swift */,
 				3EAE85542401F03D00951FEB /* studentRegister1.swift */,
 				3EAE85962401F6E000951FEB /* studentRegister2.swift */,
@@ -225,7 +226,9 @@
 				3ED88FEB23F4DF3E00EF3C0F /* clubProfileHome.swift */,
 				3E99397D240752CD001B19AD /* studentProfileHome.swift */,
 				3E81AD1524084F0800A795A2 /* studentProfileEdit.swift */,
-				3E7BC4C623F4CBFF00618F48 /* LoginHome.swift */,
+				3E7BC4C623F4CBFF00618F48 /* HomePage.swift */,
+				3ED704EE2446B10B00234E5D /* LoginPage.swift */,
+				3ED704F02446B32000234E5D /* SignupPage.swift */,
 				3E7BC4C423F4CBFF00618F48 /* SceneDelegate.swift */,
 				3E7BC4C823F4CC0300618F48 /* Assets.xcassets */,
 				3E7BC4CD23F4CC0300618F48 /* LaunchScreen.storyboard */,
@@ -592,6 +595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED704EF2446B10B00234E5D /* LoginPage.swift in Sources */,
 				8190722C240C732C004DFBC4 /* eventEdit1.swift in Sources */,
 				3E99397E240752CD001B19AD /* studentProfileHome.swift in Sources */,
 				3E81AD1624084F0800A795A2 /* studentProfileEdit.swift in Sources */,
@@ -602,9 +606,9 @@
 				E25B6D94240883E20069FFC2 /* circleImage.swift in Sources */,
 				3E7BC4C523F4CBFF00618F48 /* SceneDelegate.swift in Sources */,
 				3EAE851623F8E55D00951FEB /* clubRegister3.swift in Sources */,
-				8190722A240C660F004DFBC4 /* StudentOrClub.swift in Sources */,
-				3E7BC4C723F4CBFF00618F48 /* LoginHome.swift in Sources */,
+				3E7BC4C723F4CBFF00618F48 /* HomePage.swift in Sources */,
 				3E99397C240745E6001B19AD /* imagePicker.swift in Sources */,
+				3ED704F12446B32000234E5D /* SignupPage.swift in Sources */,
 				3EAE85552401F03D00951FEB /* studentRegister1.swift in Sources */,
 				3E06294423F627A800F1A9BD /* clubRegister1.swift in Sources */,
 				3ED88FEC23F4DF3E00EF3C0F /* clubProfileHome.swift in Sources */,

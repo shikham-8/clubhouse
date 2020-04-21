@@ -1,17 +1,3 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
-
-#import "firebasecore.nanopb.h"
-
-FOUNDATION_EXPORT double FirebaseCoreDiagnosticsVersionNumber;
-FOUNDATION_EXPORT const unsigned char FirebaseCoreDiagnosticsVersionString[];
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f126d0d3e6f392c7ab88f5330ef1bb56fb85a51f04a86dc0db5200c96f8e656
+size 370

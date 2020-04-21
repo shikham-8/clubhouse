@@ -5,7 +5,6 @@
 //  Created by Samritha Nagesh on 2/13/20.
 //  Copyright © 2020 Samritha Nagesh. All rights reserved.
 //
-
 import SwiftUI
 import Firebase
 
@@ -92,7 +91,7 @@ struct studentRegister1: View {
                     HStack(){
                         Spacer()
                         Spacer()
-                        NavigationLink(destination: StudentOrClub()){
+                        NavigationLink(destination: SignupPage()){
                             Text("back")
                                 .font(Font.custom("Montserrat-Regular", size: 22))
                                 .foregroundColor(Color.CustomPurple)

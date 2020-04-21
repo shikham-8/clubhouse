@@ -1,30 +1,3 @@
-/*
- * Copyright 2018 Google
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-#import "GDTCORClock.h"
-#import "GDTCORConsoleLogger.h"
-#import "GDTCORDataFuture.h"
-#import "GDTCOREvent.h"
-#import "GDTCOREventDataObject.h"
-#import "GDTCOREventTransformer.h"
-#import "GDTCORLifecycle.h"
-#import "GDTCORPrioritizer.h"
-#import "GDTCORRegistrar.h"
-#import "GDTCORStoredEvent.h"
-#import "GDTCORTargets.h"
-#import "GDTCORTransport.h"
-#import "GDTCORUploadPackage.h"
-#import "GDTCORUploader.h"
+version https://git-lfs.github.com/spec/v1
+oid sha256:37b5f597f7f310ff5b0f53c10d57c49b4bf10ef927c217d5d8e6280930686ddc
+size 999

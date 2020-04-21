@@ -1,31 +1,3 @@
-/*
- * Copyright 2018 Google
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-#ifndef FIRESTORE_CORE_INCLUDE_FIREBASE_FIRESTORE_FIRESTORE_VERSION_H_
-#define FIRESTORE_CORE_INCLUDE_FIREBASE_FIRESTORE_FIRESTORE_VERSION_H_
-
-/** Version for Firestore. */
-
-namespace firebase {
-namespace firestore {
-
-/** Version string for the Firebase Firestore SDK. */
-extern const char* const kFirestoreVersionString;
-
-}  // namespace firestore
-}  // namespace firebase
-
-#endif  // FIRESTORE_CORE_INCLUDE_FIREBASE_FIRESTORE_FIRESTORE_VERSION_H_
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa4c378ad4cfcec3e3f40c2bf16c4c152a44f3c45802d997c03a46d7249db82d
+size 1041
