@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		236D0DB693F307D27E6CE091 /* Pods_clubhouse_clubhouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BB2F4A4D5CDBBCD2F1D98 /* Pods_clubhouse_clubhouseUITests.framework */; };
 		3E06294423F627A800F1A9BD /* clubRegister1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06294323F627A800F1A9BD /* clubRegister1.swift */; };
+		3E11AAC024621D9C00321184 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3E11AABF24621D9C00321184 /* .gitignore */; };
 		3E5A0E3123F71E22002CDB34 /* clubRegister2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A0E3023F71E22002CDB34 /* clubRegister2.swift */; };
 		3E7BC4C323F4CBFF00618F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */; };
 		3E7BC4C523F4CBFF00618F48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C423F4CBFF00618F48 /* SceneDelegate.swift */; };
@@ -88,6 +89,7 @@
 		05AEF79ED339DDC0D4CAD73B /* Pods-clubhouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clubhouseTests.debug.xcconfig"; path = "Target Support Files/Pods-clubhouseTests/Pods-clubhouseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		21311BB091E508FC1228FEC4 /* Pods-clubhouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clubhouseTests.release.xcconfig"; path = "Target Support Files/Pods-clubhouseTests/Pods-clubhouseTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E06294323F627A800F1A9BD /* clubRegister1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubRegister1.swift; sourceTree = "<group>"; };
+		3E11AABF24621D9C00321184 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3E5A0E3023F71E22002CDB34 /* clubRegister2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubRegister2.swift; sourceTree = "<group>"; };
 		3E7BC4BF23F4CBFF00618F48 /* clubhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clubhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		3E7BC4B623F4CBFF00618F48 = {
 			isa = PBXGroup;
 			children = (
+				3E11AABF24621D9C00321184 /* .gitignore */,
 				3EAE85582401F2B400951FEB /* Fonts */,
 				3E7BC4C123F4CBFF00618F48 /* clubhouse */,
 				3E7BC4D823F4CC0400618F48 /* clubhouseTests */,
@@ -449,6 +452,7 @@
 				3EAE85852401F2B400951FEB /* Montserrat-SemiBold.ttf in Resources */,
 				3EAE858E2401F2B400951FEB /* Roboto-Italic.ttf in Resources */,
 				3EAE85822401F2B400951FEB /* Montserrat-Bold.ttf in Resources */,
+				3E11AAC024621D9C00321184 /* .gitignore in Resources */,
 				3EAE858D2401F2B400951FEB /* Montserrat-Italic.ttf in Resources */,
 				3EAE858A2401F2B400951FEB /* Montserrat-Black.ttf in Resources */,
 				3EAE857A2401F2B400951FEB /* Montserrat-Medium.ttf in Resources */,
