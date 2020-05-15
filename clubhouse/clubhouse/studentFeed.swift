@@ -26,23 +26,33 @@ struct feedHeader: View {
     }
 }
 struct feedFooter: View{
+    var explore = false
+    var calendar = false
+    var profile = false
+    
+    init(ex: Bool, cal : Bool, prof : Bool) {
+        explore = ex
+        calendar = cal
+        profile = prof
+    }
+    
     var body: some View{
         GeometryReader { geometry in
             VStack {
                 Spacer()
                 Spacer()
                 HStack {
-                    Image("ExploreIcon")
+                    Image(self.explore ? "ExploreFill" : "ExploreIcon")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(20)
                     .frame(width: geometry.size.width/3, height: 75)
-                    Image("calendar-fill")
+                    Image(self.calendar ? "calendar-fill" : "calendar-stroke")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(20)
                     .frame(width: geometry.size.width/3, height: 75)
-                    Image("StudentIcon")
+                    Image(self.profile ? "StudentFill" : "StudentIcon")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(20)
@@ -51,7 +61,7 @@ struct feedFooter: View{
                   .background(Color.white.shadow(radius: 2))
                 
             }
-            }.edgesIgnoringSafeArea(.bottom)
+        }.edgesIgnoringSafeArea(.bottom)
         }
 }
 struct eventTile: View {
@@ -95,7 +105,7 @@ struct eventTile: View {
 }
 struct studentFeed: View {
     @State var eventTiles = ["club"]
-    @State var currentView = "calendar"
+    
     let db = Firestore.firestore()
 
     
@@ -119,7 +129,7 @@ struct studentFeed: View {
                 
                 }
             }.background(Color.CustomLightGray)
-            feedFooter()
+            feedFooter(ex: false, cal: true, prof: false)
         }
     }
 }

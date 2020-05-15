@@ -83,7 +83,7 @@ struct studentProfileHome: View {
             ZStack(){
                 Color(.white)
                     .edgesIgnoringSafeArea(.all)
-                VStack(spacing: 60) {
+                VStack(spacing: 50) {
                     ZStack(){
                     GeometryReader { geometry in
                         VStack(){
@@ -165,8 +165,11 @@ struct studentProfileHome: View {
                         .frame(width: 100, height: 50)
                         .padding(50)
                 }
+                feedFooter(ex: false, cal: false, prof: true)
             }
+            
         }.onAppear(perform: fill)
+                 
     }
 }
 

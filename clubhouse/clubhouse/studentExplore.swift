@@ -252,7 +252,7 @@ struct studentExplore: View {
             }
         }
     .background(Color.white)
-
+    feedFooter(ex: true, cal: false, prof: false)
     }.onAppear(perform: fill)
     }
 
