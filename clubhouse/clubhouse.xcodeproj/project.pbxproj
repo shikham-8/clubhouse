@@ -11,6 +11,7 @@
 		3E06294423F627A800F1A9BD /* clubRegister1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06294323F627A800F1A9BD /* clubRegister1.swift */; };
 		3E11AAC024621D9C00321184 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3E11AABF24621D9C00321184 /* .gitignore */; };
 		3E11AAC2246E274100321184 /* studentClubProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E11AAC1246E274100321184 /* studentClubProfile.swift */; };
+		3E11AAC4246F086E00321184 /* studentFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E11AAC3246F086E00321184 /* studentFeed.swift */; };
 		3E5A0E3123F71E22002CDB34 /* clubRegister2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A0E3023F71E22002CDB34 /* clubRegister2.swift */; };
 		3E7BC4C323F4CBFF00618F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */; };
 		3E7BC4C523F4CBFF00618F48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BC4C423F4CBFF00618F48 /* SceneDelegate.swift */; };
@@ -92,6 +93,7 @@
 		3E06294323F627A800F1A9BD /* clubRegister1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubRegister1.swift; sourceTree = "<group>"; };
 		3E11AABF24621D9C00321184 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3E11AAC1246E274100321184 /* studentClubProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentClubProfile.swift; sourceTree = "<group>"; };
+		3E11AAC3246F086E00321184 /* studentFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentFeed.swift; sourceTree = "<group>"; };
 		3E5A0E3023F71E22002CDB34 /* clubRegister2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubRegister2.swift; sourceTree = "<group>"; };
 		3E7BC4BF23F4CBFF00618F48 /* clubhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clubhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		3E7BC4C123F4CBFF00618F48 /* clubhouse */ = {
 			isa = PBXGroup;
 			children = (
+				3E11AAC3246F086E00321184 /* studentFeed.swift */,
 				3E11AAC1246E274100321184 /* studentClubProfile.swift */,
 				3E7BC4C223F4CBFF00618F48 /* AppDelegate.swift */,
 				E25B6D92240883E10069FFC2 /* circleImage.swift */,
@@ -621,6 +624,7 @@
 				3E06294423F627A800F1A9BD /* clubRegister1.swift in Sources */,
 				3ED88FEC23F4DF3E00EF3C0F /* clubProfileHome.swift in Sources */,
 				81907228240C4BE8004DFBC4 /* StudentTabView.swift in Sources */,
+				3E11AAC4246F086E00321184 /* studentFeed.swift in Sources */,
 				3EAE85972401F6E000951FEB /* studentRegister2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
