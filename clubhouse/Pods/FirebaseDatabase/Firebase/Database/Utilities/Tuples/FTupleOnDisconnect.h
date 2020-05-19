@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39c1d97b4b9d07ceb300f7d34c9505a0ae8eb17f33bd65f84cf5d2f2a0441ac7
-size 909
+/*
+ * Copyright 2017 Google
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#import "FTypedefs_Private.h"
+#import <Foundation/Foundation.h>
+
+@interface FTupleOnDisconnect : NSObject
+
+@property(strong, nonatomic) NSString *pathString;
+@property(strong, nonatomic) NSString *action;
+@property(strong, nonatomic) id data;
+@property(strong, nonatomic) fbt_void_nsstring_nsstring onComplete;
+
+@end

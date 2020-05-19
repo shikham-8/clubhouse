@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a95c7594d4a99eb81d5101cf64b791c7f8e725513a0cb583b94aae008d1ecd7
-size 1133
+/*
+ * Copyright 2017 Google
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#import "FTupleRemovedQueriesEvents.h"
+
+@interface FTupleRemovedQueriesEvents ()
+@property(nonatomic, strong, readwrite) NSArray *removedQueries;
+@property(nonatomic, strong, readwrite) NSArray *cancelEvents;
+@end
+
+@implementation FTupleRemovedQueriesEvents
+@synthesize removedQueries;
+@synthesize cancelEvents;
+
+- (id)initWithRemovedQueries:(NSArray *)removed cancelEvents:(NSArray *)events {
+    self = [super init];
+    if (self) {
+        self.removedQueries = removed;
+        self.cancelEvents = events;
+    }
+    return self;
+}
+
+@end

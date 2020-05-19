@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8398078e8926c6edaf1cf30426289fbe2165f559c14e89b0d81396d6e391361
-size 884
+/*
+ * Copyright 2017 Google
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#import "FTupleSetIdPath.h"
+
+@implementation FTupleSetIdPath
+
+@synthesize path;
+@synthesize setId;
+
+- (id)initWithSetId:(NSNumber *)aSetId andPath:(FPath *)aPath {
+    self = [super init];
+    if (self) {
+        self.setId = aSetId;
+        self.path = aPath;
+    }
+    return self;
+}
+
+@end

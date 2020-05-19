@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95c9be2a8f21369275eea3fc828bc9376e6c325d0ea3c4581c6dc09cc72e1451
-size 1350
+/*
+ * Copyright 2017 Google
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#import "FImmutableSortedDictionary.h"
+#import "FNode.h"
+#import "FTypedefs.h"
+#import "FTypedefs_Private.h"
+#import <Foundation/Foundation.h>
+
+@class FNamedNode;
+
+@interface FChildrenNode : NSObject <FNode>
+
+- (id)initWithChildren:(FImmutableSortedDictionary *)someChildren;
+- (id)initWithPriority:(id<FNode>)aPriority
+              children:(FImmutableSortedDictionary *)someChildren;
+
+// FChildrenNode specific methods
+
+- (void)enumerateChildrenAndPriorityUsingBlock:(void (^)(NSString *, id<FNode>,
+                                                         BOOL *))block;
+
+- (FNamedNode *)firstChild;
+- (FNamedNode *)lastChild;
+
+@property(nonatomic, strong) FImmutableSortedDictionary *children;
+@property(nonatomic, strong) id<FNode> priorityNode;
+
+@end

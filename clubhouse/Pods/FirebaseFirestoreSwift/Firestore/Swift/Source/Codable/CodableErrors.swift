@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98110a0649595a4bb716bf43655d2787f41a5d0b4a63773f5daa760fef669d4b
-size 793
+/*
+ * Copyright 2019 Google
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+public enum FirestoreDecodingError: Error {
+  case decodingIsNotSupported(String)
+  case fieldNameConfict(String)
+}
+
+public enum FirestoreEncodingError: Error {
+  case encodingIsNotSupported(String)
+}

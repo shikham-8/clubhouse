@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:449563ba2c447c566e614eb010c9be7dbd829839f99fb335895d980396e46bd1
-size 253
+Please go to https://firebase.google.com/support/release-notes/ios
+to view the Firebase iOS release notes.
+
+You can find information about prior changes to the Firebase pod and Firebase
+Database [here](https://www.firebase.com/docs/ios/changelog.html).
